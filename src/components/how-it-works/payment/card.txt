@@ -1,0 +1,68 @@
+        <div className={`${styles.circle}  `} style={{ left: '-3rem' }}></div>
+        <div className={`${styles.pay}  bg-white`}>
+          {' '}
+          <div className={`${styles.pay4Img}  `}>
+            <img
+              src="https://www.datocms-assets.com/19671/1586375201-group-737.png"
+              alt=""
+              className="w-100"
+            />
+          </div>
+          <div className={`${styles.pay4}  `}>
+            <h3 className={`${styles.h3}  m-0`}>pay in 4</h3>
+            <p className={`${styles.p} text-center `}>
+              4 interest-free biweekly payments for smaller purchases.
+            </p>
+            <hr className={`${styles.hr}  `} />
+            <div className={`${styles.points} text-start `}>
+              <div
+                className="d-flex"
+                style={{ marginBottom: '1rem', width: 'fitContent' }}
+              >
+                <div
+                  className="me-3"
+                  style={{
+                    height: '1.5rem',
+                    width: '1.5rem',
+                    flex: '0 0 1.5rem',
+                  }}
+                >
+                  <BsFillCheckCircleFill color="green" />{' '}
+                </div>
+                <p className={`${styles.checkPay}  `}>No interest or fees</p>
+              </div>
+              <div
+                className="d-flex"
+                style={{ marginBottom: '1rem', width: 'fitContent' }}
+              >
+                <div
+                  className="me-3"
+                  style={{
+                    height: '1.5rem',
+                    width: '1.5rem',
+                    flex: '0 0 1.5rem',
+                  }}
+                >
+                  <BsFillCheckCircleFill color="green" />{' '}
+                </div>
+                <p className={`${styles.checkPay}  `}>No interest or fees</p>
+              </div>
+              <div
+                className="d-flex"
+                style={{ marginBottom: '1rem', width: 'fitContent' }}
+              >
+                <div
+                  className="me-3"
+                  style={{
+                    height: '1.5rem',
+                    width: '1.5rem',
+                    flex: '0 0 1.5rem',
+                  }}
+                >
+                  <BsFillCheckCircleFill color="green" />{' '}
+                </div>
+                <p className={`${styles.checkPay}  `}>No interest or fees</p>
+              </div>
+            </div>
+          </div>
+        </div>

@@ -1,0 +1,55 @@
+@media screen and (min-width: 768px) {
+  .head {
+    background-image: linear-gradient(
+        to left,
+        rgb(245, 241, 235),
+        rgb(245, 241, 235)
+      ),
+      url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTc2MCIgaGVpZ2h0PSI1MzYiIGZpbGw9IiNmZmYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgYXJpYS1oaWRkZW49InRydWUiPjxtYXNrIGlkPSJhIiBtYXNrLXR5cGU9ImFscGhhIiBtYXNrVW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4PSIwIiB5PSIwIiB3aWR0aD0iMTc2MCIgaGVpZ2h0PSI1MzYiPjxwYXRoIGZpbGw9ImluaGVyaXQiIGQ9Ik0wIDBoMTc2MHY1MzZIMHoiLz48L21hc2s+PGcgbWFzaz0idXJsKCNhKSIgZmlsbD0iaW5oZXJpdCI+PHBhdGggZD0iTTEzMDIuNiAyNjkuN2ExMDUuNCAxMDUuNCAwIDAwLTU2LjkgNjYuNCA0OC4zIDQ4LjMgMCAwMS01OC41IDI3LjIgMTA1LjMgMTA1LjMgMCAwMC0xNDQuMyA2Ny4yIDQ4LjMgNDguMyAwIDAxLTY2LjIgMjQuMSAxMDUuOSAxMDUuOSAwIDAwLTEzMSAxNDQuNSAxMDUuOSAxMDUuOSAwIDAwMTk3LjUtMTQuOSA0OC4zIDQ4LjMgMCAwMTY2LjItMjQuMkExMDUuNCAxMDUuNCAwIDAwMTI0NiA0OTBhNDguMyA0OC4zIDAgMDE2Ni4yLTI0LjIgMTA1LjkgMTA1LjkgMCAxMC05LjYtMTk2ek01ODEuMyA3OC44TDQxNC03MS4zYTc4LjUgNzguNSAwIDAxLTQuMi0xMTIgODEgODEgMCAwMTExMy4zLTYuM0w2OTAuNC0zOS40YTc4LjUgNzguNSAwIDAxNC4yIDExMS45IDgxIDgxIDAgMDEtMTEzLjMgNi4zek0xNjM3IDI2My44bC0xMzQuNS0yM2E0Ny42IDQ3LjYgMCAwMS0zOC4zLTU2LjQgNDkuNCA0OS40IDAgMDE1Ni4zLTQwbDEzNC42IDIzYTQ3LjYgNDcuNiAwIDAxMzguMyA1Ni4zIDQ5LjQgNDkuNCAwIDAxLTU2LjMgNDAuMXpNMTM4MyAxMTVhMTI5IDEyOSAwIDEwMC0yNTggMTI5IDEyOSAwIDAwMCAyNTh6TTEwNzcuNSAxMDhhMzkuNSAzOS41IDAgMTAwLTc5IDM5LjUgMzkuNSAwIDAwMCA3OXpNMzI0LjUgNTA4QzI4NS4zIDYyMS44IDM0My45IDc0NS40IDQ1NiA3OTEuN0w2MDMuOCAzNjJjLTExNy41LTMwLjctMjQwLjIgMzIuMS0yNzkuMyAxNDZ6TTIyOC41IDMyOWExOTcuNSAxOTcuNSAwIDEwMC0zOTUgMTk3LjUgMTk3LjUgMCAwMDAgMzk1eiIvPjwvZz48L3N2Zz4K);
+    background-position: center center;
+  }
+}
+
+.head {
+  box-sizing: border-box;
+  min-width: 0px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.merchantHeader {
+  min-width: 0px;
+  position: absolute;
+  width: 100%;
+  margin: 0px auto;
+  top: 0px;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-size: auto 100%;
+  background-position: left center, right center;
+  background-repeat: no-repeat;
+  background-image: url(https://www.datocms-assets.com/19671/1584807301-plants-xs-left.png?auto=format),
+    url(https://www.datocms-assets.com/19671/1584807366-plants-xs-right.png?auto=format);
+}
+
+@media screen and (min-width: 768px) {
+  .merchantHeader {
+    background-image: url(https://www.datocms-assets.com/19671/1584807328-plants-md-left.png?auto=format),
+      url(https://www.datocms-assets.com/19671/1584807337-plants-md-right.png?auto=format);
+    background-position: left center, right center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .merchantHeader {
+    width: 1440px;
+    background-size: 100%;
+    background-position: center top, center bottom;
+    background-image: url(https://www.datocms-assets.com/19671/1584807356-plants-xl-top.png?auto=format),
+      url(https://www.datocms-assets.com/19671/1584807405-plants-xl-bottom.png?auto=format);
+    background-repeat: no-repeat;
+  }
+}

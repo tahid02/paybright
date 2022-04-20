@@ -1,0 +1,21 @@
+.contentMargin {
+  margin-left: 0%;
+  margin-right: 0%;
+}
+@media screen and (min-width: 1200px) {
+  .contentMargin {
+    margin: 0 calc((100vw - 1200px) / 2);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .margin {
+    margin-top: 6.75rem;
+    margin-bottom: 6.75rem;
+  }
+}
+@media screen and (min-width: 576px) {
+  .padding {
+    margin: 4.5rem 1.5rem;
+  }
+}

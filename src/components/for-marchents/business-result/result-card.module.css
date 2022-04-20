@@ -1,0 +1,99 @@
+.card {
+  height: 100%;
+  padding: 0px 0.5rem;
+}
+@media (min-width: 576px) {
+  .card {
+    padding: 0px 0.75rem;
+  }
+}
+@media (min-width: 992px) {
+  .card {
+    padding: 0px 1rem;
+  }
+}
+
+.cardPadding {
+  box-sizing: border-box;
+  min-width: 0px;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(20 19 51 / 6%) 0px 8px 12px, rgb(20 19 51 / 6%) 0px 2px 6px;
+  padding: 3rem 1.5rem;
+}
+
+.content {
+  box-sizing: border-box;
+  min-width: 0px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.percentBg {
+  margin-bottom: 1.5rem;
+  /* background-image: url(https://www.datocms-assets.com/19671/1586367269-red.png?auto=format); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.percent {
+  box-sizing: border-box;
+  min-width: 0px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 992px) {
+  .pera {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .pera {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (min-width: 576px) {
+  .pera {
+    font-size: 2.5rem;
+  }
+}
+.pera {
+  padding: 0px;
+  margin: 2rem 0px;
+  font-family: Boing, 'IBM Plex Sans Hebrew';
+  letter-spacing: normal;
+  max-width: 100%;
+  font-size: 2.5rem;
+}
+
+.h4 {
+  padding: 0px;
+  margin: 0px;
+  font-size: 1.25rem;
+  font-family: Boing, 'IBM Plex Sans Hebrew';
+  font-weight: 500;
+  line-height: 1.2;
+  max-width: 100%;
+  text-align: center;
+}
+
+.text {
+  padding: 0px;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: Inter;
+  letter-spacing: normal;
+  max-width: 100%;
+  text-align: center;
+  margin: 0.5rem;
+}

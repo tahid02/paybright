@@ -1,0 +1,78 @@
+.main {
+  box-sizing: border-box;
+  min-width: 0px;
+  background-color: rgb(252, 250, 248);
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+@media screen and (min-width: 576px) {
+  .main {
+    padding-top: 6.75rem;
+    padding-bottom: 6.75rem;
+  }
+}
+
+.heading {
+  color: var(--darkblue);
+  padding: 0px;
+  margin: 0px 0px 3rem;
+  font-size: 1.75rem;
+  font-family: Boing, 'IBM Plex Sans Hebrew';
+  font-weight: 500;
+  line-height: 1.2;
+  max-width: 100%;
+  text-align: center;
+}
+@media screen and (min-width: 576px) {
+  .heading {
+    font-size: 1.75rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .heading {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .heading {
+    width: 40%;
+    margin: 0 auto;
+    font-size: 2.25rem;
+  }
+}
+
+.resultContainer {
+  box-sizing: border-box;
+  min-width: 0px;
+  max-width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+@media screen and (min-width: 576px) {
+  .resultContainer {
+    max-width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .resultContainer {
+    max-width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .resultContainer {
+    max-width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

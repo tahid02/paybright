@@ -1,0 +1,140 @@
+/* content margin left and right */
+.contentMargin {
+  margin-left: 0%;
+  margin-right: 0%;
+}
+@media screen and (min-width: 1200px) {
+  .contentMargin {
+    margin: 0 calc((100vw - 1200px) / 2);
+  }
+}
+/*  */
+.cardPadding {
+  box-sizing: border-box;
+  min-width: 0px;
+  padding: 0.5rem 15% 3rem;
+}
+@media screen and (min-width: 576px) {
+  .cardPadding {
+    padding-bottom: 3rem;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cardPadding {
+    padding-bottom: 3rem;
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .cardPadding {
+    padding-bottom: 2.5rem;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
+/*  */
+
+.imgCont {
+  box-sizing: border-box;
+  min-width: 0px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  max-width: 13rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 576px) {
+  .imgCont {
+    margin-bottom: 1.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .imgCont {
+    margin-bottom: 1.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .imgCont {
+    margin-bottom: 0px;
+  }
+}
+/*  */
+
+.quote {
+  box-sizing: border-box;
+  min-width: 0px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+@media screen and (min-width: 576px) {
+  .quote {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 576px) {
+  .quote {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .quote {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .quote {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .quote {
+    padding-left: 1rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .quote {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+.p {
+  padding: 0px;
+  margin: 0px;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 600;
+  font-family: Inter;
+  letter-spacing: normal;
+  max-width: 100%;
+  text-align: center;
+}

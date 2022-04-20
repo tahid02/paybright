@@ -1,0 +1,166 @@
+/* .heroBg {
+  position: relative;
+  min-height: 100vh;
+  background: url('https://www.datocms-assets.com/19671/1585896337-dsc0164-1.png?auto=format');
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+.hero {
+  box-sizing: border-box;
+  min-width: 0px;
+  height: 338px;
+  background-color: #f2f2fa;
+}
+@media screen and (min-width: 576px) {
+  .hero {
+    height: 338px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 452px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hero {
+    height: 459px;
+  }
+}
+
+.heroBg {
+  box-sizing: border-box;
+  min-width: 0px;
+  min-height: 144px;
+  background-image: url(https://www.datocms-assets.com/19671/1585896337-dsc0164-1.png?auto=format);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+@media screen and (min-width: 576px) {
+  .heroBg {
+    min-height: 144px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .heroBg {
+    min-height: 364px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .heroBg {
+    min-height: 383px;
+  }
+}
+/*  */
+.cardContent {
+  box-sizing: border-box;
+  min-width: 0px;
+  width: 100%;
+  position: absolute;
+  top: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .cardContent {
+    top: 125px;
+  }
+}
+
+/* @media screen and (min-width: 992px) {
+  .cardContent {
+    top: 100px;
+  }
+} */
+/*  */
+
+.card {
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(20 19 51 / 6%) 0px 8px 12px, rgb(20 19 51 / 6%) 0px 2px 6px;
+  padding: 3rem 2.5rem;
+}
+@media screen and (min-width: 576px) {
+  .card {
+    width: 70%;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card {
+    width: 50%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .card {
+    width: 50%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card {
+    width: 40%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+/*  */
+.h1 {
+  padding: 0px;
+  font-size: 2rem;
+  font-family: Boing, 'IBM Plex Sans Hebrew';
+  font-weight: 500;
+  line-height: 1.2;
+  max-width: 100%;
+  text-align: center;
+  margin: 0px 0px 1.5rem;
+}
+@media screen and (min-width: 992px) {
+  .h1 {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .h1 {
+    margin: 0px 0px 2rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .h1 {
+    font-size: 2.25rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .h1 {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .h1 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .h1 {
+    font-size: 2.75rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .h1 {
+    font-size: 3rem;
+  }
+}

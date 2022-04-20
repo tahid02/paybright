@@ -1,0 +1,20 @@
+.footerAccordion {
+  border: none;
+}
+
+@media screen and (max-width: 576px) {
+  .footerAccordion {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+  }
+}
+
+.footerP {
+  color: var(--lightblue);
+  padding: 0px;
+  margin-bottom: 18px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.32;
+  font-family: Inter;
+}

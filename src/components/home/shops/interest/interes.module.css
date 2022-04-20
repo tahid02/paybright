@@ -1,0 +1,55 @@
+.interest {
+  box-sizing: border-box;
+  min-width: 0px;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(20 19 51 / 6%) 0px 8px 12px, rgb(20 19 51 / 6%) 0px 2px 6px;
+  padding: 10px 1rem;
+  width: 100%;
+}
+.contentMargin {
+  margin-left: 0%;
+  margin-right: 0%;
+}
+@media screen and (min-width: 1200px) {
+  .contentMargin {
+    margin: 0 calc((100vw - 1200px) / 2);
+  }
+}
+@media screen and (min-width: 576px) {
+  .interest {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .interest {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 50%;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  .interest {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .interest {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    width: 25%;
+    text-align: start;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .interest {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    width: 20%;
+    text-align: start;
+  }
+}

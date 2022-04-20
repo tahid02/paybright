@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@600&display=swap');
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +13,160 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+* {
+  box-sizing: border-box;
+}
+:root {
+  --lightblue: #4a4af4;
+  --darkblue: #212189;
+}
+
+/* root styles */
+.text-lightblue {
+  color: var(--lightblue);
+}
+.text-darkblue {
+  color: var(--darkblue);
+}
+.bg-lightblue {
+  background-color: var(--lightblue);
+}
+.bg-darkblue {
+  background-color: var(--darkblue);
+}
+/*  */
+/* p tag */
+.p {
+  padding: 0px;
+  margin: 0px;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: Inter;
+  letter-spacing: normal;
+  max-width: 100%;
+}
+
+/*  */
+.h1Font {
+  padding: 0px;
+  margin: 0px;
+  font-size: 2rem;
+  font-family: Boing, 'IBM Plex Sans Hebrew';
+  font-weight: 500;
+  line-height: 1.2;
+  max-width: 100%;
+}
+@media screen and (min-width: 576px) {
+  .h1Font {
+    font-size: 2.25rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .h1Font {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .h1Font {
+    font-size: 2.75rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .h1Font {
+    font-size: 3rem;
+  }
+}
+/* h2 font */
+.h2Font {
+  color: var(--darkblue);
+  padding: 0px;
+  margin: 0px 0px 1rem;
+  font-size: 1.75rem;
+  font-family: Boing, 'IBM Plex Sans Hebrew';
+  font-weight: 500;
+  line-height: 1.2;
+  max-width: 100%;
+}
+@media screen and (min-width: 576px) {
+  .h2Font {
+    font-size: 1.75rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .h2Font {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .h2Font {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .h2Font {
+    font-size: 2.25rem;
+  }
+}
+/*  */
+.h4 {
+  padding: 0px;
+  margin: 0px;
+  font-size: 1.25rem;
+  font-family: Boing, 'IBM Plex Sans Hebrew';
+  font-weight: 500;
+  line-height: 1.2;
+  max-width: 100%;
+  /* text-align: center; */
+}
+
+.h3 {
+  padding: 0px;
+  margin: 0px 0px 1.5rem;
+  font-size: 1.5rem;
+  font-family: Boing, 'IBM Plex Sans Hebrew';
+  font-weight: 500;
+  line-height: 1.2;
+  max-width: 100%;
+}
+
+/* carouse;  */
+.carousel-indicators [data-bs-target] {
+  width: 12px !important;
+  height: 12px !important;
+  border: 1px solid transparent !important;
+  border-radius: 10px;
+  background-color: gray;
+}
+
+.carousel-indicators .active {
+  border-top: unset;
+  border-bottom: unset;
+  border: 1px solid transparent;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-radius: 10px;
+  background-color: var(--darkblue);
+  height: 10px;
+  width: 50px;
+}
+.accordion-button {
+  padding-left: 0;
+}
+.accordion-button:focus {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.accordion-body {
+  padding-left: 0%;
+}
+
+/* .contentMargin {
+  margin-left: 0%;
+  margin-right: 0%;
+}
+@media screen and (min-width: 1200px) {
+  .contentMargin {
+    margin: 0 calc((100vw - 1200px) / 2);
+  }
+} */

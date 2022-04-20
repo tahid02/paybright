@@ -1,0 +1,9 @@
+.contentMargin {
+  margin-left: 0%;
+  margin-right: 0%;
+}
+@media screen and (min-width: 1282px) {
+  .contentMargin {
+    margin: 0 calc((100vw - 1200px) / 2);
+  }
+}

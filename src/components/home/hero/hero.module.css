@@ -1,0 +1,125 @@
+/* .hero {
+  height: 40vh;
+}
+
+.heroSelect {
+}
+.heroSelectOption:hover {
+  box-shadow: 0 0 10px 100px #37b41b inset;
+}
+#new:hover {
+  background-color: #37b41b;
+} */
+@media screen and (max-width: 576px) {
+  .hero {
+    height: 50vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+}
+
+@media screen and (min-width: 1200px) {
+}
+
+.h1 {
+  padding: 0px;
+  margin: 0px 0px 1rem;
+  font-size: 2rem;
+  font-family: 'IBM Plex Sans Hebrew';
+  /* Boing */
+  font-weight: 500;
+  line-height: 1.2;
+  max-width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  text-align: center;
+  color: var(--darkblue);
+}
+
+@media screen and (min-width: 576px) {
+  .h1 {
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 2.25rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .h1 {
+    padding-top: 0px;
+    padding-left: 120px;
+    padding-right: 120px;
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .h1 {
+    padding-top: 0px;
+    padding-left: 240px;
+    padding-right: 240px;
+    font-size: 2.75rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .h1 {
+    padding-top: 10px;
+    padding-left: 260px;
+    padding-right: 260px;
+    font-size: 3rem;
+    margin: 0 calc((100vw - 1200px) / 2);
+  }
+}
+
+.p {
+  padding: 0px;
+  margin: 0px 0px 2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: normal;
+  font-family: Inter;
+  font-size: 1rem;
+  max-width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+@media screen and (min-width: 576px) {
+  .p {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 576px) {
+  .p {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p {
+    font-size: 1.125rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .p {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .p {
+    margin: 2rem calc((100vw - 1200px) / 2);
+  }
+}

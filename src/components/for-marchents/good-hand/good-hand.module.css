@@ -1,0 +1,65 @@
+.handContainer {
+  width: 90%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 576px) {
+  .handContainer {
+    width: 75%;
+  }
+}
+.heading {
+  position: relative;
+  padding: 0px;
+  margin: 0px 0px 2.5rem;
+  font-size: 1.75rem;
+  font-family: Boing, 'IBM Plex Sans Hebrew';
+  font-weight: 500;
+  line-height: 1.2;
+  max-width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 576px) {
+  .heading {
+    font-size: 1.75rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 2rem;
+  }
+
+  @media screen and (min-width: 992px) {
+    .heading {
+      font-size: 2rem;
+    }
+  }
+}
+@media screen and (min-width: 576px) {
+  .heading {
+    padding-left: 6.75rem;
+    padding-right: 6.75rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .heading {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .heading {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.pera {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .pera {
+    width: 50%;
+  }
+}

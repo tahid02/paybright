@@ -1,0 +1,63 @@
+.mx {
+  padding: 0 0;
+}
+@media screen and (min-width: 1200px) {
+  .mx {
+    padding: 0 4.5rem;
+  }
+}
+
+/*  */
+.equalPadding {
+  box-sizing: border-box;
+  min-width: 0px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 0px;
+}
+@media screen and (min-width: 576px) {
+  .equalPadding {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .equalPadding {
+    padding-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .equalPadding {
+    padding-top: 3rem;
+  }
+}
+
+/*  */
+.p {
+  padding: 0px;
+  margin: 0px 0px 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: normal;
+  font-family: Inter;
+  font-size: 1rem;
+  max-width: 100%;
+}
+@media screen and (min-width: 576px) {
+  .p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p {
+    font-size: 1.125rem;
+  }
+}

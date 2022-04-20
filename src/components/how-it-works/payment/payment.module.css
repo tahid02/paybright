@@ -1,0 +1,175 @@
+.paymentBg {
+  width: 100%;
+  background: #f2f2fa; /* Old browsers */
+  background: -moz-linear-gradient(top, #f2f2fa 80%, white 80%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #f2f2fa 80%,
+    white 80%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #f2f2fa 80%,
+    white 80%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2fa', endColorstr='#1c06dd',GradientType=0 ); /* IE6-9 */
+}
+
+.contentMargin {
+  box-sizing: border-box;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+@media screen and (min-width: 1280px) {
+  .contentMargin {
+    padding: 0 calc((100vw - 1200px) / 2);
+  }
+}
+
+.rowCont {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 992px) {
+  .rowCont {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .rowCont {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+
+.payCard {
+  margin-bottom: 0%;
+  position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  .payCard {
+    margin-bottom: 6.75rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .payCard {
+    margin-bottom: 6.75rem;
+  }
+}
+
+.pay {
+  width: 100%;
+  padding: 0px 2rem;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: rgb(20 19 51 / 4%) 0px 2px 4px, rgb(20 19 51 / 4%) 0px 4px 6px;
+}
+@media only screen and (min-width: 768px) {
+  .pay {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+.circle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  z-index: 2;
+  top: -3rem;
+  /* background-color: rgb(255, 117, 117); */
+}
+
+.pay4Img {
+  box-sizing: border-box;
+  min-width: 0px;
+  position: absolute;
+  z-index: 2;
+  bottom: calc(100% - 6.75rem);
+  width: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.pay4 {
+  box-sizing: border-box;
+  min-width: 0px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  /* padding-bottom: 2rem; */
+  padding-top: 6.75rem;
+}
+
+.pay4 .h3 {
+  padding: 0px;
+  margin: 0px;
+  font-size: 1.5rem;
+  font-family: Boing, 'IBM Plex Sans Hebrew';
+  font-weight: 500;
+  line-height: 1.2;
+  max-width: 100%;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: var(--darkblue);
+}
+
+.pay4 .p {
+  padding: 0px;
+  margin: 0.5rem 0px 0px;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: Inter;
+  letter-spacing: normal;
+  max-width: 100%;
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: var(--lightwhite);
+}
+
+.pay4 .hr {
+  box-sizing: content-box;
+  border: none;
+  height: 1px;
+  width: 100%;
+  margin: 0;
+  background-color: white;
+}
+
+.points {
+  box-sizing: border-box;
+  min-width: 0px;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  text-align: left;
+}
+
+.checkPay {
+  color: var(--darkblue);
+  padding: 0px;
+  white-space: nowrap;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 600;
+  font-family: Inter;
+  letter-spacing: normal;
+  max-width: 100%;
+  margin: 0px;
+  flex-basis: calc(100% - 1.5rem);
+}
