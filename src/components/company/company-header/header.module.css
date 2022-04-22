@@ -1,0 +1,80 @@
+.bgPadding {
+  background-color: #f5f1eb;
+  padding: 0;
+}
+@media screen and (min-width: 1440px) {
+  .bgPadding {
+    padding: 0 calc((100vw - 1440px) / 1.2);
+  }
+}
+@media screen and (min-width: 1600px) {
+  .bgPadding {
+    padding: 0 4rem;
+  }
+}
+.headerBg {
+  background-image: url(https://www.datocms-assets.com/19671/1586796948-xl-top.png?auto=format),
+    url(https://www.datocms-assets.com/19671/1586796960-xl-bottom.png?auto=format);
+  background-position: top left,
+    /* this positions the first image */ bottom left; /* this positions the second image */
+  background-repeat: no-repeat; /* this applies to both images */
+  background-size: contain;
+}
+
+@media screen and (max-width: 768px) {
+  .headerBg {
+    background-image: url(https://www.datocms-assets.com/19671/1586796917-xs-left.png?auto=format),
+      url(https://www.datocms-assets.com/19671/1586796922-xs-right.png?auto=format);
+    background-position: top left,
+      /* this positions the first image */ bottom right; /* this positions the second image */
+    background-repeat: no-repeat; /* this applies to both images */
+    background-size: contain;
+  }
+}
+.contentMargin {
+  margin-left: 0%;
+  margin-right: 0%;
+}
+@media screen and (min-width: 1280px) {
+  .contentMargin {
+    margin: 0 calc((100vw - 1200px) / 2);
+  }
+}
+
+.w60 {
+  width: 100%;
+}
+@media screen and (min-width: 756px) {
+  .w60 {
+    width: 60%;
+  }
+}
+
+/*  */
+
+.height {
+  box-sizing: border-box;
+  min-width: 0px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  min-height: 460px;
+}
+@media screen and (min-width: 576px) {
+  .height {
+    min-height: 460px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .height {
+    min-height: 460px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .height {
+    min-height: 536px;
+  }
+}

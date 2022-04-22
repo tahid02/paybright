@@ -1,0 +1,30 @@
+.pX {
+  height: 100%;
+  padding: 0px 0.5rem;
+}
+@media (min-width: 576px) {
+  .pX {
+    padding: 0px 0.75rem;
+  }
+}
+@media (min-width: 992px) {
+  .pX {
+    padding: 0px 1rem;
+  }
+}
+
+.p {
+  padding: 0px;
+  margin: 0px;
+  line-height: 1.32;
+  font-size: 0.75rem;
+  letter-spacing: normal;
+  font-family: Inter;
+  max-width: 100%;
+}
+.p1 {
+  font-weight: 600;
+}
+.p2 {
+  font-weight: 400;
+}

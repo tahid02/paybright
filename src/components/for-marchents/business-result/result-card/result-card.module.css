@@ -19,9 +19,18 @@
   border-radius: 8px;
   background-color: rgb(255, 255, 255);
   box-shadow: rgb(20 19 51 / 6%) 0px 8px 12px, rgb(20 19 51 / 6%) 0px 2px 6px;
-  padding: 3rem 1.5rem;
+  padding: 1rem;
 }
-
+@media (min-width: 576px) {
+  .cardPadding {
+    padding: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .cardPadding {
+    padding: 3rem 1.5rem;
+  }
+}
 .content {
   box-sizing: border-box;
   min-width: 0px;
@@ -76,6 +85,7 @@
 }
 
 .h4 {
+  color: var(--darkblue);
   padding: 0px;
   margin: 0px;
   font-size: 1.25rem;
@@ -87,6 +97,7 @@
 }
 
 .text {
+  color: var(--darkblue);
   padding: 0px;
   font-size: 1rem;
   line-height: 1.5;
@@ -94,6 +105,10 @@
   font-family: Inter;
   letter-spacing: normal;
   max-width: 100%;
-  text-align: center;
-  margin: 0.5rem;
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .text {
+    margin: 0.5rem;
+  }
 }

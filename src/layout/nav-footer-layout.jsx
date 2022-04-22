@@ -8,6 +8,15 @@ const NavFooterLayout = ({ children }) => {
     <>
       <Nav />
       {children}
+      <div className=" container">
+        <hr
+          style={{
+            border: 'none',
+            height: '1px',
+            backgroundColor: ' gray',
+          }}
+        />
+      </div>
       <Footer />
     </>
   );

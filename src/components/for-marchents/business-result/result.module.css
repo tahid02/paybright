@@ -14,7 +14,7 @@
 
 .heading {
   color: var(--darkblue);
-  padding: 0px;
+  padding: 0px 1rem;
   margin: 0px 0px 3rem;
   font-size: 1.75rem;
   font-family: Boing, 'IBM Plex Sans Hebrew';
@@ -28,6 +28,7 @@
     font-size: 1.75rem;
   }
 }
+
 @media screen and (min-width: 768px) {
   .heading {
     font-size: 2rem;
@@ -57,9 +58,9 @@
 
 @media screen and (min-width: 576px) {
   .resultContainer {
-    max-width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) {

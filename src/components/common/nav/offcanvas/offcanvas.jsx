@@ -29,6 +29,12 @@ function RightOffCanvas() {
         </Offcanvas.Header>
         <Offcanvas.Body>
           <Link to="how-it-works">how work</Link>
+          <br />
+          <Link to="for-merchants">for merchants </Link>
+          <br />
+          <Link to="careers">careers </Link>
+          <br />
+          <Link to="company">careers </Link>
         </Offcanvas.Body>
       </Offcanvas>
     </>

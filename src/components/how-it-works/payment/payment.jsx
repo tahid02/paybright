@@ -1,10 +1,11 @@
 import styles from './payment.module.css';
 import Points from './points';
 
-const Payment = () => {
+// eslint-disable-next-line react/prop-types
+const Payment = ({ bgColor }) => {
   return (
     <section className=" position-relative w-100 overflow-hidden">
-      <section className={`${styles.paymentBg} pt-5 w-100`}>
+      <section className={`${bgColor || styles.paymentBg} pt-5 w-100`}>
         <section className={` ${styles.contentMargin} w-100 `}>
           <div className="container-fluid">
             <div className={`${styles.rowCont}  `}>

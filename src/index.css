@@ -45,6 +45,21 @@ code {
   letter-spacing: normal;
   max-width: 100%;
 }
+/* p horizontal padding */
+.paddingX {
+  height: 100%;
+  padding: 0px 0.5rem;
+}
+@media (min-width: 576px) {
+  .paddingX {
+    padding: 0px 0.75rem;
+  }
+}
+@media (min-width: 992px) {
+  .paddingX {
+    padding: 0px 1rem;
+  }
+}
 
 /*  */
 .h1Font {
@@ -80,7 +95,7 @@ code {
 .h2Font {
   color: var(--darkblue);
   padding: 0px;
-  margin: 0px 0px 1rem;
+  /* margin: 0px 0px 1rem; */
   font-size: 1.75rem;
   font-family: Boing, 'IBM Plex Sans Hebrew';
   font-weight: 500;

@@ -31,14 +31,22 @@ const Nav = () => {
       {screen > laptop && (
         <div className="d-flex flex-fill flex-row justify-content-start align-items-center">
           {' '}
-          <button className={`${styles.navMenu}`}>shop</button>
-          <button className={`${styles.navMenu} `}>
+          <button className={`${styles.navMenu}`}>shop</button>{' '}
+          <Link to="how-it-works">
+            <button className={`${styles.navMenu} `}>how it works</button>{' '}
+          </Link>{' '}
+          <Link to="company">
             {' '}
-            <Link to="how-it-works">how it works</Link>{' '}
-          </button>
-          <button className={`${styles.navMenu}`}>Company</button>
-          <button className={`${styles.navMenu}`}>For Merchants</button>
-          <button className={`${styles.navMenu}`}>Careers</button>
+            <button className={`${styles.navMenu}`}>Company</button>
+          </Link>{' '}
+          <Link to="for-merchants">
+            {' '}
+            <button className={`${styles.navMenu}`}>For Merchants</button>
+          </Link>
+          <Link to="careers">
+            {' '}
+            <button className={`${styles.navMenu}`}>Careers</button>
+          </Link>
         </div>
       )}
 

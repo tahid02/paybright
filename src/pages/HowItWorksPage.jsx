@@ -21,15 +21,6 @@ const HowItWorksPage = () => {
         <div className="bg-white" style={{ height: '6.75rem' }}></div>
         <Business />
         <div className="bg-white" style={{ height: '4.5rem' }}></div>
-        <div className=" container">
-          <hr
-            style={{
-              border: 'none',
-              height: '1px',
-              backgroundColor: ' #e6e6e6',
-            }}
-          />
-        </div>
       </NavFooterLayout>
     </>
   );

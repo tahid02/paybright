@@ -1,0 +1,24 @@
+.contentMargin {
+  padding: 0;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+@media screen and (min-width: 992px) {
+  .contentMargin {
+    padding: 0 5%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contentMargin {
+    margin: 0 calc((100vw - 1200px) / 2);
+  }
+}
+.h2W {
+  width: 90%;
+}
+@media screen and (min-width: 992px) {
+  .h2W {
+    width: 40%;
+  }
+}

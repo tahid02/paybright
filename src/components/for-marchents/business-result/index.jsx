@@ -1,5 +1,5 @@
 import styles from './result.module.css';
-import ResultCard from './result-card';
+import ResultCard from './result-card/result-card';
 
 const BusinessResult = () => {
   return (
@@ -7,9 +7,12 @@ const BusinessResult = () => {
       <div className={`${styles.resultContainer}  `}>
         <div className="">
           {' '}
-          <div className={`${styles.heading}  `}>
+          <h2
+            className={`${styles.heading} text-center mx-auto `}
+            style={{ margin: '0 0 3rem' }}
+          >
             PayBright helps you drive business results
-          </div>
+          </h2>
         </div>
         <div className="row g-3 m-0">
           <ResultCard img="https://www.datocms-assets.com/19671/1586367269-red.png?auto=format" />

@@ -1,0 +1,26 @@
+.paddingY {
+  box-sizing: border-box;
+  min-width: 0px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  /* background-color: #f8f5f1;   */
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+}
+@media screen and (min-width: 576px) {
+  .paddingY {
+    padding-bottom: 1.5rem;
+  }
+}
+.contW {
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .contW {
+    width: 75%;
+  }
+}

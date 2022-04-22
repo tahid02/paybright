@@ -1,4 +1,4 @@
-.handContainer {
+/* .handContainer {
   width: 90%;
   margin: 0 auto;
 }
@@ -6,7 +6,26 @@
   .handContainer {
     width: 75%;
   }
+} */
+
+.contentMargin {
+  margin-left: 0%;
+  margin-right: 0%;
 }
+@media screen and (min-width: 1280px) {
+  .contentMargin {
+    margin: 0 calc((100vw - 1200px) / 2);
+  }
+}
+.w50 {
+  width: 100%;
+}
+@media screen and (min-width: 756px) {
+  .w50 {
+    width: 50%;
+  }
+}
+
 .heading {
   position: relative;
   padding: 0px;

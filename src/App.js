@@ -1,4 +1,5 @@
 import CareersPage from 'pages/CareersPage';
+import CompanyPage from 'pages/companyPage';
 import ForMerchantsPage from 'pages/ForMarchentsPage';
 import HomePage from 'pages/HomePage';
 import HowItWorksPage from 'pages/HowItWorksPage';
@@ -7,9 +8,11 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="career" element={<CareersPage />} />
+      <Route path="careers" element={<CareersPage />} />
+      <Route path="company" element={<CompanyPage />} />
+
       <Route path="how-it-works" element={<HowItWorksPage />} />
-      <Route path="merchants" element={<ForMerchantsPage />} />
+      <Route path="for-merchants" element={<ForMerchantsPage />} />
     </Routes>
   );
 }
