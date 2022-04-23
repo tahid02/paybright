@@ -1,24 +1,33 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import styles from './dropdown.module.css';
 import { AiOutlineDown } from 'react-icons/ai';
 import { IoIosArrowUp } from 'react-icons/io';
 import { BsSearch } from 'react-icons/bs';
-import Feature from './feature';
+import CategoryDropdown from './category-dropdown';
+import { FilterContext } from 'pages/HomePage';
 const Dropdown = () => {
+  const { status, setStatus, search, setSearch } = useContext(FilterContext);
   const [show, setShow] = useState(false);
+  function handleStatus(e) {
+    setStatus(e.target.innerText);
+    setShow(!show);
+  }
   return (
     <div className=" w-100 d-flex justify-content-center ">
+      {/* status dropdown start */}
       <div className={`${styles.category}  `}>
+        {/* status dropdown select button */}
         <button
           onClick={() => setShow(!show)}
           className={`${styles.dropbtn}  `}
         >
           <div className={`${styles.label}  `}>sort by</div>
           <div className="d-flex align-items-center">
-            <div className="me-auto">Featured</div>
+            <div className="me-auto">{status}</div>
             <div>{show ? <IoIosArrowUp /> : <AiOutlineDown />}</div>
           </div>
         </button>{' '}
+        {/* status dropdown part */}
         {show && (
           <div
             className="list-group"
@@ -33,6 +42,7 @@ const Dropdown = () => {
               flexDirection: 'column',
               borderRadius: '4px',
             }}
+            onClick={handleStatus}
           >
             <button className={`${styles.downbtn}  `}> Featured</button>
             <button className={`${styles.downbtn}  `}>Popular</button>
@@ -41,16 +51,19 @@ const Dropdown = () => {
           </div>
         )}
       </div>
+      {/* status dropdown end */}
       <div className={`${styles.featureOrSearch}  `}>
         {/* feature or input will be shown as device width (defined in css) */}
         {/* feature */}
-        <Feature styles={styles} />
+        <CategoryDropdown styles={styles} />
         {/* input */}
         <div className={`${styles.search}  position-relative `}>
           <input
             type="text"
             placeholder="Search Merchant"
             className={`${styles.input}  `}
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
           />
 
           <BsSearch

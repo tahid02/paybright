@@ -1,22 +1,30 @@
 /* eslint-disable react/prop-types */
-import { useState } from 'react';
+import { FilterContext } from 'pages/HomePage';
+import { useContext, useState } from 'react';
 import { AiOutlineDown } from 'react-icons/ai';
 import { IoIosArrowUp } from 'react-icons/io';
 // eslint-disable-next-line react/prop-types
-const Feature = ({ styles }) => {
-  const [showCategory, setShowCategory] = useState();
+const CategoryDropdown = ({ styles }) => {
+  const { category, setCategory } = useContext(FilterContext);
+  const [showCategory, setShowCategory] = useState(false);
+  const handleCategory = (e) => {
+    setCategory(e.target.innerText);
+    setShowCategory(!showCategory);
+  };
   return (
     <div className={`${styles.feature} `}>
+      {/* select button */}
       <button
         onClick={() => setShowCategory(!showCategory)}
         className={`${styles.dropbtn}  `}
       >
         <div className={`${styles.label}  `}>Catagories</div>
         <div className="d-flex align-items-center">
-          <div className="me-auto">All</div>
+          <div className="me-auto"> {category}</div>
           <div>{showCategory ? <IoIosArrowUp /> : <AiOutlineDown />}</div>
         </div>
       </button>{' '}
+      {/* dropdown part */}
       {showCategory && (
         <div
           className="list-group"
@@ -31,6 +39,7 @@ const Feature = ({ styles }) => {
             flexDirection: 'column',
             borderRadius: '4px',
           }}
+          onClick={handleCategory}
         >
           <button className={`${styles.downbtn}  `}> All</button>
           <button className={`${styles.downbtn}  `}>Home & Furniture</button>
@@ -46,4 +55,4 @@ const Feature = ({ styles }) => {
   );
 };
 
-export default Feature;
+export default CategoryDropdown;

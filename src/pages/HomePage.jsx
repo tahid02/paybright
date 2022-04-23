@@ -1,12 +1,37 @@
 import Hero from 'components/home/hero/hero';
 import Shops from 'components/home/shops';
 import NavFooterLayout from 'layout/nav-footer-layout';
+import { createContext, useState } from 'react';
+export const FilterContext = createContext();
+
 const HomePage = () => {
+  const [status, setStatus] = useState('featured');
+  const [search, setSearch] = useState('');
+  const [category, setCategory] = useState('all');
+  const [zeroInterest, setZeroInterest] = useState(false);
+  console.log({ status });
+  console.log({ zeroInterest });
+  console.log({ category });
+  console.log({ search });
+
   return (
     <>
       <NavFooterLayout>
-        <Hero />
-        <Shops />
+        <FilterContext.Provider
+          value={{
+            status,
+            setStatus,
+            search,
+            setSearch,
+            category,
+            setCategory,
+            zeroInterest,
+            setZeroInterest,
+          }}
+        >
+          <Hero />
+          <Shops />
+        </FilterContext.Provider>
       </NavFooterLayout>
     </>
   );

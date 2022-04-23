@@ -2,6 +2,7 @@ import styles from './shop-card.module.css';
 import { BiLinkExternal } from 'react-icons/bi';
 // eslint-disable-next-line react/prop-types
 const ShopCard = ({ id, marchent, category, bgImage, overlayImg }) => {
+  // console.log('hello from shop card ');
   return (
     <div
       className={`${styles.shop}  col-6 col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3`}

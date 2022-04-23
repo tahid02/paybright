@@ -1,7 +1,9 @@
-import React from 'react';
+import { FilterContext } from 'pages/HomePage';
+import React, { useContext } from 'react';
 import { BsSearch } from 'react-icons/bs';
 import styles from './input.module.css';
 const SearchInput = () => {
+  const { search, setSearch } = useContext(FilterContext);
   return (
     <div className={`${styles.searchInput} `}>
       <div className={`  position-relative `}>
@@ -9,6 +11,8 @@ const SearchInput = () => {
           type="text"
           placeholder="Search Merchant"
           className={`${styles.input}  `}
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
         />
 
         <BsSearch

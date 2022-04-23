@@ -7,6 +7,8 @@ export const shops = [
       'https://www.datocms-assets.com/26641/1628694220-background-apple.png',
     overlayImg:
       'https://www.datocms-assets.com/26641/1628697195-applelogotall.png',
+    status: 'featured',
+    zeroInterest: false,
   },
   {
     id: 2,
@@ -16,6 +18,8 @@ export const shops = [
       'https://www.datocms-assets.com/26641/1605885827-hudson-s-bay-attachment-00p5g00000o5gbxuab.png',
     overlayImg:
       'https://www.datocms-assets.com/26641/1632853684-hbcwmen2021rgb-white.png',
+    status: 'new',
+    zeroInterest: true,
   },
   {
     id: 3,
@@ -25,6 +29,8 @@ export const shops = [
       'https://www.datocms-assets.com/26641/1602251917-done-wayfair-attachment-00pf400000oqydueat.jpg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1589299208-wayfair-attachment-00pf400000lrumaeav.png',
+    status: 'popular',
+    zeroInterest: false,
   },
   {
     id: 4,
@@ -34,6 +40,8 @@ export const shops = [
       'https://www.datocms-assets.com/26641/1648508712-browns-shoes-min.jpeg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1612549474-browns-attachment-00p5g00000qzrnauad.svg',
+    status: 'featured',
+    zeroInterest: false,
   },
   {
     id: 5,
@@ -43,6 +51,8 @@ export const shops = [
       'https://www.datocms-assets.com/26641/1603742661-done-sail-attachment-00pf400000ozojpear.jpg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1603742015-sail-attachment-00pf400000ozojoear.png',
+    status: 'featured',
+    zeroInterest: true,
   },
   {
     id: 6,
@@ -51,6 +61,8 @@ export const shops = [
     bgImage: 'https://www.datocms-assets.com/26641/1648506985-source-min.jpeg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1589225937-donelogothesource.png',
+    status: 'new',
+    zeroInterest: false,
   },
   {
     id: 7,
@@ -59,6 +71,8 @@ export const shops = [
     bgImage: 'https://www.datocms-assets.com/26641/1648506705-shein-min.jpeg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1600884974-done-shein-attachment-00pf400000ocniuead.png',
+    status: 'popular',
+    zeroInterest: false,
   },
   {
     id: 8,
@@ -68,6 +82,8 @@ export const shops = [
       'https://www.datocms-assets.com/26641/1648508690-little-burgundy-min.jpg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1605200029-little-burgundy-attachment-00p5g00000o5k81uaf.png',
+    status: 'new',
+    zeroInterest: false,
   },
   {
     id: 9,
@@ -76,6 +92,8 @@ export const shops = [
     bgImage: 'https://www.datocms-assets.com/26641/1600716483-done-bowflex.jpg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1592427214-bowflex-attachment-00pf400000mvbsmea1.svg',
+    status: 'featured',
+    zeroInterest: true,
   },
   {
     id: 10,
@@ -85,6 +103,8 @@ export const shops = [
       'https://www.datocms-assets.com/26641/1600716608-done-samsung-attachment-00pf400000lrunseaf.jpeg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1589298733-samsung-attachment-00pf400000lrunreaf.png',
+    status: 'new',
+    zeroInterest: true,
   },
   {
     id: 11,
@@ -94,6 +114,8 @@ export const shops = [
       'https://www.datocms-assets.com/26641/1648508666-moose-knuckles-min.jpg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1605221625-moose-knuckles-attachment-00p5g00000o5m8nuav.png',
+    status: 'featured',
+    zeroInterest: false,
   },
   {
     id: 12,
@@ -103,6 +125,8 @@ export const shops = [
       'https://www.datocms-assets.com/26641/1648503965-stevemaddennewpic-min.jpeg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1589299171-steve-madden-attachment-00pf400000lrun3eaf.png',
+    status: 'popular',
+    zeroInterest: false,
   },
   {
     id: 13,
@@ -112,6 +136,8 @@ export const shops = [
       'https://www.datocms-assets.com/26641/1589491286-apollo-scooters-attachment-00pf400000lrnvsear.png',
     overlayImg:
       'https://www.datocms-assets.com/26641/1589491284-apollo-scooters-attachment-00pf400000lrnvrear.png',
+    status: 'featured',
+    zeroInterest: false,
   },
   {
     id: 14,
@@ -121,6 +147,8 @@ export const shops = [
       'https://www.datocms-assets.com/26641/1628694220-background-apple.png',
     overlayImg:
       'https://www.datocms-assets.com/26641/1628697195-applelogotall.png',
+    status: 'new',
+    zeroInterest: false,
   },
   {
     id: 15,
@@ -130,6 +158,8 @@ export const shops = [
       'https://www.datocms-assets.com/26641/1589299281-article-attachment-00pf400000lrv1heaf.jpeg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1589299278-article-attachment-00pf400000lrv1geaf.png',
+    status: 'popular',
+    zeroInterest: false,
   },
   {
     id: 16,
@@ -139,6 +169,8 @@ export const shops = [
       'https://www.datocms-assets.com/26641/1595422416-atlas-tools-machinery-attachment-00pf400000nzhtrea1.jpeg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1595422413-atlas-tools-machinery-attachment-00pf400000nzhtqea1.png',
+    status: 'popular',
+    zeroInterest: false,
   },
   {
     id: 17,
@@ -148,6 +180,8 @@ export const shops = [
       'https://www.datocms-assets.com/26641/1632938000-auberge-designs-attachment-00p5g00000vbglauar.jpeg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1632937996-auberge-designs-attachment-00p5g00000vbgl9uab.png',
+    status: 'featured',
+    zeroInterest: true,
   },
   {
     id: 18,
@@ -157,6 +191,8 @@ export const shops = [
       'https://www.datocms-assets.com/26641/1605630233-ava-technologies-inc-attachment-00p5g00000o5vyaua3.jpeg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1605807978-done-ava-technologies-inc-attachment-00p5g00000o5vy9uan.png',
+    status: 'new',
+    zeroInterest: true,
   },
   {
     id: 19,
@@ -166,6 +202,8 @@ export const shops = [
       'https://www.datocms-assets.com/26641/1595962641-avshop-ca-attachment-00pf400000mwndpeax.png',
     overlayImg:
       'https://www.datocms-assets.com/26641/1595962659-avshop-ca-attachment-00pf400000mwndoeax.png',
+    status: 'featured',
+    zeroInterest: false,
   },
   {
     id: 20,
@@ -174,6 +212,8 @@ export const shops = [
     bgImage: 'https://www.datocms-assets.com/26641/1648664939-awnings-min.jpg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1638475861-logopaybright-awnings-canada-png-logo.png',
+    status: 'new',
+    zeroInterest: true,
   },
   {
     id: 21,
@@ -183,6 +223,8 @@ export const shops = [
       'https://www.datocms-assets.com/26641/1601911296-done-bali-body-attachment-00pf400000opnkiea1.jpg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1601911212-done-bali-body-attachment-00pf400000opnkhea1.png',
+    status: 'popular',
+    zeroInterest: true,
   },
   {
     id: 22,
@@ -192,6 +234,8 @@ export const shops = [
       'https://www.datocms-assets.com/26641/1589568890-bbqing-attachment-00pf400000lrs8oear.jpeg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1589572079-donelogobbqing-attachment-00pf400000lrs8near.png',
+    status: 'new',
+    zeroInterest: false,
   },
   {
     id: 23,
@@ -201,6 +245,8 @@ export const shops = [
       'https://www.datocms-assets.com/26641/1600883997-done-beautycounter.png',
     overlayImg:
       'https://www.datocms-assets.com/26641/1638910403-beautycounter-logo.png',
+    status: 'new',
+    zeroInterest: true,
   },
   {
     id: 24,
@@ -210,6 +256,8 @@ export const shops = [
       'https://www.datocms-assets.com/26641/1648504764-bells-of-steel-min.jpeg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1589315249-bells-of-steel-attachment-00pf400000lrbwaeab.png',
+    status: 'featured',
+    zeroInterest: true,
   },
   {
     id: 25,
@@ -219,6 +267,8 @@ export const shops = [
       'https://www.datocms-assets.com/26641/1589579680-bellybandit-attachment-00pf400000lrtcleaj.jpeg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1589581937-donelogobellybandit-attachment-00pf400000lrtckeaj-1.png',
+    status: 'new',
+    zeroInterest: true,
   },
   {
     id: 26,
@@ -228,6 +278,8 @@ export const shops = [
       'https://www.datocms-assets.com/26641/1633032012-belogi-arcade-card1.png',
     overlayImg:
       'https://www.datocms-assets.com/26641/1632937758-belogi-arcade-attachment-00p5g00000vcepyuan.png',
+    status: 'featured',
+    zeroInterest: false,
   },
   {
     id: 27,
@@ -236,6 +288,8 @@ export const shops = [
     bgImage:
       'https://www.datocms-assets.com/26641/1648665662-cardunstoppable-min.jpeg',
     overlayImg: 'https://www.datocms-assets.com/26641/1632424636-better1.png',
+    status: 'popular',
+    zeroInterest: true,
   },
   {
     id: 28,
@@ -245,6 +299,8 @@ export const shops = [
       'https://www.datocms-assets.com/26641/1605199385-done-bicicletta-attachment-00pf400000p0cqbea3.jpg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1605199395-done-bicicletta-attachment-00pf400000p0cqaea3.png',
+    status: 'featured',
+    zeroInterest: true,
   },
   {
     id: 29,
@@ -254,6 +310,8 @@ export const shops = [
       'https://www.datocms-assets.com/26641/1589390777-bigtent-outdoor-equipment-ltd-attachment-00pf400000lrcaaeab.jpeg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1589390774-bigtent-outdoor-equipment-ltd-attachment-00pf400000lrcazear.png',
+    status: 'popular',
+    zeroInterest: true,
   },
   {
     id: 30,
@@ -263,8 +321,14 @@ export const shops = [
       'https://www.datocms-assets.com/26641/1589491280-biktrix-attachment-00pf400000lrnvmeab.jpeg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1589557757-donelogobiktrix-attachment-00pf400000lrnvleab.png',
+    status: 'new',
+    zeroInterest: false,
   },
-  {
+];
+
+/*
+
+{
     id: 31,
     marchent: 'Electronics',
     category: 'BISSELL Canada',
@@ -1072,4 +1136,6 @@ export const shops = [
     overlayImg:
       'https://www.datocms-assets.com/26641/1589493652-haven-sleep-co-attachment-00pf400000lro7deab.png',
   },
-];
+
+
+*/
