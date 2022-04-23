@@ -1,18 +1,20 @@
 import MyButton from 'components/common/button/my-button';
-import Heading from 'components/common/heading/heading';
-import React from 'react';
+import ContainerCenter from 'components/common/container-large/container-l';
 import styles from './merchant.module.css';
 const MerchantHeader = () => {
   return (
     <section className={`${styles.head} py-5 `}>
       <section className="py-5">
-        <Heading>
-          Grow your business with <br /> PayBright
-        </Heading>
-        <p className="text-lightblue py-5 text-center mx-4">
-          Join 8,500+ Canadian merchants who trust PayBright to grow their
-          business in-store and online.
-        </p>
+        <ContainerCenter>
+          <h1 className="text-darkblue text-center">
+            Grow your business with PayBright
+          </h1>{' '}
+          <p className={`${styles.pera}  text-darkblue py-5 text-center `}>
+            Join 8,500+ Canadian merchants who trust PayBright to grow their
+            business in-store and online.
+          </p>
+        </ContainerCenter>
+
         <div className="text-sm-center text-xs-center  row">
           <div className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-center text-md-end text-sm-end pt-2">
             {' '}

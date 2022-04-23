@@ -1,7 +1,7 @@
 import styles from './container-l.module.css';
 
 // eslint-disable-next-line react/prop-types
-const ContainerLarge = ({ children }) => {
+const ContainerCenter = ({ children }) => {
   return (
     <section className={`${styles.contentMargin}  `}>
       <section className="container-fluid">
@@ -13,4 +13,4 @@ const ContainerLarge = ({ children }) => {
   );
 };
 
-export default ContainerLarge;
+export default ContainerCenter;

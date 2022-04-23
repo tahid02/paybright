@@ -1,0 +1,50 @@
+.pFont {
+  padding: 0px;
+  margin: 1.5rem 0px 0px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: normal;
+  font-family: Inter;
+  font-size: 1rem;
+  max-width: 100%;
+  text-align: center;
+}
+@media screen and (min-width: 576px) {
+  .pFont {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .pFont {
+    font-size: 1.125rem;
+  }
+}
+
+/* content height */
+
+.contHeight {
+  box-sizing: border-box;
+  min-width: 0px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  min-height: 460px;
+}
+@media screen and (min-width: 576px) {
+  .contHeight {
+    min-height: 460px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contHeight {
+    min-height: 460px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .contHeight {
+    min-height: 536px;
+  }
+}

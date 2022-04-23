@@ -1,4 +1,3 @@
-import Heading from 'components/common/heading/heading';
 import React, { useState } from 'react';
 import Interest from '../shops/interest/interest';
 import Category from './categorySection/category';

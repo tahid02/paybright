@@ -1,12 +1,11 @@
-import ContainerLarge from 'components/common/container-large/container-l';
-import Heading from 'components/common/heading/heading';
+import ContainerCenter from 'components/common/container-large/container-l';
 import TrustedCard from './card/trusted-card';
 import styles from './trusted.module.css';
 
 const Trusted = () => {
   return (
     <section className={`${styles.contPadding}  `}>
-      <ContainerLarge>
+      <ContainerCenter>
         <div className="d-flex justify-content-center">
           <img
             src="https://www.datocms-assets.com/19671/1585013335-2-reviews.png?auto=format&dpr=1&h=68&w=400"
@@ -20,7 +19,7 @@ const Trusted = () => {
         >
           We’re trusted by over 2000 happy customers on Google
         </h2>
-      </ContainerLarge>
+      </ContainerCenter>
       <section>
         {/* sliding section */}
         <div className={`${styles.slider}  `}>

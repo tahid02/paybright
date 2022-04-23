@@ -1,5 +1,4 @@
 import MyButton from 'components/common/button/my-button';
-import Heading from 'components/common/heading/heading';
 import React from 'react';
 import styles from './business.module.css';
 const Business = () => {

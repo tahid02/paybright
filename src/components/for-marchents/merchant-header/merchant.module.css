@@ -18,6 +18,29 @@
   background-size: cover;
 }
 
+/*  */
+.pera {
+  padding: 0px;
+  margin: 1.5rem 0px 0px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: normal;
+  font-family: Inter;
+  font-size: 1rem;
+  max-width: 100%;
+  text-align: center;
+}
+@media screen and (min-width: 576px) {
+  .pera {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .pera {
+    font-size: 1.125rem;
+  }
+}
+
 .merchantHeader {
   min-width: 0px;
   position: absolute;

@@ -1,17 +1,15 @@
-import Heading from 'components/common/heading/heading';
 import styles from './pay-later.module.css';
 import PayLaterCard from './pay-later-card/paylater-card';
+import ContainerCenter from 'components/common/container-large/container-l';
 
 const PayLater = () => {
   return (
     <section className="">
-      <Heading>
-        {' '}
-        <div className={`${styles.margin}  `}>
-          {' '}
+      <ContainerCenter>
+        <h1 className="text-darkblue text-center">
           How do I pay later with PayBright?
-        </div>
-      </Heading>{' '}
+        </h1>
+      </ContainerCenter>{' '}
       <div className="bg-white" style={{ height: '1rem' }}></div>
       <PayLaterCard
         img="https://www.datocms-assets.com/19671/1585329241-step1.png?auto=format&dpr=0.35&w=2341"

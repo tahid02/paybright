@@ -28,13 +28,17 @@ function RightOffCanvas() {
           <Offcanvas.Title>title</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <Link to="how-it-works">how work</Link>
+          <Link to="/">shop</Link>
           <br />
-          <Link to="for-merchants">for merchants </Link>
+          <Link to="/how-it-works">how work</Link>
           <br />
-          <Link to="careers">careers </Link>
+          <Link to="/for-merchants">for merchants </Link>
           <br />
-          <Link to="company">careers </Link>
+          <Link to="/careers">careers </Link>
+          <br />
+          <Link to="/company">company </Link>
+          <br />
+          <Link to="/press">press </Link>
         </Offcanvas.Body>
       </Offcanvas>
     </>

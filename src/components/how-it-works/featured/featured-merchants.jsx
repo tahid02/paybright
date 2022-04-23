@@ -1,7 +1,6 @@
 import styles from './featured.module.css';
 import ShopCard from 'components/home/shops/shop-card/shop-card';
 import { shops } from 'shops';
-import Heading from 'components/common/heading/heading';
 import MyButton from 'components/common/button/my-button';
 
 const FeaturedMerchants = () => {
