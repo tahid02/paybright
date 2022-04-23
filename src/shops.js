@@ -1,8 +1,8 @@
 export const shops = [
   {
     id: 1,
-    marchent: 'Electronics',
-    category: 'Apple',
+    category: 'Electronics',
+    merchant: 'Apple',
     bgImage:
       'https://www.datocms-assets.com/26641/1628694220-background-apple.png',
     overlayImg:
@@ -12,8 +12,8 @@ export const shops = [
   },
   {
     id: 2,
-    marchent: 'Fashion',
-    category: 'The Bay',
+    category: 'Fashion',
+    merchant: 'The Bay',
     bgImage:
       'https://www.datocms-assets.com/26641/1605885827-hudson-s-bay-attachment-00p5g00000o5gbxuab.png',
     overlayImg:
@@ -23,8 +23,8 @@ export const shops = [
   },
   {
     id: 3,
-    marchent: 'Home &amp; Furniture',
-    category: 'Wayfair',
+    category: 'Home & Furniture',
+    merchant: 'Wayfair',
     bgImage:
       'https://www.datocms-assets.com/26641/1602251917-done-wayfair-attachment-00pf400000oqydueat.jpg',
     overlayImg:
@@ -34,8 +34,8 @@ export const shops = [
   },
   {
     id: 4,
-    marchent: 'Fashion',
-    category: 'Browns Shoes',
+    category: 'Fashion',
+    merchant: 'Browns Shoes',
     bgImage:
       'https://www.datocms-assets.com/26641/1648508712-browns-shoes-min.jpeg',
     overlayImg:
@@ -45,8 +45,8 @@ export const shops = [
   },
   {
     id: 5,
-    marchent: 'Sporting Goods',
-    category: 'SAIL',
+    category: 'Sporting Goods',
+    merchant: 'SAIL',
     bgImage:
       'https://www.datocms-assets.com/26641/1603742661-done-sail-attachment-00pf400000ozojpear.jpg',
     overlayImg:
@@ -56,8 +56,8 @@ export const shops = [
   },
   {
     id: 6,
-    marchent: 'Electronics',
-    category: 'The Source',
+    category: 'Electronics',
+    merchant: 'The Source',
     bgImage: 'https://www.datocms-assets.com/26641/1648506985-source-min.jpeg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1589225937-donelogothesource.png',
@@ -66,8 +66,8 @@ export const shops = [
   },
   {
     id: 7,
-    marchent: 'Fashion',
-    category: 'SHEIN',
+    category: 'Fashion',
+    merchant: 'SHEIN',
     bgImage: 'https://www.datocms-assets.com/26641/1648506705-shein-min.jpeg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1600884974-done-shein-attachment-00pf400000ocniuead.png',
@@ -76,8 +76,8 @@ export const shops = [
   },
   {
     id: 8,
-    marchent: 'Fashion',
-    category: 'Little Burgundy',
+    category: 'Fashion',
+    merchant: 'Little Burgundy',
     bgImage:
       'https://www.datocms-assets.com/26641/1648508690-little-burgundy-min.jpg',
     overlayImg:
@@ -87,8 +87,8 @@ export const shops = [
   },
   {
     id: 9,
-    marchent: 'Sporting Goods',
-    category: 'Bowflex',
+    category: 'Sporting Goods',
+    merchant: 'Bowflex',
     bgImage: 'https://www.datocms-assets.com/26641/1600716483-done-bowflex.jpg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1592427214-bowflex-attachment-00pf400000mvbsmea1.svg',
@@ -97,8 +97,8 @@ export const shops = [
   },
   {
     id: 10,
-    marchent: 'Electronics',
-    category: 'Samsung',
+    category: 'Electronics',
+    merchant: 'Samsung',
     bgImage:
       'https://www.datocms-assets.com/26641/1600716608-done-samsung-attachment-00pf400000lrunseaf.jpeg',
     overlayImg:
@@ -108,8 +108,8 @@ export const shops = [
   },
   {
     id: 11,
-    marchent: 'Fashion',
-    category: 'Moose Knuckles',
+    category: 'Fashion',
+    merchant: 'Moose Knuckles',
     bgImage:
       'https://www.datocms-assets.com/26641/1648508666-moose-knuckles-min.jpg',
     overlayImg:
@@ -119,8 +119,8 @@ export const shops = [
   },
   {
     id: 12,
-    marchent: 'Fashion',
-    category: 'Steve Madden',
+    category: 'Fashion',
+    merchant: 'Steve Madden',
     bgImage:
       'https://www.datocms-assets.com/26641/1648503965-stevemaddennewpic-min.jpeg',
     overlayImg:
@@ -130,8 +130,8 @@ export const shops = [
   },
   {
     id: 13,
-    marchent: 'Hobby &amp; Leisure',
-    category: 'Apollo Scooters',
+    category: 'Hobby & Leisure',
+    merchant: 'Apollo Scooters',
     bgImage:
       'https://www.datocms-assets.com/26641/1589491286-apollo-scooters-attachment-00pf400000lrnvsear.png',
     overlayImg:
@@ -141,8 +141,8 @@ export const shops = [
   },
   {
     id: 14,
-    marchent: 'Electronics',
-    category: 'Apple',
+    category: 'Electronics',
+    merchant: 'Apple',
     bgImage:
       'https://www.datocms-assets.com/26641/1628694220-background-apple.png',
     overlayImg:
@@ -152,19 +152,19 @@ export const shops = [
   },
   {
     id: 15,
-    marchent: 'Home &amp; Furniture',
-    category: 'Article',
+    category: 'Home & Furniture',
+    merchant: 'Article',
     bgImage:
       'https://www.datocms-assets.com/26641/1589299281-article-attachment-00pf400000lrv1heaf.jpeg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1589299278-article-attachment-00pf400000lrv1geaf.png',
     status: 'popular',
-    zeroInterest: false,
+    zeroInterest: true,
   },
   {
     id: 16,
-    marchent: 'Home &amp; Furniture',
-    category: 'Atlas Tools &amp; Machinery',
+    category: 'Home & Furniture',
+    merchant: 'Atlas Tools & Machinery',
     bgImage:
       'https://www.datocms-assets.com/26641/1595422416-atlas-tools-machinery-attachment-00pf400000nzhtrea1.jpeg',
     overlayImg:
@@ -174,8 +174,8 @@ export const shops = [
   },
   {
     id: 17,
-    marchent: 'Home &amp; Furniture',
-    category: 'Auberge Designs',
+    category: 'Home & Furniture',
+    merchant: 'Auberge Designs',
     bgImage:
       'https://www.datocms-assets.com/26641/1632938000-auberge-designs-attachment-00p5g00000vbglauar.jpeg',
     overlayImg:
@@ -185,8 +185,8 @@ export const shops = [
   },
   {
     id: 18,
-    marchent: 'Electronics',
-    category: 'AVA Technologies Inc.',
+    category: 'Electronics',
+    merchant: 'AVA Technologies Inc.',
     bgImage:
       'https://www.datocms-assets.com/26641/1605630233-ava-technologies-inc-attachment-00p5g00000o5vyaua3.jpeg',
     overlayImg:
@@ -196,8 +196,8 @@ export const shops = [
   },
   {
     id: 19,
-    marchent: 'Electronics',
-    category: 'AVShop',
+    category: 'Electronics',
+    merchant: 'AVShop',
     bgImage:
       'https://www.datocms-assets.com/26641/1595962641-avshop-ca-attachment-00pf400000mwndpeax.png',
     overlayImg:
@@ -207,8 +207,8 @@ export const shops = [
   },
   {
     id: 20,
-    marchent: 'Home &amp; Furniture',
-    category: 'Awnings Canada',
+    category: 'Home & Furniture',
+    merchant: 'Awnings Canada',
     bgImage: 'https://www.datocms-assets.com/26641/1648664939-awnings-min.jpg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1638475861-logopaybright-awnings-canada-png-logo.png',
@@ -217,8 +217,8 @@ export const shops = [
   },
   {
     id: 21,
-    marchent: 'Beauty &amp; Wellness',
-    category: 'Bali Body',
+    category: 'Beauty & Wellness',
+    merchant: 'Bali Body',
     bgImage:
       'https://www.datocms-assets.com/26641/1601911296-done-bali-body-attachment-00pf400000opnkiea1.jpg',
     overlayImg:
@@ -228,8 +228,8 @@ export const shops = [
   },
   {
     id: 22,
-    marchent: 'Hobby &amp; Leisure',
-    category: 'BBQing',
+    category: 'Hobby & Leisure',
+    merchant: 'BBQing',
     bgImage:
       'https://www.datocms-assets.com/26641/1589568890-bbqing-attachment-00pf400000lrs8oear.jpeg',
     overlayImg:
@@ -239,8 +239,8 @@ export const shops = [
   },
   {
     id: 23,
-    marchent: 'Beauty &amp; Wellness',
-    category: 'Beautycounter',
+    category: 'Beauty & Wellness',
+    merchant: 'Beautycounter',
     bgImage:
       'https://www.datocms-assets.com/26641/1600883997-done-beautycounter.png',
     overlayImg:
@@ -250,8 +250,8 @@ export const shops = [
   },
   {
     id: 24,
-    marchent: 'Sporting Goods',
-    category: 'Bells of Steel',
+    category: 'Sporting Goods',
+    merchant: 'Bells of Steel',
     bgImage:
       'https://www.datocms-assets.com/26641/1648504764-bells-of-steel-min.jpeg',
     overlayImg:
@@ -261,8 +261,8 @@ export const shops = [
   },
   {
     id: 25,
-    marchent: 'Beauty &amp; Wellness',
-    category: 'Belly Bandit',
+    category: 'Beauty & Wellness',
+    merchant: 'Belly Bandit',
     bgImage:
       'https://www.datocms-assets.com/26641/1589579680-bellybandit-attachment-00pf400000lrtcleaj.jpeg',
     overlayImg:
@@ -272,8 +272,8 @@ export const shops = [
   },
   {
     id: 26,
-    marchent: 'Hobby &amp; Leisure',
-    category: 'Belogi Arcade',
+    category: 'Hobby & Leisure',
+    merchant: 'Belogi Arcade',
     bgImage:
       'https://www.datocms-assets.com/26641/1633032012-belogi-arcade-card1.png',
     overlayImg:
@@ -283,8 +283,8 @@ export const shops = [
   },
   {
     id: 27,
-    marchent: 'Electronics',
-    category: 'Better1.com',
+    category: 'Electronics',
+    merchant: 'Better1.com',
     bgImage:
       'https://www.datocms-assets.com/26641/1648665662-cardunstoppable-min.jpeg',
     overlayImg: 'https://www.datocms-assets.com/26641/1632424636-better1.png',
@@ -293,19 +293,19 @@ export const shops = [
   },
   {
     id: 28,
-    marchent: 'Sporting Goods',
-    category: 'Bicicletta',
+    category: 'Sporting Goods',
+    merchant: 'Bicicletta',
     bgImage:
       'https://www.datocms-assets.com/26641/1605199385-done-bicicletta-attachment-00pf400000p0cqbea3.jpg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1605199395-done-bicicletta-attachment-00pf400000p0cqaea3.png',
     status: 'featured',
-    zeroInterest: true,
+    zeroInterest: false,
   },
   {
     id: 29,
-    marchent: 'Hobby &amp; Leisure',
-    category: 'Bigtent Outdoor Equipment',
+    category: 'Hobby & Leisure',
+    merchant: 'Bigtent Outdoor Equipment',
     bgImage:
       'https://www.datocms-assets.com/26641/1589390777-bigtent-outdoor-equipment-ltd-attachment-00pf400000lrcaaeab.jpeg',
     overlayImg:
@@ -315,13 +315,57 @@ export const shops = [
   },
   {
     id: 30,
-    marchent: 'Hobby &amp; Leisure',
-    category: 'Biktrix',
+    category: 'Hobby & Leisure',
+    merchant: 'Biktrix',
     bgImage:
       'https://www.datocms-assets.com/26641/1589491280-biktrix-attachment-00pf400000lrnvmeab.jpeg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1589557757-donelogobiktrix-attachment-00pf400000lrnvleab.png',
     status: 'new',
+    zeroInterest: false,
+  },
+  {
+    id: 31,
+    category: 'Sporting Goods',
+    merchant: 'Bicicletta',
+    bgImage:
+      'https://www.datocms-assets.com/26641/1605199385-done-bicicletta-attachment-00pf400000p0cqbea3.jpg',
+    overlayImg:
+      'https://www.datocms-assets.com/26641/1605199395-done-bicicletta-attachment-00pf400000p0cqaea3.png',
+    status: 'featured',
+    zeroInterest: false,
+  },
+  {
+    id: 32,
+    category: 'Sporting Goods',
+    merchant: 'Bicicletta',
+    bgImage:
+      'https://www.datocms-assets.com/26641/1605199385-done-bicicletta-attachment-00pf400000p0cqbea3.jpg',
+    overlayImg:
+      'https://www.datocms-assets.com/26641/1605199395-done-bicicletta-attachment-00pf400000p0cqaea3.png',
+    status: 'featured',
+    zeroInterest: false,
+  },
+  {
+    id: 33,
+    category: 'Sporting Goods',
+    merchant: 'Bicicletta',
+    bgImage:
+      'https://www.datocms-assets.com/26641/1605199385-done-bicicletta-attachment-00pf400000p0cqbea3.jpg',
+    overlayImg:
+      'https://www.datocms-assets.com/26641/1605199395-done-bicicletta-attachment-00pf400000p0cqaea3.png',
+    status: 'featured',
+    zeroInterest: false,
+  },
+  {
+    id: 34,
+    category: 'Sporting Goods',
+    merchant: 'Bicicletta',
+    bgImage:
+      'https://www.datocms-assets.com/26641/1605199385-done-bicicletta-attachment-00pf400000p0cqbea3.jpg',
+    overlayImg:
+      'https://www.datocms-assets.com/26641/1605199395-done-bicicletta-attachment-00pf400000p0cqaea3.png',
+    status: 'featured',
     zeroInterest: false,
   },
 ];
@@ -330,16 +374,16 @@ export const shops = [
 
 {
     id: 31,
-    marchent: 'Electronics',
-    category: 'BISSELL Canada',
+    category: 'Electronics',
+    merchant: 'BISSELL Canada',
     bgImage: 'https://www.datocms-assets.com/26641/1635183298-bissel.jpg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1638910501-bissell-logo.png',
   },
   {
     id: 32,
-    marchent: 'Auto',
-    category: 'Blackcircles.ca',
+    category: 'Auto',
+    merchant: 'Blackcircles.ca',
     bgImage:
       'https://www.datocms-assets.com/26641/1589477139-blackcircles-ca-attachment-00pf400000lrm8veab.jpeg',
     overlayImg:
@@ -347,8 +391,8 @@ export const shops = [
   },
   {
     id: 33,
-    marchent: 'Fashion',
-    category: 'Boohoo',
+    category: 'Fashion',
+    merchant: 'Boohoo',
     bgImage:
       'https://www.datocms-assets.com/26641/1600716301-done-boohoo-attachment-00pf400000lrfpmeab.jpeg',
     overlayImg:
@@ -356,8 +400,8 @@ export const shops = [
   },
   {
     id: 34,
-    marchent: 'Beauty &amp; Wellness',
-    category: 'Boutique Skin Envie Inc.',
+    category: 'Beauty & Wellness',
+    merchant: 'Boutique Skin Envie Inc.',
     bgImage:
       'https://www.datocms-assets.com/26641/1596209017-boutique-skin-envie-inc-attachment-00pf400000napyneaj.jpeg',
     overlayImg:
@@ -365,16 +409,16 @@ export const shops = [
   },
   {
     id: 35,
-    marchent: 'Sporting Goods',
-    category: 'Bowflex',
+    category: 'Sporting Goods',
+    merchant: 'Bowflex',
     bgImage: 'https://www.datocms-assets.com/26641/1600716483-done-bowflex.jpg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1592427214-bowflex-attachment-00pf400000mvbsmea1.svg',
   },
   {
     id: 36,
-    marchent: 'Fashion',
-    category: 'Bravo Gifts',
+    category: 'Fashion',
+    merchant: 'Bravo Gifts',
     bgImage:
       'https://www.datocms-assets.com/26641/1628645726-bravo-gifts-attachment-00p5g00000vyln1uad.jpeg',
     overlayImg:
@@ -382,8 +426,8 @@ export const shops = [
   },
   {
     id: 37,
-    marchent: 'Beauty &amp; Wellness',
-    category: 'Browbox',
+    category: 'Beauty & Wellness',
+    merchant: 'Browbox',
     bgImage:
       'https://www.datocms-assets.com/26641/1613085854-browbox-attachment-00p5g00000qa9tluaj.jpeg',
     overlayImg:
@@ -391,8 +435,8 @@ export const shops = [
   },
   {
     id: 38,
-    marchent: 'Fashion',
-    category: 'Browns Shoes',
+    category: 'Fashion',
+    merchant: 'Browns Shoes',
     bgImage:
       'https://www.datocms-assets.com/26641/1648508712-browns-shoes-min.jpeg',
     overlayImg:
@@ -400,8 +444,8 @@ export const shops = [
   },
   {
     id: 39,
-    marchent: 'Hobby &amp; Leisure',
-    category: 'Busy Bee Tools',
+    category: 'Hobby & Leisure',
+    merchant: 'Busy Bee Tools',
     bgImage:
       'https://www.datocms-assets.com/26641/1615914736-busy-bee-tools-attachment-00p5g00000rmieuuaf.png',
     overlayImg:
@@ -409,8 +453,8 @@ export const shops = [
   },
   {
     id: 40,
-    marchent: 'Fashion',
-    category: 'byCassandre',
+    category: 'Fashion',
+    merchant: 'byCassandre',
     bgImage:
       'https://www.datocms-assets.com/26641/1600716246-done-bycassandre-attachment-00pf400000odamneap.jpg',
     overlayImg:
@@ -418,8 +462,8 @@ export const shops = [
   },
   {
     id: 41,
-    marchent: 'Hobby &amp; Leisure',
-    category: 'Canada Drone',
+    category: 'Hobby & Leisure',
+    merchant: 'Canada Drone',
     bgImage:
       'https://www.datocms-assets.com/26641/1602708827-canada-drone-attachment-00pf400000orfxveal.jpeg',
     overlayImg:
@@ -427,16 +471,16 @@ export const shops = [
   },
   {
     id: 42,
-    marchent: 'Sporting Goods',
-    category: 'CanadaFit',
+    category: 'Sporting Goods',
+    merchant: 'CanadaFit',
     bgImage:
       'https://www.datocms-assets.com/26641/1592242560-canadafitimage.jpg',
     overlayImg: 'https://www.datocms-assets.com/26641/1592243121-canadafit.png',
   },
   {
     id: 43,
-    marchent: 'Hobby &amp; Leisure',
-    category: 'Canada Greenhouse Kits',
+    category: 'Hobby & Leisure',
+    merchant: 'Canada Greenhouse Kits',
     bgImage:
       'https://www.datocms-assets.com/26641/1648664800-greenhouse-min.jpg',
     overlayImg:
@@ -444,8 +488,8 @@ export const shops = [
   },
   {
     id: 44,
-    marchent: 'Auto',
-    category: 'CanadaWheels.ca',
+    category: 'Auto',
+    merchant: 'CanadaWheels.ca',
     bgImage:
       'https://www.datocms-assets.com/26641/1607460890-done-canadawheels.jpg',
     overlayImg:
@@ -453,8 +497,8 @@ export const shops = [
   },
   {
     id: 45,
-    marchent: 'Beauty &amp; Wellness',
-    category: 'Canadian Barista Academy',
+    category: 'Beauty & Wellness',
+    merchant: 'Canadian Barista Academy',
     bgImage:
       'https://www.datocms-assets.com/26641/1648668112-canadian-barista-academy-min.jpeg',
     overlayImg:
@@ -462,8 +506,8 @@ export const shops = [
   },
   {
     id: 46,
-    marchent: 'Home &amp; Furniture',
-    category: 'Canadian Bedding',
+    category: 'Home & Furniture',
+    merchant: 'Canadian Bedding',
     bgImage:
       'https://www.datocms-assets.com/26641/1627674406-canadian-bedding-attachment-00p5g00000vllgsuad.jpeg',
     overlayImg:
@@ -471,8 +515,8 @@ export const shops = [
   },
   {
     id: 47,
-    marchent: 'Electronics',
-    category: 'CANBAT',
+    category: 'Electronics',
+    merchant: 'CANBAT',
     bgImage:
       'https://www.datocms-assets.com/26641/1608319438-canbat-attachment-00p5g00000qxtpcua1.jpeg',
     overlayImg:
@@ -480,8 +524,8 @@ export const shops = [
   },
   {
     id: 48,
-    marchent: 'Home &amp; Furniture',
-    category: 'Candace &amp; Basil',
+    category: 'Home & Furniture',
+    merchant: 'Candace & Basil',
     bgImage:
       'https://www.datocms-assets.com/26641/1648506605-candace-basil-min.jpeg',
     overlayImg:
@@ -489,16 +533,16 @@ export const shops = [
   },
   {
     id: 49,
-    marchent: 'Electronics',
-    category: 'Canon',
+    category: 'Electronics',
+    merchant: 'Canon',
     bgImage: 'https://www.datocms-assets.com/26641/1648666845-canon-min.jpeg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1589315296-donelogocanon.png',
   },
   {
     id: 50,
-    marchent: 'Sporting Goods',
-    category: 'Cascadia Board Co.',
+    category: 'Sporting Goods',
+    merchant: 'Cascadia Board Co.',
     bgImage:
       'https://www.datocms-assets.com/26641/1648667494-cascadia-board-co-min.png',
     overlayImg:
@@ -506,8 +550,8 @@ export const shops = [
   },
   {
     id: 51,
-    marchent: 'Home &amp; Furniture',
-    category: 'Casper',
+    category: 'Home & Furniture',
+    merchant: 'Casper',
     bgImage:
       'https://www.datocms-assets.com/26641/1590168289-casper-attachment-00pf400000mtirxeaf.jpeg',
     overlayImg:
@@ -515,8 +559,8 @@ export const shops = [
   },
   {
     id: 52,
-    marchent: 'Electronics',
-    category: 'Cellcom Communications',
+    category: 'Electronics',
+    merchant: 'Cellcom Communications',
     bgImage:
       'https://www.datocms-assets.com/26641/1589226337-donegeneric-electronics.jpg',
     overlayImg:
@@ -524,8 +568,8 @@ export const shops = [
   },
   {
     id: 53,
-    marchent: 'Home &amp; Furniture',
-    category: 'Chairs4Gaming',
+    category: 'Home & Furniture',
+    merchant: 'Chairs4Gaming',
     bgImage:
       'https://www.datocms-assets.com/26641/1648506332-chairsforgaming-min.jpeg',
     overlayImg:
@@ -533,8 +577,8 @@ export const shops = [
   },
   {
     id: 54,
-    marchent: 'Home &amp; Furniture',
-    category: 'Choice Mart',
+    category: 'Home & Furniture',
+    merchant: 'Choice Mart',
     bgImage:
       'https://www.datocms-assets.com/26641/1613604271-choice-mart-attachment-00p5g00000qarxauav.png',
     overlayImg:
@@ -542,8 +586,8 @@ export const shops = [
   },
   {
     id: 55,
-    marchent: 'Beauty &amp; Wellness',
-    category: 'Ciao Bella',
+    category: 'Beauty & Wellness',
+    merchant: 'Ciao Bella',
     bgImage:
       'https://www.datocms-assets.com/26641/1648671040-generic-wellness-min.jpg',
     overlayImg:
@@ -551,8 +595,8 @@ export const shops = [
   },
   {
     id: 56,
-    marchent: 'Beauty &amp; Wellness',
-    category: 'Citrine Teeth Whitening',
+    category: 'Beauty & Wellness',
+    merchant: 'Citrine Teeth Whitening',
     bgImage:
       'https://www.datocms-assets.com/26641/1643835050-citrine-card.jpeg',
     overlayImg:
@@ -560,8 +604,8 @@ export const shops = [
   },
   {
     id: 57,
-    marchent: 'Fashion',
-    category: 'CityLux Boutique',
+    category: 'Fashion',
+    merchant: 'CityLux Boutique',
     bgImage:
       'https://www.datocms-assets.com/26641/1648667981-citylux-boutique-min.jpeg',
     overlayImg:
@@ -569,8 +613,8 @@ export const shops = [
   },
   {
     id: 58,
-    marchent: 'Beauty &amp; Wellness',
-    category: 'Clinique Virtuelle',
+    category: 'Beauty & Wellness',
+    merchant: 'Clinique Virtuelle',
     bgImage:
       'https://www.datocms-assets.com/26641/1648504694-clinique-virtuelle-min.jpeg',
     overlayImg:
@@ -578,8 +622,8 @@ export const shops = [
   },
   {
     id: 59,
-    marchent: 'Fashion',
-    category: 'CLOUD Footwear',
+    category: 'Fashion',
+    merchant: 'CLOUD Footwear',
     bgImage:
       'https://www.datocms-assets.com/26641/1648670975-cloud-footwear-min.jpeg',
     overlayImg:
@@ -587,8 +631,8 @@ export const shops = [
   },
   {
     id: 60,
-    marchent: 'Home &amp; Furniture',
-    category: 'Coast Appliances',
+    category: 'Home & Furniture',
+    merchant: 'Coast Appliances',
     bgImage:
       'https://www.datocms-assets.com/26641/1603931018-coast-appliances-attachment-00pf400000ozwpkeaz.jpeg',
     overlayImg:
@@ -596,8 +640,8 @@ export const shops = [
   },
   {
     id: 61,
-    marchent: 'Home &amp; Furniture',
-    category: 'Concept Lighting',
+    category: 'Home & Furniture',
+    merchant: 'Concept Lighting',
     bgImage:
       'https://www.datocms-assets.com/26641/1608155629-concept-lighting-attachment-00p5g00000o6kq3uaj.png',
     overlayImg:
@@ -605,8 +649,8 @@ export const shops = [
   },
   {
     id: 62,
-    marchent: 'Home &amp; Furniture',
-    category: 'Conscious Water Inc.',
+    category: 'Home & Furniture',
+    merchant: 'Conscious Water Inc.',
     bgImage:
       'https://www.datocms-assets.com/26641/1648668042-conscious-water-inc-min.jpeg',
     overlayImg:
@@ -614,16 +658,16 @@ export const shops = [
   },
   {
     id: 63,
-    marchent: 'Home &amp; Furniture',
-    category: 'Cook Store Inc.',
+    category: 'Home & Furniture',
+    merchant: 'Cook Store Inc.',
     bgImage: 'https://www.datocms-assets.com/26641/1635535882-cookcardcsbg.jpg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1635535913-cookstore-white.png',
   },
   {
     id: 64,
-    marchent: 'Fashion',
-    category: 'Covogue',
+    category: 'Fashion',
+    merchant: 'Covogue',
     bgImage:
       'https://www.datocms-assets.com/26641/1604948031-covogue-attachment-00p5g00000o58pxuab.jpeg',
     overlayImg:
@@ -631,8 +675,8 @@ export const shops = [
   },
   {
     id: 65,
-    marchent: 'Home &amp; Furniture',
-    category: 'Create Room',
+    category: 'Home & Furniture',
+    merchant: 'Create Room',
     bgImage:
       'https://www.datocms-assets.com/26641/1594743816-create-room-attachment-00pf400000mxwz4ead.jpeg',
     overlayImg:
@@ -640,16 +684,16 @@ export const shops = [
   },
   {
     id: 66,
-    marchent: 'Home &amp; Furniture',
-    category: 'Cybeart',
+    category: 'Home & Furniture',
+    merchant: 'Cybeart',
     bgImage: 'https://www.datocms-assets.com/26641/1648670692-cybeart-min.jpeg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1601497415-cybeart-attachment-00pf400000oputkeal.png',
   },
   {
     id: 67,
-    marchent: 'Fashion',
-    category: 'Dainty Gal Jewelry',
+    category: 'Fashion',
+    merchant: 'Dainty Gal Jewelry',
     bgImage:
       'https://www.datocms-assets.com/26641/1606429435-dainty-gal-jewelry-attachment-00p5g00000o5vzruaz.jpeg',
     overlayImg:
@@ -657,8 +701,8 @@ export const shops = [
   },
   {
     id: 68,
-    marchent: 'Fashion',
-    category: 'Dana Dow Jewellers',
+    category: 'Fashion',
+    merchant: 'Dana Dow Jewellers',
     bgImage:
       'https://www.datocms-assets.com/26641/1648670483-doneimagedana-dow-min.jpg',
     overlayImg:
@@ -666,8 +710,8 @@ export const shops = [
   },
   {
     id: 69,
-    marchent: 'Hobby &amp; Leisure',
-    category: "Dave's Drum Shop",
+    category: 'Hobby & Leisure',
+    merchant: "Dave's Drum Shop",
     bgImage:
       'https://www.datocms-assets.com/26641/1589487500-doneimagedrum.jpg',
     overlayImg:
@@ -675,8 +719,8 @@ export const shops = [
   },
   {
     id: 70,
-    marchent: 'Sporting Goods',
-    category: 'Delfast Bikes',
+    category: 'Sporting Goods',
+    merchant: 'Delfast Bikes',
     bgImage:
       'https://www.datocms-assets.com/26641/1593708818-delfast-bikes-attachment-00pf400000mwy5eeat.jpeg',
     overlayImg:
@@ -684,8 +728,8 @@ export const shops = [
   },
   {
     id: 71,
-    marchent: 'Home &amp; Furniture',
-    category: 'DesignRepublic',
+    category: 'Home & Furniture',
+    merchant: 'DesignRepublic',
     bgImage:
       'https://www.datocms-assets.com/26641/1648577875-design-republic-card.jpeg',
     overlayImg:
@@ -693,8 +737,8 @@ export const shops = [
   },
   {
     id: 72,
-    marchent: 'Home &amp; Furniture',
-    category: 'Digby Paints',
+    category: 'Home & Furniture',
+    merchant: 'Digby Paints',
     bgImage:
       'https://www.datocms-assets.com/26641/1618360948-digby-paints-attachment-00p5g00000rnv5zuar.jpeg',
     overlayImg:
@@ -702,8 +746,8 @@ export const shops = [
   },
   {
     id: 73,
-    marchent: 'Auto',
-    category: 'Dirty Diesel Customs',
+    category: 'Auto',
+    merchant: 'Dirty Diesel Customs',
     bgImage:
       'https://www.datocms-assets.com/26641/1590006278-dirty-diesel-customs-attachment-00pf400000lscivea3.jpeg',
     overlayImg:
@@ -711,8 +755,8 @@ export const shops = [
   },
   {
     id: 74,
-    marchent: 'Electronics',
-    category: "Don's Photo Shop",
+    category: 'Electronics',
+    merchant: "Don's Photo Shop",
     bgImage:
       'https://www.datocms-assets.com/26641/1589914477-don-s-photo-shop-attachment-00pf400000ls4sjear.jpeg',
     overlayImg:
@@ -720,8 +764,8 @@ export const shops = [
   },
   {
     id: 75,
-    marchent: 'Home &amp; Furniture',
-    category: 'Douglas Bed',
+    category: 'Home & Furniture',
+    merchant: 'Douglas Bed',
     bgImage:
       'https://www.datocms-assets.com/26641/1589390678-douglas-bed-attachment-00pf400000lrg1eeab.jpeg',
     overlayImg:
@@ -729,8 +773,8 @@ export const shops = [
   },
   {
     id: 76,
-    marchent: 'Hobby &amp; Leisure',
-    category: 'Drumland',
+    category: 'Hobby & Leisure',
+    merchant: 'Drumland',
     bgImage:
       'https://www.datocms-assets.com/26641/1589298856-drumland-attachment-00pf400000lrvqoeaf.jpeg',
     overlayImg:
@@ -738,8 +782,8 @@ export const shops = [
   },
   {
     id: 77,
-    marchent: 'Hobby &amp; Leisure',
-    category: 'Drummond Musique',
+    category: 'Hobby & Leisure',
+    merchant: 'Drummond Musique',
     bgImage:
       'https://www.datocms-assets.com/26641/1645114776-card_dmusiquethumbnail.jpg',
     overlayImg:
@@ -747,8 +791,8 @@ export const shops = [
   },
   {
     id: 78,
-    marchent: 'Fashion',
-    category: 'Dynamite',
+    category: 'Fashion',
+    merchant: 'Dynamite',
     bgImage:
       'https://www.datocms-assets.com/26641/1648503310-dynamite-min.jpeg',
     overlayImg:
@@ -756,16 +800,16 @@ export const shops = [
   },
   {
     id: 79,
-    marchent: 'All',
-    category: 'Dyson',
+    category: 'All',
+    merchant: 'Dyson',
     bgImage: 'https://www.datocms-assets.com/26641/1648506626-dyson-min.jpeg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1638910654-dyson-logo.png',
   },
   {
     id: 80,
-    marchent: 'Beauty &amp; Wellness',
-    category: 'EasyFold',
+    category: 'Beauty & Wellness',
+    merchant: 'EasyFold',
     bgImage:
       'https://www.datocms-assets.com/26641/1589390809-easyfold-attachment-00pf400000lrg7eeab.jpeg',
     overlayImg:
@@ -773,8 +817,8 @@ export const shops = [
   },
   {
     id: 81,
-    marchent: 'All',
-    category: 'eBay',
+    category: 'All',
+    merchant: 'eBay',
     bgImage:
       'https://www.datocms-assets.com/26641/1590424738-doneimageebay-our-company-buyer-photo.jpg',
     overlayImg:
@@ -782,8 +826,8 @@ export const shops = [
   },
   {
     id: 82,
-    marchent: 'Sporting Goods',
-    category: 'Echelon',
+    category: 'Sporting Goods',
+    merchant: 'Echelon',
     bgImage:
       'https://www.datocms-assets.com/26641/1589403891-doneimageechelon.jpg',
     overlayImg:
@@ -791,8 +835,8 @@ export const shops = [
   },
   {
     id: 83,
-    marchent: 'Hobby &amp; Leisure',
-    category: "eevee's",
+    category: 'Hobby & Leisure',
+    merchant: "eevee's",
     bgImage:
       'https://www.datocms-assets.com/26641/1619709415-done-eevee-s-attachment-00p5g00000qzg2uuax.jpg',
     overlayImg:
@@ -800,8 +844,8 @@ export const shops = [
   },
   {
     id: 84,
-    marchent: 'Fashion',
-    category: 'EG Bespoke Ltd',
+    category: 'Fashion',
+    merchant: 'EG Bespoke Ltd',
     bgImage:
       'https://www.datocms-assets.com/26641/1648671881-eg-bespoke-ltd-min.jpeg',
     overlayImg:
@@ -809,8 +853,8 @@ export const shops = [
   },
   {
     id: 85,
-    marchent: 'Beauty &amp; Wellness',
-    category: 'Elite Lash Society',
+    category: 'Beauty & Wellness',
+    merchant: 'Elite Lash Society',
     bgImage:
       'https://www.datocms-assets.com/26641/1619708050-done-genericbeauty.png',
     overlayImg:
@@ -818,8 +862,8 @@ export const shops = [
   },
   {
     id: 86,
-    marchent: 'Sporting Goods',
-    category: 'eMARKH Outdoor Products',
+    category: 'Sporting Goods',
+    merchant: 'eMARKH Outdoor Products',
     bgImage:
       'https://www.datocms-assets.com/26641/1617919904-emarkh-outdoor-products-attachment-00p5g00000rnfmquar.png',
     overlayImg:
@@ -827,8 +871,8 @@ export const shops = [
   },
   {
     id: 87,
-    marchent: 'Beauty &amp; Wellness',
-    category: 'eMuza Mobility',
+    category: 'Beauty & Wellness',
+    merchant: 'eMuza Mobility',
     bgImage:
       'https://www.datocms-assets.com/26641/1600886518-done-emuza-mobility.png',
     overlayImg:
@@ -836,8 +880,8 @@ export const shops = [
   },
   {
     id: 88,
-    marchent: 'Home &amp; Furniture',
-    category: 'Endy',
+    category: 'Home & Furniture',
+    merchant: 'Endy',
     bgImage:
       'https://www.datocms-assets.com/26641/1600716385-done-endy-attachment-00pf400000lrunoeav.jpg',
     overlayImg:
@@ -845,8 +889,8 @@ export const shops = [
   },
   {
     id: 89,
-    marchent: 'Sporting Goods',
-    category: 'Everyday Bicycles',
+    category: 'Sporting Goods',
+    merchant: 'Everyday Bicycles',
     bgImage:
       'https://www.datocms-assets.com/26641/1589298962-everyday-bicycles-attachment-00pf400000lrgcnea3.jpeg',
     overlayImg:
@@ -854,16 +898,16 @@ export const shops = [
   },
   {
     id: 90,
-    marchent: 'Beauty &amp; Wellness',
-    category: 'Fab Beauty Supplies',
+    category: 'Beauty & Wellness',
+    merchant: 'Fab Beauty Supplies',
     bgImage: 'https://www.datocms-assets.com/26641/1648505749-fab-min.jpeg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1601499215-fab-beauty-supplies-attachment-00pf400000opuddead.png',
   },
   {
     id: 91,
-    marchent: 'Electronics',
-    category: 'Factory Direct',
+    category: 'Electronics',
+    merchant: 'Factory Direct',
     bgImage:
       'https://www.datocms-assets.com/26641/1648503552-donegeneric-electronics-min.jpg',
     overlayImg:
@@ -871,8 +915,8 @@ export const shops = [
   },
   {
     id: 92,
-    marchent: 'Fashion',
-    category: 'Finders Keep Hers Boutique',
+    category: 'Fashion',
+    merchant: 'Finders Keep Hers Boutique',
     bgImage:
       'https://www.datocms-assets.com/26641/1600885402-done-finders-keep-hers-boutique.png',
     overlayImg:
@@ -880,8 +924,8 @@ export const shops = [
   },
   {
     id: 93,
-    marchent: 'Sporting Goods',
-    category: 'Fitness Nutrition Cardio',
+    category: 'Sporting Goods',
+    merchant: 'Fitness Nutrition Cardio',
     bgImage:
       'https://www.datocms-assets.com/26641/1589576087-fitness-nutrition-cardio-attachment-00pf400000lrsmwear.jpeg',
     overlayImg:
@@ -889,8 +933,8 @@ export const shops = [
   },
   {
     id: 94,
-    marchent: 'Sporting Goods',
-    category: 'Fitness Town',
+    category: 'Sporting Goods',
+    merchant: 'Fitness Town',
     bgImage:
       'https://www.datocms-assets.com/26641/1589573795-doneimagefitnesstown.png',
     overlayImg:
@@ -898,8 +942,8 @@ export const shops = [
   },
   {
     id: 95,
-    marchent: 'Home &amp; Furniture',
-    category: 'Fizzics Canada',
+    category: 'Home & Furniture',
+    merchant: 'Fizzics Canada',
     bgImage:
       'https://www.datocms-assets.com/26641/1638372887-cardfizzicspaybright.jpg',
     overlayImg:
@@ -907,8 +951,8 @@ export const shops = [
   },
   {
     id: 96,
-    marchent: 'Home &amp; Furniture',
-    category: 'Fleur &amp; Co.',
+    category: 'Home & Furniture',
+    merchant: 'Fleur & Co.',
     bgImage:
       'https://www.datocms-assets.com/26641/1616708497-fleur-co-attachment-00p5g00000rmpxluab.jpeg',
     overlayImg:
@@ -916,8 +960,8 @@ export const shops = [
   },
   {
     id: 97,
-    marchent: 'Hobby &amp; Leisure',
-    category: 'Fluid Float',
+    category: 'Hobby & Leisure',
+    merchant: 'Fluid Float',
     bgImage:
       'https://www.datocms-assets.com/26641/1615585326-fluid-float-attachment-00p5g00000rmc3muav.png',
     overlayImg:
@@ -925,8 +969,8 @@ export const shops = [
   },
   {
     id: 98,
-    marchent: 'Fashion',
-    category: 'Flying7',
+    category: 'Fashion',
+    merchant: 'Flying7',
     bgImage:
       'https://www.datocms-assets.com/26641/1630536336-flying7-attachment-00p5g00000vajytua3.jpeg',
     overlayImg:
@@ -934,8 +978,8 @@ export const shops = [
   },
   {
     id: 99,
-    marchent: 'Fashion',
-    category: 'Foot Locker',
+    category: 'Fashion',
+    merchant: 'Foot Locker',
     bgImage:
       'https://www.datocms-assets.com/26641/1633637941-foot-locker-attachment-00p5g00000x0idsuaz.jpeg',
     overlayImg:
@@ -943,8 +987,8 @@ export const shops = [
   },
   {
     id: 100,
-    marchent: 'Sporting Goods',
-    category: 'Foresight Sports Canada',
+    category: 'Sporting Goods',
+    merchant: 'Foresight Sports Canada',
     bgImage:
       'https://www.datocms-assets.com/26641/1648667779-foresight-sports-min.jpeg',
     overlayImg:
@@ -952,8 +996,8 @@ export const shops = [
   },
   {
     id: 101,
-    marchent: 'Home &amp; Furniture',
-    category: 'Furnberry Inc.',
+    category: 'Home & Furniture',
+    merchant: 'Furnberry Inc.',
     bgImage:
       'https://www.datocms-assets.com/26641/1589477401-doneimagefurnberry.jpg',
     overlayImg:
@@ -961,23 +1005,23 @@ export const shops = [
   },
   {
     id: 102,
-    marchent: 'Home &amp; Furniture',
-    category: 'FurnishMyHome.ca',
+    category: 'Home & Furniture',
+    merchant: 'FurnishMyHome.ca',
     bgImage: 'https://www.datocms-assets.com/26641/1634648748-fmhcard.jpg',
     overlayImg: 'https://www.datocms-assets.com/26641/1634648767-fmhlogo.png',
   },
   {
     id: 103,
-    marchent: 'Sporting Goods',
-    category: 'FXR Racing',
+    category: 'Sporting Goods',
+    merchant: 'FXR Racing',
     bgImage: 'https://www.datocms-assets.com/26641/1589488549-doneimagefxr.jpg',
     overlayImg:
       'https://www.datocms-assets.com/26641/1589382382-donelogofxr-1.png',
   },
   {
     id: 104,
-    marchent: 'Home &amp; Furniture',
-    category: 'GA Home Superstore',
+    category: 'Home & Furniture',
+    merchant: 'GA Home Superstore',
     bgImage:
       'https://www.datocms-assets.com/26641/1630692069-ga-home-superstore-attachment-00p5g00000varp0uaf.jpeg',
     overlayImg:
@@ -985,8 +1029,8 @@ export const shops = [
   },
   {
     id: 105,
-    marchent: 'Fashion',
-    category: 'Garage',
+    category: 'Fashion',
+    merchant: 'Garage',
     bgImage:
       'https://www.datocms-assets.com/26641/1589390714-garage-attachment-00pf400000lrfreear.jpeg',
     overlayImg:
@@ -994,8 +1038,8 @@ export const shops = [
   },
   {
     id: 106,
-    marchent: 'Home &amp; Furniture',
-    category: 'GFURN',
+    category: 'Home & Furniture',
+    merchant: 'GFURN',
     bgImage:
       'https://www.datocms-assets.com/26641/1589299166-gfurn-attachment-00pf400000lrs1peav.jpeg',
     overlayImg:
@@ -1003,8 +1047,8 @@ export const shops = [
   },
   {
     id: 107,
-    marchent: 'Home &amp; Furniture',
-    category: 'GhostBed',
+    category: 'Home & Furniture',
+    merchant: 'GhostBed',
     bgImage:
       'https://www.datocms-assets.com/26641/1648506651-ghostbed-min.jpeg',
     overlayImg:
@@ -1012,8 +1056,8 @@ export const shops = [
   },
   {
     id: 108,
-    marchent: 'Sporting Goods',
-    category: 'Giant Bicycle Canada',
+    category: 'Sporting Goods',
+    merchant: 'Giant Bicycle Canada',
     bgImage:
       'https://www.datocms-assets.com/26641/1589406908-giant-bicycle-canada-attachment-00pf400000lrigaeaj.jpeg',
     overlayImg:
@@ -1021,8 +1065,8 @@ export const shops = [
   },
   {
     id: 109,
-    marchent: 'Electronics',
-    category: 'Gibbys',
+    category: 'Electronics',
+    merchant: 'Gibbys',
     bgImage:
       'https://www.datocms-assets.com/26641/1608305034-gibbys-attachment-00p5g00000qxsjjua1.jpeg',
     overlayImg:
@@ -1030,8 +1074,8 @@ export const shops = [
   },
   {
     id: 110,
-    marchent: 'Fashion',
-    category: 'Global Diamond Montreal',
+    category: 'Fashion',
+    merchant: 'Global Diamond Montreal',
     bgImage:
       'https://www.datocms-assets.com/26641/1600715802-done-global-diamond-montreal-attachment-00pf400000mwvkceap.jpg',
     overlayImg:
@@ -1039,8 +1083,8 @@ export const shops = [
   },
   {
     id: 111,
-    marchent: 'Fashion',
-    category: 'Goodwatch',
+    category: 'Fashion',
+    merchant: 'Goodwatch',
     bgImage:
       'https://www.datocms-assets.com/26641/1637175722-cardshop-local.jpeg',
     overlayImg:
@@ -1048,8 +1092,8 @@ export const shops = [
   },
   {
     id: 112,
-    marchent: 'Electronics',
-    category: 'Grand Videoke Canada',
+    category: 'Electronics',
+    merchant: 'Grand Videoke Canada',
     bgImage:
       'https://www.datocms-assets.com/26641/1595970374-grand-videoke-canada-attachment-00pf400000naqapea3.png',
     overlayImg:
@@ -1057,8 +1101,8 @@ export const shops = [
   },
   {
     id: 113,
-    marchent: 'Home &amp; Furniture',
-    category: 'Grizzly Shelter',
+    category: 'Home & Furniture',
+    merchant: 'Grizzly Shelter',
     bgImage:
       'https://www.datocms-assets.com/26641/1589298977-grizzly-shelter-attachment-00pf400000lrg5veav.jpeg',
     overlayImg:
@@ -1066,8 +1110,8 @@ export const shops = [
   },
   {
     id: 114,
-    marchent: 'Auto',
-    category: 'GTR Auto',
+    category: 'Auto',
+    merchant: 'GTR Auto',
     bgImage:
       'https://www.datocms-assets.com/26641/1589305915-donegeneric-auto.jpg',
     overlayImg:
@@ -1075,8 +1119,8 @@ export const shops = [
   },
   {
     id: 115,
-    marchent: 'Hobby &amp; Leisure',
-    category: 'Guitarworks',
+    category: 'Hobby & Leisure',
+    merchant: 'Guitarworks',
     bgImage:
       'https://www.datocms-assets.com/26641/1589488210-doneimageguitarworks-attachment-00pf400000lrv26eaf.jpg',
     overlayImg:
@@ -1084,8 +1128,8 @@ export const shops = [
   },
   {
     id: 116,
-    marchent: 'Fashion',
-    category: 'Gymshark',
+    category: 'Fashion',
+    merchant: 'Gymshark',
     bgImage:
       'https://www.datocms-assets.com/26641/1630364661-gymshark-attachment-00p5g00000va7d5uab.jpeg',
     overlayImg:
@@ -1093,8 +1137,8 @@ export const shops = [
   },
   {
     id: 117,
-    marchent: 'Fashion',
-    category: 'Halifax Watch Company',
+    category: 'Fashion',
+    merchant: 'Halifax Watch Company',
     bgImage:
       'https://www.datocms-assets.com/26641/1648505212-halifax-watch-company-min.jpeg',
     overlayImg:
@@ -1102,8 +1146,8 @@ export const shops = [
   },
   {
     id: 118,
-    marchent: 'Hobby &amp; Leisure',
-    category: 'Hammock Universe',
+    category: 'Hobby & Leisure',
+    merchant: 'Hammock Universe',
     bgImage:
       'https://www.datocms-assets.com/26641/1589299407-hammock-universe-attachment-00pf400000lrh5heav.jpeg',
     overlayImg:
@@ -1111,8 +1155,8 @@ export const shops = [
   },
   {
     id: 119,
-    marchent: 'Beauty &amp; Wellness',
-    category: 'Happy Face Skincare Co.',
+    category: 'Beauty & Wellness',
+    merchant: 'Happy Face Skincare Co.',
     bgImage:
       'https://www.datocms-assets.com/26641/1628811799-happy-face-skincare-co-attachment-00p5g00000vyybdua1.jpeg',
     overlayImg:
@@ -1120,8 +1164,8 @@ export const shops = [
   },
   {
     id: 120,
-    marchent: 'Fashion',
-    category: 'H-Authentica',
+    category: 'Fashion',
+    merchant: 'H-Authentica',
     bgImage:
       'https://www.datocms-assets.com/26641/1589402867-doneimageh-authentica-attachment-00pf400000lrhlxeab-1.jpg',
     overlayImg:
@@ -1129,8 +1173,8 @@ export const shops = [
   },
   {
     id: 121,
-    marchent: 'Home &amp; Furniture',
-    category: 'Haven Sleep Co.',
+    category: 'Home & Furniture',
+    merchant: 'Haven Sleep Co.',
     bgImage:
       'https://www.datocms-assets.com/26641/1589493655-haven-sleep-co-attachment-00pf400000lro7eeab.jpeg',
     overlayImg:

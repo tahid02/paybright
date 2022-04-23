@@ -1,7 +1,7 @@
 import styles from './shop-card.module.css';
 import { BiLinkExternal } from 'react-icons/bi';
 // eslint-disable-next-line react/prop-types
-const ShopCard = ({ id, marchent, category, bgImage, overlayImg }) => {
+const ShopCard = ({ id, merchant, category, bgImage, overlayImg }) => {
   // console.log('hello from shop card ');
   return (
     <div
@@ -40,8 +40,8 @@ const ShopCard = ({ id, marchent, category, bgImage, overlayImg }) => {
           borderBottomLeftRadius: '8px',
         }}
       >
-        <p className={`${styles.category}  `}>{marchent}</p>
-        <p className={`${styles.marchent}  `}>{category}</p>
+        <p className={`${styles.category}  `}>{category}</p>
+        <p className={`${styles.marchent}  `}>{merchant}</p>
       </div>
     </div>
   );

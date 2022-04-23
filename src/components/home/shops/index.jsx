@@ -1,14 +1,23 @@
+/* eslint-disable react/prop-types */
 import styles from './shop.module.css';
-import { shops } from 'shops';
 import ShopCard from './shop-card/shop-card';
 import MyButton from 'components/common/button/my-button';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+// import { NO_OF_SHOPS_TO_SHOW } from 'constants/constants';
 
-const Shops = () => {
-  const primaryShop = shops.slice(0, 10);
-  const [showCount, setShowCount] = useState(2);
-  const [showMore, setShowMore] = useState(primaryShop);
-  console.log(shops.length, showMore.length);
+// eslint-disable-next-line react/prop-types
+const Shops = ({ filteredShops }) => {
+  const [showCount, setShowCount] = useState(1);
+  useEffect(() => {
+    setShowCount(1);
+  }, [filteredShops?.length]);
+  const NO_OF_SHOPS_TO_SHOW = 2;
+  // const primaryShowShops =
+  //   filteredShops?.length > NO_OF_SHOPS_TO_SHOW
+  //     ? filteredShops?.slice(0, NO_OF_SHOPS_TO_SHOW)
+  //     : filteredShops;
+  // console.log({ primaryShowShops });
+
   return (
     <section className={`${styles.contentMargin} pt-4`}>
       <div className="">
@@ -19,17 +28,23 @@ const Shops = () => {
               : 'row g-5 w-100 mx-0'
           }
         >
-          {showMore.map((shop) => (
-            <ShopCard {...shop} key={shop.id} />
-          ))}
+          {filteredShops?.length > NO_OF_SHOPS_TO_SHOW * showCount ||
+          showCount > 1
+            ? filteredShops
+                ?.slice(0, showCount * NO_OF_SHOPS_TO_SHOW)
+                .map((shop) => {
+                  return <ShopCard {...shop} key={shop.id} />;
+                })
+            : filteredShops.map((shop) => {
+                return <ShopCard {...shop} key={shop.id} />;
+              })}
         </div>
         <div className="text-center pt-5">
-          {shops.length > showMore.length && (
+          {filteredShops?.length > NO_OF_SHOPS_TO_SHOW * showCount && (
             <div
               className="bg-transparent border-0"
               onClick={() => {
                 setShowCount((prev) => prev + 1);
-                setShowMore(shops.slice(0, showCount * 10));
               }}
             >
               <MyButton>Show more</MyButton>
