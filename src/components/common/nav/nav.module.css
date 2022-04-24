@@ -26,3 +26,39 @@
     padding-bottom: 1rem;
   }
 }
+
+/*  */
+.paddingLR {
+  box-sizing: border-box;
+  /* min-width: 0px; */
+  /* max-width: 1440px; */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media screen and (min-width: 576px) {
+  .paddingLR {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .paddingLR {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .paddingLR {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .paddingLR {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}

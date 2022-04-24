@@ -4,7 +4,7 @@ import styles from './my-button.module.css';
 const MyButton = ({ children, bgColor, textColor, ...rest }) => {
   return (
     <button
-      className={`${styles.button} bg-${bgColor || 'lightblue'}  text-${
+      className={`${styles.w} bg-${bgColor || 'lightblue'}  text-${
         textColor || 'white'
       } `}
     >

@@ -1,7 +1,6 @@
-.button {
+/* .button {
   padding: 0.5rem 1.5rem;
   border-radius: 2.5rem;
-  /* color: white; */
   border-width: 0;
 }
 .button:hover {
@@ -9,6 +8,111 @@
 }
 .button:focus {
   border: 2px solid rgb(255, 255, 255);
-  /* border: 1px solid rgb(74, 74, 244); */
   outline: 2px solid black;
+} */
+/* .w {
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  position: relative;
+  border-radius: 32px;
+  font-family: Inter;
+  font-size: 1rem;
+  line-height: 1.5;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 576px) {
+  .w {
+    width: fit-content;
+  }
+}
+.w:focus {
+  outline: 0px;
+  position: relative;
+}
+.w:focus::after {
+  content: '';
+  z-index: -1;
+  width: 100%;
+  position: absolute;
+  inset: -5px;
+  border-radius: 32px;
+}
+.styl {
+  background: rgb(74, 74, 244);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(74, 74, 244);
+}
+
+.styl:hover {
+  background: rgb(33, 33, 137);
+  border: 1px solid rgb(33, 33, 137);
+}
+
+.styl:focus::after {
+  background: rgb(255, 255, 255);
+  border: 2px solid rgb(74, 74, 244);
+}
+
+.styl:active {
+  background: rgb(20, 19, 51);
+  border: 1px solid rgb(20, 19, 51);
+}
+
+.HKYlp {
+  overflow: hidden;
+  text-overflow: ellipsis;
+} */
+
+.w {
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2rem;
+  font-family: Inter;
+  font-size: 1rem;
+  line-height: 1.5;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  border: none;
+  background-color: var(--lightblue);
+  color: white;
+}
+
+@media screen and (min-width: 576px) {
+  .w {
+    width: fit-content;
+  }
+}
+
+.w:active,
+.w:hover {
+  background: rgb(20, 19, 51);
+}
+
+.w:focus::after {
+  content: '';
+  position: absolute;
+  inset: -4px -4px -4px -4px;
+  z-index: -1;
+  background-color: white;
+  border-radius: 2rem;
+  border: 2px solid rgb(74, 74, 244);
 }

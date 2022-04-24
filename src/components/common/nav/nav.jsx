@@ -4,6 +4,7 @@ import Logo from './logo';
 import RightOffCanvas from './offcanvas/offcanvas';
 import styles from './nav.module.css';
 import { Link } from 'react-router-dom';
+import Flag from './offcanvas/flag';
 
 // import MyButton from '../button/my-button';
 
@@ -20,9 +21,10 @@ const Nav = () => {
     setScreen(width);
   }, []);
   return (
+    // <section className="bg-white ">
     <div
-      className={`${styles.navContainer} container px-4  d-flex flex-row bg-white`}
-      style={{}}
+      className={`${styles.navContainer} ${styles.paddingLR} position-sticky top-0    d-flex flex-row bg-white`}
+      style={{ zIndex: 1000 }}
     >
       <div className="d-flex flex-fill align-items-center">
         {/* <img src={logo} alt="" /> */}
@@ -58,7 +60,7 @@ const Nav = () => {
           <>
             {' '}
             <button className={`${styles.navMenu}`}>Help</button>
-            <div className="">
+            <div className="mx-3">
               <MyButton>Log in </MyButton>{' '}
             </div>
           </>
@@ -71,14 +73,19 @@ const Nav = () => {
         )}
         {screen > laptop && (
           <div className="">
-            <span>en</span>
-            <span>fr</span>
-            <span>flag</span>
+            <span className="fw-bold  text-darkblue">En </span>
+            <span className="fw-bold text-darkblue"> |</span>
+            <span className="fw-bold ps-1 text-darkblue">Fr </span>
+            <span>
+              {' '}
+              <Flag />{' '}
+            </span>
           </div>
         )}
       </div>
       {/* */}
     </div>
+    // </section>
   );
 };
 
