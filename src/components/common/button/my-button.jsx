@@ -7,6 +7,7 @@ const MyButton = ({ children, bgColor, textColor, ...rest }) => {
       className={`${styles.w} bg-${bgColor || 'lightblue'}  text-${
         textColor || 'white'
       } `}
+      {...rest}
     >
       {children}
     </button>

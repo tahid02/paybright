@@ -176,6 +176,12 @@ code {
   padding-left: 0%;
 }
 
+.btn-close {
+  color: var(--lightblue);
+}
+.btn-close:focus {
+  box-shadow: none;
+}
 /* .contentMargin {
   margin-left: 0%;
   margin-right: 0%;

@@ -4,7 +4,7 @@ import Logo from './logo';
 import RightOffCanvas from './offcanvas/offcanvas';
 import styles from './nav.module.css';
 import { Link } from 'react-router-dom';
-import Flag from './offcanvas/flag';
+import Flag from './flag';
 
 // import MyButton from '../button/my-button';
 

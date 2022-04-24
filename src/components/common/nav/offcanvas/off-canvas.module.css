@@ -1,0 +1,19 @@
+.LinkPadding {
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 1rem 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.LinkPadding:hover {
+  background-color: #f2f2fa;
+}
+@media screen and (min-width: 576px) {
+  .LinkPadding {
+    padding: 1rem 12px;
+  }
+}
+.linkStyle {
+  font-weight: 600;
+  color: var(--darkblue);
+  text-decoration: none;
+}

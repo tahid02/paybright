@@ -17,6 +17,7 @@ function App() {
         <Route path="how-it-works" element={<HowItWorksPage />} />
         <Route path="for-merchants" element={<ForMerchantsPage />} />
         <Route path="press" element={<PressPage />} />
+        <Route path="help" element={<p>This is a help page</p>} />
         <Route
           path="*"
           element={<h1 className="text-center text-danger pt-5">Not Found</h1>}
