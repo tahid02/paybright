@@ -1,12 +1,15 @@
 import { FilterContext } from 'pages/HomePage';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import styles from './category.module.css';
 
 const Category = () => {
-  const { setCategory } = useContext(FilterContext);
+  const { category, setCategory } = useContext(FilterContext);
+  const [active, setActive] = useState('All');
   const handleCategory = (e) => {
     setCategory(e.target.innerText);
+    setActive(e.target.innerText);
   };
+  console.log({ active }, category === active);
   return (
     <div
       className="container-fluid d-flex justify-content-center d-none d-xl-block "
@@ -19,15 +22,29 @@ const Category = () => {
         className=" d-flex flex-fill flex-row justify-content-center align-items-center mx-auto"
         onClick={handleCategory}
       >
-        {' '}
-        <button className={`${styles.categoryMenu}`}>All</button>
-        <button className={`${styles.categoryMenu}`}>Home & Furniture</button>
-        <button className={`${styles.categoryMenu}`}>Electronics</button>
-        <button className={`${styles.categoryMenu}`}>Fashion</button>
-        <button className={`${styles.categoryMenu}`}>Beauty & Wellness</button>
-        <button className={`${styles.categoryMenu}`}>Sporting Goods</button>
-        <button className={`${styles.categoryMenu}`}>Hobby & Leisure</button>
-        <button className={`${styles.categoryMenu}`}>Auto</button>
+        {[
+          'All',
+          'Home & Furniture',
+          'Electronics',
+          'Fashion',
+          'Beauty & Wellness',
+          'Sporting Goods',
+          'Hobby & Leisure',
+          'Auto',
+        ].map((cate, index) => {
+          return (
+            <>
+              <button
+                className={`mx-1 ${styles.categoryMenu} ${
+                  active === cate && styles.active
+                }`}
+                key={index}
+              >
+                {cate}
+              </button>
+            </>
+          );
+        })}
       </div>
     </div>
   );

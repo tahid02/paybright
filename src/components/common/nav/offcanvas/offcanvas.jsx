@@ -54,26 +54,24 @@ function RightOffCanvas() {
           </Offcanvas.Header>
         </div>
         <Offcanvas.Body>
-          <div className={`${styles.LinkPadding}  `}>
-            <Link to="/" className={`${styles.linkStyle}  `}>
-              Shop
-            </Link>
-          </div>
-          <div className={`${styles.LinkPadding}  `}>
-            <Link to="/how-it-works" className={`${styles.linkStyle}  `}>
-              How work
-            </Link>
-          </div>
-          <div className={`${styles.LinkPadding}  `}>
-            <Link to="/company" className={`${styles.linkStyle}  `}>
-              company
-            </Link>
-          </div>
-          <div className={`${styles.LinkPadding}  `}>
-            <Link to="/for-merchants" className={`${styles.linkStyle}  `}>
-              For merchants
-            </Link>
-          </div>
+          <Link to="/" className={`${styles.linkStyle}  `}>
+            <div className={`${styles.LinkPadding}  `}>Shop</div>
+          </Link>
+
+          <Link to="/how-it-works" className={`${styles.linkStyle}  `}>
+            <div className={`${styles.LinkPadding}  `}>How work</div>{' '}
+          </Link>
+
+          <Link to="/company" className={`${styles.linkStyle}  `}>
+            {' '}
+            <div className={`${styles.LinkPadding}  `}>company</div>{' '}
+          </Link>
+
+          <Link to="/for-merchants" className={`${styles.linkStyle}  `}>
+            {' '}
+            <div className={`${styles.LinkPadding}  `}>For merchants</div>{' '}
+          </Link>
+
           <hr
             style={{
               backgroundColor: 'gray',
@@ -81,17 +79,16 @@ function RightOffCanvas() {
               margin: '.2rem .5rem',
             }}
           />
-          <div className={`${styles.LinkPadding}  `}>
-            <Link to="/careers" className={`${styles.linkStyle}  `}>
-              Careers
-            </Link>
-          </div>
 
-          <div className={`${styles.LinkPadding}  `}>
-            <Link to="/press" className={`${styles.linkStyle}  `}>
-              Press
-            </Link>
-          </div>
+          <Link to="/careers" className={`${styles.linkStyle}  `}>
+            {' '}
+            <div className={`${styles.LinkPadding}  `}>Careers</div>
+          </Link>
+
+          <Link to="/press" className={`${styles.linkStyle}  `}>
+            <div className={`${styles.LinkPadding}  `}>Press</div>
+          </Link>
+
           <div className="d-block d-md-none">
             <hr
               style={{
@@ -102,7 +99,7 @@ function RightOffCanvas() {
             />{' '}
             <div className=" w-100 ">
               <MyButton style={{ width: '90%', padding: '1rem 2rem' }}>
-                Log in{' '}
+                login
               </MyButton>{' '}
             </div>
             <div className={`py-3 text-center`}>

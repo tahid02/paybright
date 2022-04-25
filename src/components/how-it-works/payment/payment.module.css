@@ -61,28 +61,95 @@
     margin-bottom: 6.75rem;
   }
 }
-
-.pay {
+/* left card start(contains card data) */
+.payLeft {
   width: 100%;
   padding: 0px 2rem;
   position: relative;
   border-radius: 8px;
   box-shadow: rgb(20 19 51 / 4%) 0px 2px 4px, rgb(20 19 51 / 4%) 0px 4px 6px;
 }
-@media only screen and (min-width: 768px) {
-  .pay {
-    width: 75%;
+@media only screen and (min-width: 576px) {
+  .payLeft {
+    width: 60%;
     margin: 0 auto;
   }
 }
+@media only screen and (min-width: 768px) {
+  .payLeft {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .payLeft {
+    width: 75%;
+    margin: 0 auto 0 0;
+  }
+}
+/* pay right card start (contains card data) */
+.payRight {
+  width: 100%;
+  padding: 0px 2rem;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: rgb(20 19 51 / 4%) 0px 2px 4px, rgb(20 19 51 / 4%) 0px 4px 6px;
+}
+@media only screen and (min-width: 576px) {
+  .payRight {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .payRight {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .payRight {
+    width: 75%;
+    margin: 0 0 0 auto;
+  }
+}
+/* pay right card end */
 .circle {
   position: absolute;
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   border-radius: 100%;
-  z-index: 2;
+  z-index: 0;
   top: -3rem;
   /* background-color: rgb(255, 117, 117); */
+}
+/* left card circle position */
+.leftCircle {
+  left: -3rem;
+}
+@media only screen and (min-width: 576px) {
+  .leftCircle {
+    left: 4rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .leftCircle {
+    left: -3rem;
+  }
+}
+/* right card circle position */
+.rightCircle {
+  right: -3rem;
+}
+@media only screen and (min-width: 576px) {
+  .rightCircle {
+    right: 4rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .rightCircle {
+    right: -3rem;
+  }
 }
 
 .pay4Img {
@@ -139,7 +206,7 @@
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  color: var(--lightwhite);
+  color: var(--darkblue);
 }
 
 .pay4 .hr {

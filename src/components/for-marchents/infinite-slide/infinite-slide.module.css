@@ -57,6 +57,9 @@
   width: calc(250px * 14);
 }
 .slider .slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100px;
   width: 250px;
 }

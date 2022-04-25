@@ -14,7 +14,7 @@ const Shops = ({ filteredShops }) => {
 
   return (
     <section className={`${styles.contentMargin} pt-4`}>
-      <div className="">
+      <div className="container-fluid">
         <div
           className={
             window.innerWidth < 576
@@ -51,7 +51,6 @@ const Shops = ({ filteredShops }) => {
           )}
         </div>
       </div>
-      ;
     </section>
   );
 };

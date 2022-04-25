@@ -1,28 +1,20 @@
-/* .hero {
-  height: 40vh;
-}
-
-.heroSelect {
-}
-.heroSelectOption:hover {
-  box-shadow: 0 0 10px 100px #37b41b inset;
-}
-#new:hover {
-  background-color: #37b41b;
-} */
-@media screen and (max-width: 576px) {
-  .hero {
-    height: 50vh;
-  }
+.hero {
+  background-image: url(https://www.datocms-assets.com/19671/1647628074-spring_homepage_mobile.jpg?auto=format);
+  background-size: cover;
 }
 
 @media screen and (min-width: 768px) {
-}
-
-@media screen and (min-width: 992px) {
+  .hero {
+    background-image: url(https://www.datocms-assets.com/19671/1647628068-spring_homepage_tablet.jpg?auto=format);
+    background-size: cover;
+  }
 }
 
 @media screen and (min-width: 1200px) {
+  .hero {
+    background-image: url(https://www.datocms-assets.com/19671/1647628060-spring_homepage_desktop.jpg?auto=format);
+    background-size: cover;
+  }
 }
 
 .h1 {
@@ -30,7 +22,6 @@
   margin: 0px 0px 1rem;
   font-size: 2rem;
   font-family: 'IBM Plex Sans Hebrew';
-  /* Boing */
   font-weight: 500;
   line-height: 1.2;
   max-width: 100%;

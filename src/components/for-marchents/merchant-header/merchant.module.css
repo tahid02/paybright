@@ -55,6 +55,7 @@
   background-repeat: no-repeat;
   background-image: url(https://www.datocms-assets.com/19671/1584807301-plants-xs-left.png?auto=format),
     url(https://www.datocms-assets.com/19671/1584807366-plants-xs-right.png?auto=format);
+  /* background-color: #f5f1eb; */
 }
 
 @media screen and (min-width: 768px) {
@@ -74,5 +75,27 @@
     background-image: url(https://www.datocms-assets.com/19671/1584807356-plants-xl-top.png?auto=format),
       url(https://www.datocms-assets.com/19671/1584807405-plants-xl-bottom.png?auto=format);
     background-repeat: no-repeat;
+  }
+}
+
+.btnPosition {
+  display: inline-block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  background-color: yellow;
+}
+
+@media screen and (min-width: 576px) {
+  .btnPosition {
+    background-color: red;
+    margin-left: auto !important;
+    margin-right: 0% !important;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .btnRight {
+    margin-left: 0 !important;
+    margin-right: auto !important;
   }
 }

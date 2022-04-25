@@ -59,7 +59,7 @@ const Footer = () => {
           </div>
 
           <div className="col-xs-12 col-sm-12 col-md-12 col-xl-6 col-xxl-6 px-0 pt-3">
-            {window.innerWidth > 576 && (
+            <div className="d-none d-sm-block">
               <div className="row text-start container-fluid ps-0">
                 <div className="col-4">
                   <h3 className="text-darkblue h4 mb-4">Company</h3>
@@ -99,8 +99,10 @@ const Footer = () => {
                   </p>
                 </div>
               </div>
-            )}
-            {window.innerWidth < 576 && <FooterAccordion />}
+            </div>
+            <div className="d-block d-sm-none">
+              <FooterAccordion />
+            </div>
           </div>
         </section>
       </section>

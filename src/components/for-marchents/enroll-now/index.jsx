@@ -34,11 +34,11 @@ const Enroll = ({ h2, button }) => {
               transform: 'translate(-50%,-50%)',
             }}
           >
-            <h2 className="text-center">
+            <h2 className="text-center text-white">
               {h2 || 'Get started with PayBright today'}
             </h2>
-            <p className="text-center">
-              <MyButton bgColor="white" textColor="lightblue">
+            <p className="text-center" style={{ marginTop: '1.5rem' }}>
+              <MyButton bgColor="white" textColor="black">
                 {button || 'Enroll now'}
               </MyButton>
             </p>

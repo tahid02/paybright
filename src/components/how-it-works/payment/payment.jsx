@@ -11,14 +11,18 @@ const Payment = ({ bgColor }) => {
             <div className={`${styles.rowCont}  `}>
               <div className="row ">
                 <div
-                  className={`${styles.payCard} col-xs-12 col-sm-6 col-md-6 col-xl-6 position-relative  `}
+                  className={`${styles.payCard} col-xs-12 col-sm-12 col-md-6 col-xl-6 position-relative  `}
                 >
-                  <div className={`${styles.pay}  bg-white`}>
-                    {' '}
-                    <div
-                      className={`${styles.circle}  `}
-                      style={{ left: '-3rem', backgroundColor: '#ff7575' }}
-                    ></div>
+                  <div
+                    className={`${styles.circle} ${styles.leftCircle}  `}
+                    style={{
+                      // left: '0rem',
+                      backgroundColor: '#ff7575',
+                      zIndex: 0,
+                    }}
+                  ></div>
+                  {/* <div className={`${styles.pay}  bg-white`}> */}
+                  <div className={`${styles.payLeft}  bg-white`}>
                     <div className={`${styles.pay4Img}  `}>
                       <img
                         src="https://www.datocms-assets.com/19671/1586375201-group-737.png"
@@ -33,22 +37,31 @@ const Payment = ({ bgColor }) => {
                       </p>
                       <hr className={`${styles.hr}  `} />
                       <div className={`${styles.points} text-start `}>
-                        <Points styles={styles}>Lorem ipsum dolor sit.</Points>
-                        <Points styles={styles}>Lorem ipsum dolor sit.</Points>
-                        <Points styles={styles}>Lorem ipsum dolor sit.</Points>
+                        <Points styles={styles}> No interest or fees</Points>
+                        <Points styles={styles}>
+                          {' '}
+                          No impact on credit score
+                        </Points>
+                        <Points styles={styles}>
+                          {' '}
+                          Easy, automatic payments
+                        </Points>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div
-                  className={`${styles.payCard} col-xs-12 col-sm-6 col-md-6 col-xl-6 position-relative  `}
+                  className={`${styles.payCard} col-xs-12 col-sm-12 col-md-6 col-xl-6 position-relative  `}
                 >
-                  <div className={`${styles.pay} bg-white`}>
+                  <div
+                    className={`${styles.circle}  ${styles.rightCircle}`}
+                    style={{
+                      backgroundColor: '#fae980',
+                    }}
+                  ></div>
+                  {/* <div className={`${styles.pay} bg-white`}> */}
+                  <div className={`${styles.payRight} bg-white`}>
                     {' '}
-                    <div
-                      className={`${styles.circle}  `}
-                      style={{ right: '-3rem', backgroundColor: '#fae980' }}
-                    ></div>
                     <div className={`${styles.pay4Img}  `}>
                       <img
                         src="https://www.datocms-assets.com/19671/1586375231-group-736.png?auto=format&dpr=1&w=580"
@@ -63,9 +76,16 @@ const Payment = ({ bgColor }) => {
                       </p>
                       <hr className={`${styles.hr}  `} />
                       <div className={`${styles.points} text-start `}>
-                        <Points styles={styles}>Lorem ipsum dolor sit.</Points>
-                        <Points styles={styles}>Lorem ipsum dolor sit.</Points>
-                        <Points styles={styles}>Lorem ipsum dolor sit.</Points>
+                        <Points styles={styles}>
+                          {' '}
+                          Payment plans from 0% interest
+                        </Points>
+                        <Points styles={styles}>
+                          No impact to credit score
+                        </Points>
+                        <Points styles={styles}>
+                          Easy, automatic payments
+                        </Points>
                       </div>
                     </div>
                   </div>{' '}

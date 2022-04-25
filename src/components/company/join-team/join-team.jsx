@@ -9,7 +9,7 @@ import Cylinder from './svg/cylindar';
 const JoinOurTeam = () => {
   return (
     <section style={{ backgroundColor: '#f8f5f1', position: 'relative' }}>
-      <div
+      {/* <div
         className="position-absolute d-none d-lg-block"
         style={{
           top: '0.2rem',
@@ -37,7 +37,7 @@ const JoinOurTeam = () => {
         }}
       >
         <Cylinder width="230" />
-      </div>
+      </div> */}
       <div className={`${styles.paddingY}`}>
         <ContainerMarginL>
           <div className={`${styles.contW}  mx-auto`}>
@@ -54,9 +54,11 @@ const JoinOurTeam = () => {
               <div
                 className={`col-12 col-xs-12 col-sm-6  order-2 order-sm-1 d-flex justify-content-center align-items-center`}
               >
-                <div className={` text-center text-sm-start`}>
+                <div className={` text-center text-sm-start pt-3`}>
                   <h2 className="h2Font">Help us change how Canadians pay</h2>
-                  <MyButton>Join our team</MyButton>
+                  <MyButton others={window.innerWidth > 578 && 'm-0'}>
+                    Join our team
+                  </MyButton>
                 </div>
               </div>
             </div>

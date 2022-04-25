@@ -3,7 +3,10 @@ import ContainerCenter from 'components/common/container-large/container-l';
 import styles from './merchant.module.css';
 const MerchantHeader = () => {
   return (
-    <section className={`${styles.head} py-5 `}>
+    <section
+      className={`${styles.head} py-5 `}
+      style={{ backgroundColor: '#f5f1eb' }}
+    >
       <section className="py-5">
         <ContainerCenter>
           <h1 className="text-darkblue text-center">
@@ -15,18 +18,17 @@ const MerchantHeader = () => {
           </p>
         </ContainerCenter>
 
-        <div className="text-sm-center text-xs-center  row">
-          <div className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-center text-md-end text-sm-end pt-2">
-            {' '}
-            <MyButton>Enroll Now </MyButton>
+        <ContainerCenter>
+          <div className="d-flex flex-column flex-sm-row justify-content-center">
+            <div className=" pt-2 my-auto ">
+              <MyButton>Enroll Now </MyButton>
+            </div>
+            <div style={{ width: '1rem' }}></div>
+            <div className="  pt-2 my-auto ">
+              <MyButton others="me-auto">Enroll Now </MyButton>
+            </div>
           </div>
-          <div className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-center text-md-start text-sm-start pt-2">
-            {' '}
-            <span className="ms-2">
-              <MyButton>Get In touch</MyButton>
-            </span>
-          </div>
-        </div>
+        </ContainerCenter>
       </section>
       <section className={`${styles.merchantHeader}  `}></section>
     </section>
