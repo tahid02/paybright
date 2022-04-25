@@ -94,7 +94,7 @@ const WhyUs = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xs-12 col-sm-12 col-lg-6 col-xl-6 col-xxl-6">
+            <div className="col-xs-12 col-sm-12 col-lg-6 col-xl-6 col-xxl-6 px-0">
               <div className="d-flex justify-content-center">
                 <div className={`${styles.workPadding}  `}>
                   <div className={`${styles.imgCont} `}>

@@ -5,8 +5,8 @@ import styles from './values.module.css';
 
 const OurValues = () => {
   return (
-    <section style={{ backgroundColor: '#f2f2fa' }}>
-      <div className="pt-5">
+    <section style={{ backgroundColor: '#f2f2fa', position: 'relative' }}>
+      <div className="py-5">
         <ContainerCenter>
           <h2 className="h2Font text-center">Our Values</h2>
           <p className="text-darkblue p pFont text-center">
@@ -122,7 +122,7 @@ const OurValues = () => {
           </div>
         </section>
       </section>{' '}
-      <div className="d-block d-lg-none">
+      <div className="d-block d-lg-none position-relative ">
         <ValueCarousel />
       </div>
     </section>

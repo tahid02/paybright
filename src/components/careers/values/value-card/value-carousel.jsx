@@ -18,10 +18,14 @@ const ValueCarousel = () => {
         }}
       >
         <Carousel.Item
-          interval={1000}
-          style={{ height: '50vh', position: 'relative' }}
+          interval={100000}
+          // style={{ height: '50vh', position: 'relative' }}
+          style={{
+            height: `${window.innerWidth < 400 ? '60vh' : '50vh'}`,
+            position: 'relative',
+          }}
         >
-          <Carousel.Caption className="w-100  position-absolute start-0   text-start">
+          <Carousel.Caption className="w-100  position-absolute top-0 start-0   text-start">
             <ValueCard
               img="https://www.datocms-assets.com/19671/1586202786-values-image.png?auto=format&dpr=1&w=400"
               h4=" We just get it done "
@@ -30,10 +34,14 @@ const ValueCarousel = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item
-          interval={1000}
-          style={{ height: '50vh', position: 'relative' }}
+          interval={100000}
+          // style={{ height: '50vh', position: 'relative' }}
+          style={{
+            height: `${window.innerWidth < 400 ? '60vh' : '50vh'}`,
+            position: 'relative',
+          }}
         >
-          <Carousel.Caption className="w-100  position-absolute start-0  text-start">
+          <Carousel.Caption className="w-100  position-absolute top-0  start-0 text-start">
             <ValueCard
               img="https://www.datocms-assets.com/19671/1592230713-careers-values-2.png?auto=format&dpr=1&w=400"
               h4="We all work for each other"
@@ -42,14 +50,14 @@ const ValueCarousel = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item
-          interval={1000}
+          interval={100000}
           style={{
             height: `${window.innerWidth < 400 ? '60vh' : '50vh'}`,
             position: 'relative',
           }}
         >
           <Carousel.Caption
-            className="w-100  position-absolute start-0  text-start"
+            className="w-100  position-absolute top-0 start-0  text-start"
             // style={{ transform: 'translateY(-60%)' }}
           >
             <ValueCard
@@ -60,11 +68,15 @@ const ValueCarousel = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item
-          interval={1000}
-          style={{ height: '50vh', position: 'relative' }}
+          interval={100000}
+          // style={{ height: '50vh', position: 'relative' }}
+          style={{
+            height: `${window.innerWidth < 400 ? '60vh' : '50vh'}`,
+            position: 'relative',
+          }}
         >
           {' '}
-          <Carousel.Caption className="w-100  position-absolute start-0  text-start">
+          <Carousel.Caption className="w-100  position-absolute top-0 start-0  text-start">
             <ValueCard
               img="https://www.datocms-assets.com/19671/1586202786-values-image.png?auto=format&dpr=1&w=400"
               h4=" We just get it done "
@@ -73,13 +85,13 @@ const ValueCarousel = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item
-          interval={1000}
+          interval={100000}
           style={{
             height: `${window.innerWidth < 400 ? '60vh' : '50vh'}`,
             position: 'relative',
           }}
         >
-          <Carousel.Caption className="w-100  position-absolute start-0  text-start">
+          <Carousel.Caption className="w-100  position-absolute top-0 start-0  text-start">
             <ValueCard
               img="https://www.datocms-assets.com/19671/1592230773-careers-team-sharing.png?auto=format&dpr=1&w=420"
               h4=" We do the right thing      "
