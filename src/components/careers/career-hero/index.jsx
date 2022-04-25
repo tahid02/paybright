@@ -5,7 +5,7 @@ import { AiOutlineRight } from 'react-icons/ai';
 const CareerHero = () => {
   return (
     <section
-      className={`${styles.hero}  `}
+      className={`${styles.hero} position-relative `}
       style={{ backgroundColor: '#f2f2fa' }}
     >
       <section className={`${styles.heroBg}  `}>

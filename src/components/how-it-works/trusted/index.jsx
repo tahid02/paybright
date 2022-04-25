@@ -1,6 +1,9 @@
 import ContainerCenter from 'components/common/container-large/container-l';
+import { Carousel } from 'react-bootstrap';
 import TrustedCard from './card/trusted-card';
+import TrustCarousel from './trust-carousel';
 import styles from './trusted.module.css';
+import { trustInfo } from './trusts';
 
 const Trusted = () => {
   return (
@@ -20,114 +23,29 @@ const Trusted = () => {
           We’re trusted by over 2000 happy customers on Google
         </h2>
       </ContainerCenter>
-      <section>
+
+      <section className="d-none d-md-block">
         {/* sliding section */}
         <div className={`${styles.slider}  `}>
           <div className={`${styles.slideTrack}  `}>
-            <div className={`${styles.slide}  `}>
-              <TrustedCard
-                cardPosition="lowerCard"
-                quote="Love, love, love how fast and easy it was to go through the application process."
-                name={'Joyce G'}
-              />
-            </div>
-            <div className={`${styles.slide}  `}>
-              <TrustedCard
-                quote={`“Very simple process! As easy as online shopping can get."`}
-                name="Zoltan L."
-              />
-            </div>
-            <div className={`${styles.slide}  `}>
-              <TrustedCard
-                cardPosition="lowerCard"
-                quote={`"This is the future of flexible payment. The process was streamlined and very easy."`}
-                name="Anthony A."
-              />
-            </div>
-            <div className={`${styles.slide}  `}>
-              <TrustedCard
-                quote={`I think this is a new dawn for Canadians to make big purchases without paying that 20% credit card interest`}
-                name={'Diane N.'}
-              />
-            </div>
-            <div className={`${styles.slide}  `}>
-              <TrustedCard
-                cardPosition="lowerCard"
-                quote={
-                  'PayBright was so easy to use and has allowed me to slowly pay for my purchase as opposed to paying one lump sum! Thank you.'
-                }
-                name
-              />
-            </div>
-            <div className={`${styles.slide}  `}>
-              <TrustedCard
-                quote={
-                  "This was one of the best experiences I've had to make a purchase. Thank you PayBright. I will definitely refer your service."
-                }
-                name="Diane N."
-              />
-            </div>
-
-            <div className={`${styles.slide}  `}>
-              <TrustedCard
-                cardPosition="lowerCard"
-                quote={`"This is the future of flexible payment. The process was streamlined and very easy."`}
-                name="Anthony A."
-              />
-            </div>
-            <div className={`${styles.slide}  `}>
-              <TrustedCard
-                cardPosition="lowerCard"
-                quote="Love, love, love how fast and easy it was to go through the application process."
-                name={'Joyce G'}
-              />
-            </div>
-            <div className={`${styles.slide}  `}>
-              <TrustedCard
-                quote={`“Very simple process! As easy as online shopping can get."`}
-                name="Zoltan L."
-              />
-            </div>
-            <div className={`${styles.slide}  `}>
-              <TrustedCard
-                cardPosition="lowerCard"
-                quote={`"This is the future of flexible payment. The process was streamlined and very easy."`}
-                name="Anthony A."
-              />
-            </div>
-            <div className={`${styles.slide}  `}>
-              <TrustedCard
-                quote={`I think this is a new dawn for Canadians to make big purchases without paying that 20% credit card interest`}
-                name={'Diane N.'}
-              />
-            </div>
-            <div className={`${styles.slide}  `}>
-              <TrustedCard
-                cardPosition="lowerCard"
-                quote={
-                  'PayBright was so easy to use and has allowed me to slowly pay for my purchase as opposed to paying one lump sum! Thank you.'
-                }
-                name
-              />
-            </div>
-            <div className={`${styles.slide}  `}>
-              <TrustedCard
-                quote={
-                  "This was one of the best experiences I've had to make a purchase. Thank you PayBright. I will definitely refer your service."
-                }
-                name="Diane N."
-              />
-            </div>
-
-            <div className={`${styles.slide}  `}>
-              <TrustedCard
-                cardPosition="lowerCard"
-                quote={`"This is the future of flexible payment. The process was streamlined and very easy."`}
-                name="Anthony A."
-              />
-            </div>
+            {trustInfo.map((trust, id) => {
+              return (
+                <>
+                  <div className={`${styles.slide}  `} key={id}>
+                    <TrustedCard
+                      cardPosition={trust?.cardPosition}
+                      quote={trust.quote}
+                      name={trust.name}
+                    />
+                  </div>
+                </>
+              );
+            })}
           </div>
         </div>
+      </section>
+      <section className="d-block d-md-none">
+        <TrustCarousel />
       </section>
     </section>
   );

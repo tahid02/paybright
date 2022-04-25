@@ -1,3 +1,4 @@
+import ContainerMarginL from 'components/common/container-large-margin/containerL-margin';
 import Check from './check';
 import styles from './why-us.module.css';
 
@@ -7,6 +8,7 @@ const WhyUs = () => {
       <div className="">
         <div className={`${styles.margin}  `}>
           <div className="container-fluid">
+            {/* <ContainerMarginL> */}
             <div className={`${styles.card}  `}>
               <div className={`${styles.cardPadding}  `}>
                 <h2 className={`${styles.h2}  `}>Why work with us</h2>
@@ -20,12 +22,14 @@ const WhyUs = () => {
             </div>
           </div>
         </div>
+        {/* </ContainerMarginL> */}
       </div>
       <div className="">
-        <div className={`${styles.margin}  `}>
+        {/* <ContainerMarginL> */}
+        <div className={`${styles.margin} container-fluid `}>
           <div className="d-flex mx-auto"></div>
-          <div className="row ">
-            <div className="col-xs-12 col-sm-12 col-lg-6 col-xl-6 col-xxl-6 ">
+          <div className="row mx-0 w-100">
+            <div className="col-xs-12 col-sm-12 col-lg-6 col-xl-6 col-xxl-6 px-0">
               <div className="d-flex justify-content-center">
                 <div className={`${styles.workPadding}  `}>
                   <div className={`${styles.imgCont} `}>
@@ -157,6 +161,7 @@ const WhyUs = () => {
             </div>
           </div>
         </div>
+        {/* </ContainerMarginL> */}
       </div>
     </section>
   );

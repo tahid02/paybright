@@ -1,4 +1,3 @@
-import styles from './pay-later.module.css';
 import PayLaterCard from './pay-later-card/paylater-card';
 import ContainerCenter from 'components/common/container-large/container-l';
 
@@ -6,7 +5,7 @@ const PayLater = () => {
   return (
     <section className="">
       <ContainerCenter>
-        <h1 className="text-darkblue text-center">
+        <h1 className="text-darkblue text-center pb-5">
           How do I pay later with PayBright?
         </h1>
       </ContainerCenter>{' '}
@@ -18,7 +17,7 @@ const PayLater = () => {
         stepNo="1"
         stepTitle="Select PayBright at checkout"
         stepDetail="Shop at your favourite stores that offer PayBright and select us as your payment option at checkout."
-      />
+      />{' '}
       <PayLaterCard
         img="https://www.datocms-assets.com/19671/1586375539-step2-v2.png?auto=format&dpr=0.46&w=1752"
         imgOrder="order-1"

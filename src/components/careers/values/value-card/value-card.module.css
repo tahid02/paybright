@@ -76,3 +76,27 @@
   height: 100%;
   padding-bottom: 1.5rem;
 }
+
+.imgW {
+  width: 25%;
+}
+@media screen and (min-width: 576px) {
+  .imgW {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 700px) {
+  .imgW {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 700px) {
+  .imgW {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .imgW {
+    width: 100%;
+  }
+}

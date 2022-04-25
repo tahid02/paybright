@@ -149,7 +149,7 @@ const Nav = () => {
           </div>
           {showLogin && (
             <div
-              className="position-absolute bg-white d-flex flex-column justify-content-center "
+              className="position-absolute bg-white d-flex flex-column justify-content-center shadow"
               style={{
                 width: 'auto',
                 marginTop: '1px',

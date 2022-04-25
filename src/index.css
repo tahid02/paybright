@@ -45,6 +45,20 @@ code {
   letter-spacing: normal;
   max-width: 100%;
 }
+.pFont {
+  font-size: 1rem;
+}
+@media screen and (min-width: 576px) {
+  .pFont {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .pFont {
+    font-size: 1.125rem;
+  }
+}
+
 /* p horizontal padding */
 .paddingX {
   height: 100%;

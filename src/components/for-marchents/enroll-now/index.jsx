@@ -10,7 +10,10 @@ const Enroll = ({ h2, button }) => {
       <div className={`${styles.contentMargin}  `}>
         <div
           className="bg-lightblue position-relative overflow-hidden"
-          style={{ height: '40vh', borderRadius: '.5rem' }}
+          style={{
+            height: '40vh',
+            borderRadius: `${window.innerWidth < 992 ? '0' : '.5rem'} `,
+          }}
         >
           <img
             src="https://paybright.com/static/left-cropped-2bffa39bd0d098b235726044ff3e2eb9.png"

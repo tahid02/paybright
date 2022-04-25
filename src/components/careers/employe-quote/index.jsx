@@ -3,7 +3,7 @@ import { AiOutlineRight, AiOutlineLeft } from 'react-icons/ai';
 import styles from './employe.module.css';
 const EmployeeSays = () => {
   return (
-    <section className={`${styles.contentMargin}  `}>
+    <section className={`${styles.contentMargin} position-relative `}>
       {' '}
       <Carousel
         className="text-dark "

@@ -3,21 +3,22 @@ import styles from './value-card.module.css';
 const ValueCard = ({ img, p, h4 }) => {
   return (
     <section className={`${styles.card}  `}>
-      <div className="row">
-        <div className=" col-3 px-0">
-          <div className={`${styles.imgCont} pb-0 `}>
+      <div className="row g-3">
+        <div className=" col-12 col-sm-3 px-0 ">
+          <div className={`${styles.imgCont} pb-0 ps-3`}>
             <img
               src={
                 img ||
                 'https://www.datocms-assets.com/19671/1592230713-careers-values-2.png?auto=format&dpr=1&w=400'
               }
               alt=""
-              className="w-100"
+              // className="w-100"
+              className={`${styles.imgW}  `}
             />
           </div>
         </div>
         <div
-          className="col-9"
+          className="col-12 col-sm-9 text-center text-sm-start d-flex flex-column justify-content-center"
           style={{ paddingLeft: '2rem', fontSize: '1.25rem' }}
         >
           <h4
