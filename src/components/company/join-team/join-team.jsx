@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import MyButton from 'components/common/button/my-button';
 import ContainerMarginL from 'components/common/container-large-margin/containerL-margin';
+import RightArrow from 'components/common/svg/right-arrow';
 import styles from './join-team.module.css';
 import Circle from './svg/circle';
 import Cylinder from './svg/cylindar';
@@ -61,6 +62,7 @@ const JoinOurTeam = () => {
                     others={window.innerWidth > 578 && 'm-0'}
                   >
                     Join our team
+                    <RightArrow />
                   </MyButton>
                 </div>
               </div>

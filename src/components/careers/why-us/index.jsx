@@ -1,5 +1,4 @@
-import ContainerMarginL from 'components/common/container-large-margin/containerL-margin';
-import Check from './check';
+import Check from 'components/common/svg/check';
 import styles from './why-us.module.css';
 
 const WhyUs = () => {
@@ -55,9 +54,7 @@ const WhyUs = () => {
                   </h3>
                   <div style={{ marginBottom: '1.5rem' }}>
                     <div className="d-flex" style={{ width: 'fit-content' }}>
-                      <div className={`${styles.check}  `} style={{}}>
-                        <Check />
-                      </div>
+                      <Check />
                       <p className={`${styles.p}  `}>
                         Generous health and wellness benefits
                       </p>
@@ -65,9 +62,7 @@ const WhyUs = () => {
                   </div>
                   <div style={{ marginBottom: '1.5rem' }}>
                     <div className="d-flex" style={{ width: 'fit-content' }}>
-                      <div className={`${styles.check}  `} style={{}}>
-                        <Check />
-                      </div>
+                      <Check />
                       <p className={`${styles.p}  `}>
                         Parental leave top up and diaper bonus program
                       </p>
@@ -75,17 +70,13 @@ const WhyUs = () => {
                   </div>
                   <div style={{ marginBottom: '1.5rem' }}>
                     <div className="d-flex" style={{ width: 'fit-content' }}>
-                      <div className={`${styles.check}  `} style={{}}>
-                        <Check />
-                      </div>
+                      <Check />
                       <p className={`${styles.p}  `}>Supportive environment</p>
                     </div>
                   </div>
                   <div style={{ marginBottom: '1.5rem' }}>
                     <div className="d-flex" style={{ width: 'fitContent' }}>
-                      <div className={`${styles.check}  `} style={{}}>
-                        <Check />
-                      </div>
+                      <Check />
                       <p className={`${styles.p}  `}>
                         Plenty of time off so you can always be at your best
                       </p>
@@ -120,9 +111,7 @@ const WhyUs = () => {
                   </h3>
                   <div style={{ marginBottom: '1.5rem' }}>
                     <div className="d-flex" style={{ width: 'fit-content' }}>
-                      <div className={`${styles.check}  `} style={{}}>
-                        <Check />
-                      </div>
+                      <Check />
                       <p className={`${styles.p}  `}>
                         Team social activities (Virtual, for now)
                       </p>
@@ -130,9 +119,7 @@ const WhyUs = () => {
                   </div>
                   <div style={{ marginBottom: '1.5rem' }}>
                     <div className="d-flex" style={{ width: 'fit-content' }}>
-                      <div className={`${styles.check}  `} style={{}}>
-                        <Check />
-                      </div>
+                      <Check />
                       <p className={`${styles.p}  `}>
                         Professional development opportunities for employee
                       </p>
@@ -140,9 +127,7 @@ const WhyUs = () => {
                   </div>
                   <div style={{ marginBottom: '1.5rem' }}>
                     <div className="d-flex" style={{ width: 'fit-content' }}>
-                      <div className={`${styles.check}  `} style={{}}>
-                        <Check />
-                      </div>
+                      <Check />
                       <p className={`${styles.p}  `}>
                         Easy access to public transportation
                       </p>
@@ -150,9 +135,7 @@ const WhyUs = () => {
                   </div>
                   <div style={{ marginBottom: '1.5rem' }}>
                     <div className="d-flex" style={{ width: 'fitContent' }}>
-                      <div className={`${styles.check}  `} style={{}}>
-                        <Check />
-                      </div>
+                      <Check />
                       <p className={`${styles.p}  `}>Equity participation</p>
                     </div>
                   </div>

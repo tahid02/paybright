@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { lazy, Suspense } from 'react';
+import { lazy, Suspense, useEffect, useState } from 'react';
 import ErrorBoundary from 'layout/error-boundary';
+import useDelay from 'hooks/useDelay';
 
 const CareersPage = lazy(() => import('pages/CareersPage'));
 const CompanyPage = lazy(() => import('pages/companyPage'));
@@ -10,14 +11,16 @@ const HowItWorksPage = lazy(() => import('pages/HowItWorksPage'));
 const PressPage = lazy(() => import('pages/PressPage'));
 
 function App() {
+  const { loading } = useDelay(5000); // delay for 5 second
+
   return (
     <Router>
       <ErrorBoundary>
         <Suspense
           fallback={
-            <h1 className="py-5 text-center text-success">
-              {/* Loading... */}
-            </h1>
+            loading && (
+              <h1 className="py-5 text-center text-success">Loading...</h1>
+            )
           }
         >
           <Routes>

@@ -46,7 +46,7 @@ const Shops = ({ filteredShops }) => {
                 setShowCount((prev) => prev + 1);
               }}
             >
-              <MyButton styles={{ padding: '1rem 2rem' }}>Show more</MyButton>
+              <MyButton style={{ padding: '1rem 2rem' }}>Show more</MyButton>
             </div>
           )}
         </div>

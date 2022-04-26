@@ -1,9 +1,7 @@
 import styles from './footer-copyright.module.css';
-import {
-  AiFillFacebook,
-  AiFillLinkedin,
-  AiFillInstagram,
-} from 'react-icons/ai';
+import LinkedinIcon from 'components/common/svg/linkedin-icon';
+import InstagramIcon from 'components/common/svg/instagram-icon';
+import FacebookIcon from 'components/common/svg/facebook-icon';
 const FooterCopyRight = () => {
   return (
     <section className={`${styles.cont}   mt-4  `}>
@@ -36,25 +34,13 @@ const FooterCopyRight = () => {
                   // }
                 >
                   <div className="">
-                    {' '}
-                    <AiFillFacebook
-                      className=""
-                      style={{ color: '#00c1a1', fontSize: '1.5rem' }}
-                    />{' '}
+                    <FacebookIcon />
                   </div>{' '}
                   <div className="ms-2">
-                    {' '}
-                    <AiFillLinkedin
-                      className=""
-                      style={{ color: '#00c1a1', fontSize: '1.5rem' }}
-                    />{' '}
+                    <LinkedinIcon />
                   </div>
                   <div className="ms-2">
-                    {' '}
-                    <AiFillInstagram
-                      className=""
-                      style={{ color: '#00c1a1', fontSize: '1.5rem' }}
-                    />{' '}
+                    <InstagramIcon />
                   </div>
                 </div>
 

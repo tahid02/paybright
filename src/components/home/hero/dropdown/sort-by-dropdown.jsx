@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
+import DownArrow from 'components/common/svg/down-arrow';
+import UpArrow from 'components/common/svg/up-arrow';
 import { FilterContext } from 'pages/HomePage';
 import React, { useContext, useState } from 'react';
-import { AiOutlineDown } from 'react-icons/ai';
-import { IoIosArrowUp } from 'react-icons/io';
 
 const SortByDropdown = ({ styles }) => {
   const { status, setStatus } = useContext(FilterContext);
@@ -23,7 +23,7 @@ const SortByDropdown = ({ styles }) => {
           <div className={`${styles.label}  `}>sort by</div>
           <div className="d-flex align-items-center">
             <div className="me-auto">{status}</div>
-            <div>{show ? <IoIosArrowUp /> : <AiOutlineDown />}</div>
+            <div>{show ? <UpArrow /> : <DownArrow />}</div>
           </div>
         </button>{' '}
       </div>

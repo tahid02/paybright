@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
+import DownArrow from 'components/common/svg/down-arrow';
+import UpArrow from 'components/common/svg/up-arrow';
 import { FilterContext } from 'pages/HomePage';
 import { useContext, useState } from 'react';
-import { AiOutlineDown } from 'react-icons/ai';
-import { IoIosArrowUp } from 'react-icons/io';
+
 // eslint-disable-next-line react/prop-types
 const CategoryDropdown = ({ styles }) => {
   const { category, setCategory } = useContext(FilterContext);
@@ -23,7 +24,8 @@ const CategoryDropdown = ({ styles }) => {
           <div className={`${styles.label}  `}>Catagories</div>
           <div className="d-flex align-items-center">
             <div className="me-auto"> {category}</div>
-            <div>{showCategory ? <IoIosArrowUp /> : <AiOutlineDown />}</div>
+            {/* <div>{showCategory ? <IoIosArrowUp /> : <AiOutlineDown />}</div> */}
+            <div>{showCategory ? <UpArrow /> : <DownArrow />}</div>
           </div>
         </button>{' '}
       </div>

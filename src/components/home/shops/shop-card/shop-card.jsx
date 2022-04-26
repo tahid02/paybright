@@ -1,7 +1,7 @@
 import styles from './shop-card.module.css';
-import { BiLinkExternal } from 'react-icons/bi';
 import ShopCardSkeleton from 'skeleton/shop-skeleton/shop-skeleton';
 import { useEffect, useState } from 'react';
+import ExternalLinkIcon from 'components/common/svg/external-link-icon';
 // eslint-disable-next-line react/prop-types
 const ShopCard = ({ id, merchant, category, bgImage, overlayImg }) => {
   const [shopLoading, setShopLoading] = useState(true);
@@ -37,7 +37,7 @@ const ShopCard = ({ id, merchant, category, bgImage, overlayImg }) => {
               <div className={`${styles.shopNow}  `}>
                 shop now{' '}
                 <span>
-                  <BiLinkExternal />
+                  <ExternalLinkIcon />
                 </span>{' '}
               </div>
             </div>

@@ -1,5 +1,5 @@
+import RightIcon from 'components/common/svg/right-icon';
 import styles from './blog-card.module.css';
-import { AiOutlineRight } from 'react-icons/ai';
 const BlogCard = () => {
   return (
     <div className="col-12 col-sm-6 col-md-4 col-lg-4 ">
@@ -28,7 +28,7 @@ const BlogCard = () => {
             >
               Read more{' '}
               <span>
-                <AiOutlineRight />{' '}
+                <RightIcon />{' '}
               </span>
             </a>
           </div>

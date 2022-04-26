@@ -26,7 +26,7 @@ const FeaturedMerchants = () => {
         </div>
         <div className="text-center">
           {' '}
-          <MyButton>See More </MyButton>
+          <MyButton style={{ padding: '1rem 2rem' }}>See More </MyButton>
         </div>
       </div>
       ;

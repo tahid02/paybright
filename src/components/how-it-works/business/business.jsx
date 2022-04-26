@@ -30,7 +30,9 @@ const Business = () => {
                     Add PayBright as a payment method to your store. Available
                     in-store and online.
                   </p>
-                  <MyButton>Learn More </MyButton>
+                  <MyButton style={{ padding: '1rem 2rem' }}>
+                    Learn More{' '}
+                  </MyButton>
                 </div>
               </div>
               <div className="col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-2 col-xxl-3 d-none d-sm-block d-md-block d-lg-block d-xl-block d-xxl-block  d-xs-none ">

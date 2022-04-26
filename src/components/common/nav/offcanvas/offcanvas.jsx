@@ -1,7 +1,6 @@
 import MyButton from 'components/common/button/my-button';
 import { useState } from 'react';
 import { Offcanvas } from 'react-bootstrap';
-// import { BiMenu } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 import Flag from '../flag';
 import MenuIcon from './menu-icon';
@@ -16,7 +15,6 @@ function RightOffCanvas() {
   return (
     <>
       <button className="border-0 bg-transparent" onClick={handleShow}>
-        {/* <BiMenu size={32} className="text-lightblue fw-bold" /> */}
         <MenuIcon />
       </button>
 

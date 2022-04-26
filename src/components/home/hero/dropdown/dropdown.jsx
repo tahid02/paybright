@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import styles from './dropdown.module.css';
-import { BsSearch } from 'react-icons/bs';
 import CategoryDropdown from './category-dropdown';
 import { FilterContext } from 'pages/HomePage';
 import SortByDropdown from './sort-by-dropdown';
+import SearchIcon from 'components/common/svg/search';
 
 const Dropdown = () => {
   const { search, setSearch } = useContext(FilterContext);
@@ -27,15 +27,7 @@ const Dropdown = () => {
             onChange={(e) => setSearch(e.target.value)}
           />
 
-          <BsSearch
-            style={{
-              position: 'absolute',
-              top: '50%',
-              right: '2rem',
-              transform: 'translateY(-50%)',
-              color: 'var(--lightblue)',
-            }}
-          />
+          <SearchIcon />
         </div>
       </div>
     </div>

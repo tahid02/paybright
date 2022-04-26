@@ -1,6 +1,6 @@
+import SearchIcon from 'components/common/svg/search';
 import { FilterContext } from 'pages/HomePage';
 import React, { useContext } from 'react';
-import { BsSearch } from 'react-icons/bs';
 import styles from './input.module.css';
 const SearchInput = () => {
   const { search, setSearch } = useContext(FilterContext);
@@ -15,7 +15,7 @@ const SearchInput = () => {
           onChange={(e) => setSearch(e.target.value)}
         />
 
-        <BsSearch
+        {/* <BsSearch
           style={{
             position: 'absolute',
             top: '50%',
@@ -23,7 +23,8 @@ const SearchInput = () => {
             transform: 'translateY(-50%)',
             color: 'var(--lightblue)',
           }}
-        />
+        /> */}
+        <SearchIcon />
       </div>
     </div>
   );

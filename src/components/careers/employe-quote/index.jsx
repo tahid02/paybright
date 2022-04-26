@@ -1,5 +1,7 @@
+import NextSlideIcon from 'components/common/svg/next-slide-icon';
+import PrevSlideIcon from 'components/common/svg/prev-slide-icon';
 import { Carousel } from 'react-bootstrap';
-import { AiOutlineRight, AiOutlineLeft } from 'react-icons/ai';
+
 import styles from './employe.module.css';
 const EmployeeSays = () => {
   return (
@@ -7,26 +9,8 @@ const EmployeeSays = () => {
       {' '}
       <Carousel
         className="text-dark "
-        nextIcon={
-          <AiOutlineRight
-            style={{
-              backgroundColor: 'var(--darkblue)',
-              fontSize: '3rem',
-              borderRadius: '50%',
-              padding: '.5rem',
-            }}
-          />
-        }
-        prevIcon={
-          <AiOutlineLeft
-            style={{
-              backgroundColor: 'var(--darkblue)',
-              fontSize: '3rem',
-              borderRadius: '50%',
-              padding: '.5rem',
-            }}
-          />
-        }
+        nextIcon={<NextSlideIcon />}
+        prevIcon={<PrevSlideIcon />}
       >
         {/*  style={{ padding: '0 15%' }} */}
         <Carousel.Item interval={10000} className={`${styles.cardPadding}  `}>

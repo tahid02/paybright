@@ -1,6 +1,6 @@
 import MyButton from 'components/common/button/my-button';
 import styles from './hero.module.css';
-import { BsArrowRight } from 'react-icons/bs';
+import RightArrow from 'components/common/svg/right-arrow';
 
 const CareerHero = () => {
   return (
@@ -18,8 +18,7 @@ const CareerHero = () => {
                 </h1>
                 <div className="text-center">
                   <MyButton style={{ padding: '1rem 2rem' }}>
-                    See open positions{' '}
-                    <BsArrowRight size={32} className="ps-2" />
+                    See open positions <RightArrow />
                   </MyButton>
                 </div>
               </div>

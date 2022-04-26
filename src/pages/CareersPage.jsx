@@ -19,7 +19,6 @@ const CareersPage = () => {
         <div style={{ height: '6.75rem' }}></div>
         <WhyUs />
 
-        <CareerImgSlide />
         <div style={{ height: '6.75rem' }}></div>
         <EqualEmployment />
         <OpenPosition />
