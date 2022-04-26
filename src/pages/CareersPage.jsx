@@ -1,5 +1,4 @@
 import CareerHero from 'components/careers/career-hero';
-import CareerImgSlide from 'components/careers/career-slide';
 import EmployeeSays from 'components/careers/employe-quote';
 import EqualEmployment from 'components/careers/equal-employment';
 import OpenPosition from 'components/careers/open-position';
