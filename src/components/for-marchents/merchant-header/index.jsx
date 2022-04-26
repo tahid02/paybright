@@ -21,11 +21,21 @@ const MerchantHeader = () => {
         <ContainerCenter>
           <div className="d-flex flex-column flex-sm-row justify-content-center">
             <div className=" pt-2 my-auto ">
-              <MyButton>Enroll Now </MyButton>
+              <MyButton style={{ padding: '1rem 2rem' }}>Enroll Now </MyButton>
             </div>
             <div style={{ width: '1rem' }}></div>
             <div className="  pt-2 my-auto ">
-              <MyButton others="me-auto">Enroll Now </MyButton>
+              <MyButton
+                style={{
+                  padding: '1rem 2rem',
+                  border: '1px solid blue',
+                }}
+                others="me-auto"
+                textColor="black"
+                bgColor="transparent"
+              >
+                Enroll Now{' '}
+              </MyButton>
             </div>
           </div>
         </ContainerCenter>

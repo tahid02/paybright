@@ -3,6 +3,7 @@ import Shops from 'components/home/shops';
 import FilteredShop from 'components/home/shops/filtered-shop';
 import NavFooterLayout from 'layout/nav-footer-layout';
 import { createContext, useState } from 'react';
+import ShopCardSkeleton from 'skeleton/shop-skeleton/shop-skeleton';
 export const FilterContext = createContext();
 
 const HomePage = () => {

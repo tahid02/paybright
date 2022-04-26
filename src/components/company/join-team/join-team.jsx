@@ -56,7 +56,10 @@ const JoinOurTeam = () => {
               >
                 <div className={` text-center text-sm-start pt-3`}>
                   <h2 className="h2Font">Help us change how Canadians pay</h2>
-                  <MyButton others={window.innerWidth > 578 && 'm-0'}>
+                  <MyButton
+                    style={{ padding: '1rem 2rem' }}
+                    others={window.innerWidth > 578 && 'm-0'}
+                  >
                     Join our team
                   </MyButton>
                 </div>

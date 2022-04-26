@@ -23,7 +23,7 @@ const MerchantPayHeader = () => {
             </div>
           </div>
           <div className="text-center">
-            <MyButton>Get in touch</MyButton>
+            <MyButton style={{ padding: '1rem 2rem' }}>Get in touch</MyButton>
           </div>
         </div>
       </div>

@@ -41,7 +41,11 @@ const Enroll = ({ h2, button }) => {
               {h2 || 'Get started with PayBright today'}
             </h2>
             <p className="text-center" style={{ marginTop: '1.5rem' }}>
-              <MyButton bgColor="white" textColor="black">
+              <MyButton
+                style={{ padding: '1rem 2rem' }}
+                bgColor="white"
+                textColor="black"
+              >
                 {button || 'Enroll now'}
               </MyButton>
             </p>
