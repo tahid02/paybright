@@ -16,14 +16,19 @@ const FilteredShop = () => {
             ? ''
             : category.toLowerCase()
         ) &&
-      shop.status.toLowerCase().includes(status.toLowerCase()) &&
+      shop.status
+        .toLowerCase()
+        .includes(
+          status.toLowerCase() === 'Alphabetical'.toLowerCase()
+            ? ''
+            : status.toLowerCase()
+        ) &&
       shop.zeroInterest === zeroInterest
     );
   });
   console.log({ filteredShops });
   return (
     <>
-      {' '}
       <Shops filteredShops={filteredShops} />
     </>
   );

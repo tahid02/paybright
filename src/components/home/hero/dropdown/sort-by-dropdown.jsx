@@ -1,27 +1,32 @@
 /* eslint-disable react/prop-types */
 import DownArrow from 'components/common/svg/down-arrow';
 import UpArrow from 'components/common/svg/up-arrow';
+import useClickedOutside from 'hooks/useClickedOutside';
 import { FilterContext } from 'pages/HomePage';
 import React, { useContext, useState } from 'react';
 
 const SortByDropdown = ({ styles }) => {
   const { status, setStatus } = useContext(FilterContext);
-
   const [show, setShow] = useState(false);
+  const { refElement } = useClickedOutside(() => setShow(false));
+
   function handleStatus(e) {
     setStatus(e.target.innerText);
-    setShow(!show);
+  }
+  function handleShow() {
+    setShow((show) => !show);
   }
   return (
     <div className={`${styles.category}  `}>
       {/* status dropdown select button */}
       <div className="d-none d-sm-block">
         <button
-          onClick={() => setShow(!show)}
+          ref={refElement}
+          onClick={handleShow}
           className={`${styles.dropbtn}  `}
         >
           <div className={`${styles.label}  `}>sort by</div>
-          <div className="d-flex align-items-center">
+          <div className="d-flex align-items-center ">
             <div className="me-auto">{status}</div>
             <div>{show ? <UpArrow /> : <DownArrow />}</div>
           </div>

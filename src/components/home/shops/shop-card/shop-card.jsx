@@ -23,7 +23,7 @@ const ShopCard = ({ id, merchant, category, bgImage, overlayImg }) => {
             style={{ backgroundImage: `url(${bgImage})` }}
           >
             {/* background image overlay part */}
-            <div className={`${styles.overlay}  `} style={{ zIndex: 999 }}>
+            <div className={`${styles.overlay}  `} style={{ zIndex: 100 }}>
               <div className="img">
                 <img
                   src={

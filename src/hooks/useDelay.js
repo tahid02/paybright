@@ -7,7 +7,7 @@ const useDelay = (delay) => {
       setLoading(true);
     }, delay);
     return () => clearTimeout(delayTime);
-  }, [delay]);
+  }, []);
   return { loading };
 };
 

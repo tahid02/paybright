@@ -1,5 +1,6 @@
 import React from 'react';
 
+// eslint-disable-next-line react/prop-types
 function DownArrow() {
   return (
     <svg
@@ -10,6 +11,9 @@ function DownArrow() {
       ariaHidden="true"
       className="SVGIcon-yudk90-0 gJinXq"
       viewBox="0 0 40 40"
+      style={{
+        backgroundColor: 'white',
+      }}
     >
       <path
         fill="currentColor"

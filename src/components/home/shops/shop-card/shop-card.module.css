@@ -38,15 +38,14 @@
   /* opacity: 0.9; */
   background-color: #0b0be1;
 }
-.shopNow {
-  transition: all 0.2s ease 0s;
-}
+
 .shopNow {
   display: none;
 }
 .shop:hover .shopNow {
   display: block;
 }
+
 /* .shopInfo {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   border-bottom-left-radius: 8px;

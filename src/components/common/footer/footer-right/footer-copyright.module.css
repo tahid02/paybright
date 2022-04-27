@@ -19,9 +19,15 @@
 
 .footerP {
   padding: 0px;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 0%;
   font-size: 0.775rem;
   font-weight: 600;
   line-height: 1.32;
   font-family: Inter;
+}
+@media screen and (min-width: 1200px) {
+  .footerP {
+    margin-bottom: 10px;
+  }
 }

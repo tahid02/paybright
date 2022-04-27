@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import DownArrow from 'components/common/svg/down-arrow';
 import UpArrow from 'components/common/svg/up-arrow';
+import useClickedOutside from 'hooks/useClickedOutside';
 import { FilterContext } from 'pages/HomePage';
 import { useContext, useState } from 'react';
 
@@ -8,6 +9,7 @@ import { useContext, useState } from 'react';
 const CategoryDropdown = ({ styles }) => {
   const { category, setCategory } = useContext(FilterContext);
   const [showCategory, setShowCategory] = useState(false);
+  const { refElement } = useClickedOutside(() => setShowCategory(false)); // this callback has called inside the hook
   const handleCategory = (e) => {
     setCategory(e.target.innerText);
     setShowCategory(!showCategory);
@@ -18,7 +20,8 @@ const CategoryDropdown = ({ styles }) => {
       {/* select button */}
       <div className="d-none d-sm-block">
         <button
-          onClick={() => setShowCategory(!showCategory)}
+          ref={refElement}
+          onClick={() => setShowCategory((show) => !show)}
           className={`${styles.dropbtn}  `}
         >
           <div className={`${styles.label}  `}>Catagories</div>
