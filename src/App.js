@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { lazy, Suspense, useEffect, useState } from 'react';
+import { lazy, Suspense } from 'react';
 import ErrorBoundary from 'layout/error-boundary';
 import useDelay from 'hooks/useDelay';
+import CustomerLoginPage from 'pages/CustomerLoginPage';
 
 const CareersPage = lazy(() => import('pages/CareersPage'));
 const CompanyPage = lazy(() => import('pages/companyPage'));
@@ -30,6 +31,7 @@ function App() {
             <Route path="how-it-works" element={<HowItWorksPage />} />
             <Route path="for-merchants" element={<ForMerchantsPage />} />
             <Route path="press" element={<PressPage />} />
+            <Route path="customer-login" element={<CustomerLoginPage />} />{' '}
             <Route path="help" element={<p>This is a help page</p>} />
             <Route
               path="*"

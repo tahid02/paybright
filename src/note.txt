@@ -1,2 +1,0 @@
-primary color: #4a4af4
-heading text color #212189

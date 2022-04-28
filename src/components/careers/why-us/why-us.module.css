@@ -21,11 +21,16 @@
     width: 75%;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 1440px) {
+  .margin {
+    width: 60%;
+  }
+}
+/* @media screen and (max-width: 992px) {
   .margin {
     width: 100%;
   }
-}
+} */
 
 /*  */
 

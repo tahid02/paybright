@@ -7,18 +7,25 @@ import Flag from './flag';
 import styles from './nav.module.css';
 import useClickedOutside from 'hooks/useClickedOutside';
 
-const Nav = () => {
+// eslint-disable-next-line react/prop-types
+const Nav = ({ showMenu = true }) => {
   const [showLogin, setShowLogin] = useState(false);
   const { refElement } = useClickedOutside(() => setShowLogin(false));
   return (
     <div
-      className={`${styles.navContainer} ${styles.paddingLR} position-sticky top-0    d-flex flex-row bg-white`}
+      className={`${styles.navContainer} ${styles.paddingLR} ${
+        !showMenu && 'shadow-sm'
+      } position-sticky top-0    d-flex flex-row bg-white`}
       style={{ zIndex: 1000 }}
     >
       <div className="d-flex flex-fill align-items-center">
         <Logo />
       </div>
-      <div className="d-none d-xl-block">
+
+      <div
+        className="d-none d-xl-block"
+        style={{ visibility: `${!showMenu ? 'hidden' : 'visible'}` }}
+      >
         <div className="d-flex flex-fill flex-row justify-content-start align-items-center">
           {' '}
           <Link to="/">
@@ -43,7 +50,10 @@ const Nav = () => {
         </div>
       </div>
 
-      <div className="d-flex flex-fill flex-row justify-content-end align-items-center">
+      <div
+        className="d-flex flex-fill flex-row justify-content-end align-items-center"
+        style={{ visibility: `${!showMenu ? 'hidden' : 'visible'}` }}
+      >
         <div className="d-none d-md-block position-relative ">
           <div className="d-flex justify-content-end align-items-center">
             {' '}
@@ -67,16 +77,18 @@ const Nav = () => {
               }}
             >
               <div>
-                <MyButton
-                  textColor="lightblue"
-                  style={{
-                    backgroundColor: 'white',
-                    border: '1px solid var(--lightblue)',
-                    color: '#4a4af4',
-                  }}
-                >
-                  Customer Log in
-                </MyButton>
+                <Link to="/customer-login" className="text-decoration-none">
+                  <MyButton
+                    textColor="lightblue"
+                    style={{
+                      backgroundColor: 'white',
+                      border: '1px solid var(--lightblue)',
+                      color: '#4a4af4',
+                    }}
+                  >
+                    Customer Log in
+                  </MyButton>
+                </Link>
               </div>
               <div className="text-center   mt-3">
                 {' '}
@@ -107,6 +119,7 @@ const Nav = () => {
         </div>
       </div>
     </div>
+
     // </section>
   );
 };

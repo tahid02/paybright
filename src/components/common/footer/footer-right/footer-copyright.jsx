@@ -2,9 +2,10 @@ import styles from './footer-copyright.module.css';
 import LinkedinIcon from 'components/common/svg/linkedin-icon';
 import InstagramIcon from 'components/common/svg/instagram-icon';
 import FacebookIcon from 'components/common/svg/facebook-icon';
-const FooterCopyRight = () => {
+// eslint-disable-next-line react/prop-types
+const FooterCopyRight = ({ mt }) => {
   return (
-    <section className={`${styles.cont}   mt-4  `}>
+    <section className={`${styles.cont}  ${mt || 'mt-4'} `}>
       <div className={`${styles.padding}`}>
         <div className="row container-fluid">
           <div className=" text-white col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 col-xxl-5 order-2 order-xl-1 ">
