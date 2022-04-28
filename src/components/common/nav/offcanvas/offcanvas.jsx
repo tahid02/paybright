@@ -96,9 +96,11 @@ function RightOffCanvas() {
               }}
             />{' '}
             <div className=" w-100 ">
-              <MyButton style={{ width: '90%', padding: '1rem 2rem' }}>
-                login
-              </MyButton>{' '}
+              <Link to="customer-login">
+                <MyButton style={{ width: '90%', padding: '1rem 2rem' }}>
+                  login
+                </MyButton>{' '}
+              </Link>
             </div>
             <div className={`py-3 text-center`}>
               <Link

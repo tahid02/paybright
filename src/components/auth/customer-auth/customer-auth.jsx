@@ -2,44 +2,60 @@ import MyButton from 'components/common/button/my-button';
 import GoogleIcon from '../svg/google-icon';
 import LoginLogo from '../svg/login-logo';
 import styles from './customer-auth.module.css';
+import { LeftImgContainer, RightImgContainer } from './img-container';
+// firebase import
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+import firebaseConfig from '../firebase.config';
+import {
+  getAuth,
+  signInWithPopup,
+  GoogleAuthProvider,
+  updateProfile,
+  getAdditionalUserInfo,
+} from 'firebase/auth';
+
+if (!firebase.apps.length) {
+  firebase.initializeApp(firebaseConfig);
+}
 
 const CustomerAuth = () => {
+  const provider = new GoogleAuthProvider();
+
+  function handleGoogleSignUp() {
+    const auth = getAuth();
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        console.log(result.user);
+        return result;
+      })
+      .then((result) => updateUserInfo(result))
+      .catch((error) => {
+        const { email, errorCode, errorMessage } = error;
+        console.log({ errorCode, errorMessage, email });
+      });
+
+    const updateUserInfo = (result) => {
+      const newUser = getAdditionalUserInfo(result).isNewUser;
+      if (newUser) {
+        updateProfile(auth.currentUser, {
+          displayName: result.user.displayName + ',' + 'customer',
+        })
+          .then(() => {
+            console.log({ result });
+          })
+          .catch((error) => {
+            console.log('update err', error);
+          });
+      }
+    };
+  }
+
   return (
     <section className={`${styles.rowH} h-100 w-100 position-relative`}>
       <div className="row mx-0 h-100 w-100 position-relative">
         <div className="col-12 col-lg-6 px-0 h-100 position-relative ">
-          <div className="d-none d-sm-block d-lg-none">
-            <div className="position-absolute end-0" style={{ top: '10%' }}>
-              <div className="w-75 ms-auto">
-                <img
-                  src="https://portal.paybright.com/static/media/plant.4a390000.png"
-                  alt=""
-                  className="w-100 "
-                />
-              </div>
-            </div>
-          </div>
-          <div className="d-block d-sm-none">
-            <div className="d-flex ">
-              <div className="cycle w-50">
-                <img
-                  src="https://portal.paybright.com/static/media/sporting-goods.9a8fe835.png"
-                  alt=""
-                  className="w-100"
-                />
-              </div>
-              <div className="camera w-50">
-                <div className="w-25 ms-auto">
-                  <img
-                    src="https://portal.paybright.com/static/media/electronics.22ab6569.png"
-                    alt=""
-                    className="w-100 "
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
+          <LeftImgContainer />
           {/* <div className="d-flex flex-column justify-content-center align-items-center h-100 "> */}
           <div className={`${styles.loginW} position-absolute mx-auto `}>
             <div className="">
@@ -62,7 +78,10 @@ const CustomerAuth = () => {
                 Let’s get started
               </p>
             </div>
-            <div className={`${styles.btnW}   mx-auto mt-4`}>
+            <div
+              className={`${styles.btnW}   mx-auto mt-4`}
+              onClick={handleGoogleSignUp}
+            >
               <MyButton style={{ padding: '1rem ', width: '100%' }}>
                 {/* <div style={{height}}></div> */}
                 <GoogleIcon />{' '}
@@ -74,30 +93,7 @@ const CustomerAuth = () => {
 
         {/* img section */}
         <div className="col-12 col-lg-6 pe-0 d-none d-lg-block">
-          <div className="position-relative">
-            <img
-              src="https://portal.paybright.com/static/media/login-light-blobs.f2d0252a.png"
-              alt=""
-              style={{ height: '80vh' }}
-              className=" w-100"
-            />
-            <div
-              className="position-absolute w-100"
-              style={{
-                top: '50%',
-                left: '50%',
-                transform: 'translate(-50%,-50%)',
-              }}
-            >
-              <div className="w-75 mx-auto">
-                <img
-                  src="https://portal.paybright.com/static/media/login-shape.c056e360.png"
-                  alt=""
-                  className=" w-100"
-                />
-              </div>
-            </div>
-          </div>
+          <RightImgContainer />
         </div>
       </div>
     </section>
