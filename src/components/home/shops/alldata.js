@@ -1,4 +1,4 @@
-export const shops = [
+export const allShopsdata = [
   {
     id: 1,
     category: 'Electronics',

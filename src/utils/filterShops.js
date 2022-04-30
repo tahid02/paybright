@@ -2,6 +2,7 @@ export const filterFromShops = async (
   shops,
   search,
   category,
+  status,
   zeroInterest
 ) => {
   try {
