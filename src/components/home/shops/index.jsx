@@ -30,12 +30,12 @@ const Shops = ({
           }
         >
           {(!shopLoading || shopLoading === 'next') &&
-            !search.length &&
+            search.length === 0 &&
             filteredShops?.map((shop, i) => {
               return <ShopCard {...shop} key={i} />;
             })}
           {(!shopLoading || shopLoading === 'next') &&
-            search.length &&
+            search.length > 0 &&
             searchedShop?.map((shop, i) => {
               return <ShopCard {...shop} key={i} />;
             })}
@@ -52,7 +52,7 @@ const Shops = ({
         </div>
         <div className="text-center pt-5">
           {queryFetchedLength > NO_OF_SHOPS_TO_SHOW &&
-            !shopLoading &&
+            shopLoading === 0 &&
             filteredShops.length >= NO_OF_SHOPS_TO_SHOW && (
               // (filteredShops.length >= NO_OF_SHOPS_TO_SHOW ||
               // searchedShop?.length > NO_OF_SHOPS_TO_SHOW) && (
