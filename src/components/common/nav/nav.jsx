@@ -93,7 +93,7 @@ const Nav = ({ showMenu = true }) => {
               <div className="text-center   mt-3">
                 {' '}
                 <Link
-                  to="/merchant-log-in"
+                  to="/merchant-login"
                   className="text-lightblue"
                   style={{ fontWeight: 600 }}
                 >

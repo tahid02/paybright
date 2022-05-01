@@ -3,6 +3,7 @@ import { lazy, Suspense } from 'react';
 import ErrorBoundary from 'layout/error-boundary';
 import useDelay from 'hooks/useDelay';
 import CustomerLoginPage from 'pages/CustomerLoginPage';
+import MerchantLoginPage from 'pages/MerchantLoginPage';
 
 const CareersPage = lazy(() => import('pages/CareersPage'));
 const CompanyPage = lazy(() => import('pages/companyPage'));
@@ -32,6 +33,7 @@ function App() {
             <Route path="for-merchants" element={<ForMerchantsPage />} />
             <Route path="press" element={<PressPage />} />
             <Route path="customer-login" element={<CustomerLoginPage />} />{' '}
+            <Route path="merchant-login" element={<MerchantLoginPage />} />{' '}
             <Route path="help" element={<p>This is a help page</p>} />
             <Route
               path="*"

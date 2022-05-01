@@ -7,49 +7,15 @@ import { LeftImgContainer, RightImgContainer } from './img-container';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import firebaseConfig from '../firebase.config';
-import {
-  getAuth,
-  signInWithPopup,
-  GoogleAuthProvider,
-  updateProfile,
-  getAdditionalUserInfo,
-} from 'firebase/auth';
+import { useHandleGoogleSignUp } from '../useHandleGoogleSignUp';
 
 if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig);
 }
 
 const CustomerAuth = () => {
-  const provider = new GoogleAuthProvider();
-
-  function handleGoogleSignUp() {
-    const auth = getAuth();
-    signInWithPopup(auth, provider)
-      .then((result) => {
-        console.log(result.user);
-        return result;
-      })
-      .then((result) => updateUserInfo(result))
-      .catch((error) => {
-        const { email, errorCode, errorMessage } = error;
-        console.log({ errorCode, errorMessage, email });
-      });
-
-    const updateUserInfo = (result) => {
-      const newUser = getAdditionalUserInfo(result).isNewUser;
-      if (newUser) {
-        updateProfile(auth.currentUser, {
-          displayName: result.user.displayName + ',' + 'customer',
-        })
-          .then(() => {
-            console.log({ result });
-          })
-          .catch((error) => {
-            console.log('update err', error);
-          });
-      }
-    };
-  }
+  const { userInfo, handleGoogleSignUp } = useHandleGoogleSignUp('customer');
+  console.log({ userInfo });
 
   return (
     <section className={`${styles.rowH} h-100 w-100 position-relative`}>
