@@ -51,15 +51,14 @@ const Shops = ({
             ))}
         </div>
         <div className="text-center pt-5">
-          {queryFetchedLength > NO_OF_SHOPS_TO_SHOW &&
-            shopLoading === 0 &&
-            filteredShops.length >= NO_OF_SHOPS_TO_SHOW && (
-              // (filteredShops.length >= NO_OF_SHOPS_TO_SHOW ||
-              // searchedShop?.length > NO_OF_SHOPS_TO_SHOW) && (
-              <div className="bg-transparent border-0" onClick={handleShowMore}>
-                <MyButton style={{ padding: '1rem 2rem' }}>Show more</MyButton>
-              </div>
-            )}
+          {queryFetchedLength > NO_OF_SHOPS_TO_SHOW && shopLoading === false && (
+            // filteredShops?.length >= NO_OF_SHOPS_TO_SHOW && (
+            // filteredShops.length >= NO_OF_SHOPS_TO_SHOW &&
+            // searchedShop?.length > NO_OF_SHOPS_TO_SHOW && (
+            <div className="bg-transparent border-0" onClick={handleShowMore}>
+              <MyButton style={{ padding: '1rem 2rem' }}>Show more</MyButton>
+            </div>
+          )}
           {shopLoading === 'next' && (
             <div className="bg-transparent border-0" onClick={handleShowMore}>
               <MyButton

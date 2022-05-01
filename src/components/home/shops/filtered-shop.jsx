@@ -23,7 +23,33 @@ const FilteredShop = () => {
   const [searchedShop, setSearchedShop] = useState([]);
 
   // this effect will not run in initial render
-  useMountedEffect(() => {
+
+  //   when status, category or interest is changed
+  useEffect(() => {
+    setShopLoading('firstLoad');
+    if (search.length > 0) {
+      setSearch('');
+    }
+
+    const firstQuery = firstFetchQuery(category, zeroInterest, status);
+    getDocs(firstQuery)
+      .then((snapshot) => {
+        const qry = snapshot.docs.map((doc) => doc.data());
+        setQueryFetchedLength(qry.length);
+        setLastShop(snapshot.docs[snapshot.docs.length - 1]);
+        return qry;
+      })
+      .then((filted) => {
+        setFetchedShop(filted);
+        setShopLoading(false);
+        return filted;
+      })
+      .catch((err) => console.log(err));
+  }, [category, status, zeroInterest]);
+  //
+  //
+  //
+  useEffect(() => {
     const filted = filterFromShops(
       fetchedShop,
       search,
@@ -36,40 +62,6 @@ const FilteredShop = () => {
     });
     console.log({ filted });
   }, [search]);
-  //   when status, category or interest is changed
-  useEffect(() => {
-    setShopLoading('firstLoad');
-    // setSearchedShop([]);
-    const firstQuery = firstFetchQuery(category, zeroInterest, status);
-    getDocs(firstQuery)
-      .then((snapshot) => {
-        const qry = snapshot.docs.map((doc) => doc.data());
-        // console.log({ qry });
-        setQueryFetchedLength(qry.length);
-        setLastShop(snapshot.docs[snapshot.docs.length - 1]);
-        // setFetchedShop([]);
-
-        return filterFromShops(
-          qry.slice(0, NO_OF_SHOPS_TO_SHOW),
-          search,
-          category,
-          status,
-          zeroInterest
-        );
-        // setShowCount(1);
-        // return snapshot.docs[snapshot.docs.length - 1];
-      })
-      .then((filted) => {
-        setFetchedShop(filted);
-        setShopLoading(false);
-        return filted;
-      })
-
-      .catch((err) => console.log(err));
-    // console.log({ shopLoading });
-  }, [category, status, zeroInterest]);
-  //
-  //
   //
   // when show more button is clicked
   const handleShowMore = async () => {
@@ -85,7 +77,6 @@ const FilteredShop = () => {
     await getDocs(nextQuery)
       .then((snap) => {
         const qrynext = snap.docs.map((doc) => doc.data());
-        // console.log({ qrynext });
         setQueryFetchedLength(qrynext.length);
         setLastShop(snap.docs[snap.docs.length - 1]);
         return filterFromShops(

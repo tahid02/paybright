@@ -16,7 +16,7 @@ export const filterFromShops = async (
               ? ''
               : category.toLowerCase()
           ) &&
-        shop.status.toLowerCase().includes(status.toLowerCase()) &&
+        shop.status.toLowerCase().includes(status?.toLowerCase() || '') &&
         shop.zeroInterest === zeroInterest
       );
     });
