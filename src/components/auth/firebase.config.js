@@ -1,10 +1,10 @@
 const firebaseConfig = {
-  apiKey: 'AIzaSyCfkCLLBouHOhttUnMn0RAB1Dbn3iPbILo',
-  authDomain: 'secur-rider.firebaseapp.com',
-  projectId: 'secur-rider',
-  storageBucket: 'secur-rider.appspot.com',
-  messagingSenderId: '252768467636',
-  appId: '1:252768467636:web:6d4fd358811dcfe6d675e1',
+  apiKey: 'AIzaSyCOkmoZX8RBhhQ2pFX-Vff5gUTaVNIqhl8',
+  authDomain: 'dev01-655aa.firebaseapp.com',
+  projectId: 'dev01-655aa',
+  storageBucket: 'dev01-655aa.appspot.com',
+  messagingSenderId: '141075402009',
+  appId: '1:141075402009:web:60fa419e7366913b254988',
 };
 
 export default firebaseConfig;
