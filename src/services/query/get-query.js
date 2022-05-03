@@ -11,14 +11,16 @@ const {
 const db = getFirestore();
 const colRef = collection(db, 'shops');
 
-export const firstFetchQuery = (category, zeroInterest, status) => {
+export const firstFetchQuery = (category, zeroInterest, status, search) => {
   let firstQuery;
   if (category.toLowerCase() === 'all') {
     firstQuery = query(
       colRef,
       where('status', '==', status.toLowerCase()),
       where('zeroInterest', '==', zeroInterest),
-      orderBy('id'),
+      where('merchant', '>=', search.toLowerCase().trim()),
+      where('merchant', '<=', search.toLowerCase().trim() + '\uf8ff'),
+      orderBy('merchant'),
       limit(NO_OF_SHOPS_TO_SHOW + 1)
     );
   } else {
@@ -27,7 +29,9 @@ export const firstFetchQuery = (category, zeroInterest, status) => {
       where('category', '==', category),
       where('status', '==', status.toLowerCase()),
       where('zeroInterest', '==', zeroInterest),
-      orderBy('id'),
+      where('merchant', '>=', search.toLowerCase().trim()),
+      where('merchant', '<=', search.toLowerCase().trim() + '\uf8ff'),
+      orderBy('merchant'),
       limit(NO_OF_SHOPS_TO_SHOW + 1)
     );
   }
@@ -37,6 +41,7 @@ export const nextFetchQuery = async (
   category,
   zeroInterest,
   status,
+  search,
   lastShop
 ) => {
   let nextQuery;
@@ -45,7 +50,9 @@ export const nextFetchQuery = async (
       colRef,
       where('status', '==', status.toLowerCase()),
       where('zeroInterest', '==', zeroInterest),
-      orderBy('id'),
+      where('merchant', '>=', search.toLowerCase().trim()),
+      where('merchant', '<=', search.toLowerCase().trim() + '\uf8ff'),
+      orderBy('merchant'),
       startAt(lastShop),
       limit(NO_OF_SHOPS_TO_SHOW + 1)
     );
@@ -55,7 +62,9 @@ export const nextFetchQuery = async (
       where('category', '==', category),
       where('status', '==', status.toLowerCase()),
       where('zeroInterest', '==', zeroInterest),
-      orderBy('id'),
+      where('merchant', '>=', search.toLowerCase().trim()),
+      where('merchant', '<=', search.toLowerCase().trim() + '\uf8ff'),
+      orderBy('merchant'),
       startAt(lastShop),
       limit(NO_OF_SHOPS_TO_SHOW + 1)
     );

@@ -5,6 +5,7 @@ import MyButton from 'components/common/button/my-button';
 import { NO_OF_SHOPS_TO_SHOW } from 'constants/constants';
 import ShopCardSkeleton from 'skeleton/shop-skeleton/shop-skeleton';
 import { Spinner } from 'react-bootstrap';
+import NoShopFoundIcon from 'components/common/svg/no-shop-found';
 
 // eslint-disable-next-line react/prop-types
 const Shops = ({
@@ -13,7 +14,6 @@ const Shops = ({
   shopLoading,
   queryFetchedLength,
   handleShowMore,
-  searchedShop,
 }) => {
   console.log('ln', queryFetchedLength);
   console.log('load', shopLoading);
@@ -30,13 +30,7 @@ const Shops = ({
           }
         >
           {(!shopLoading || shopLoading === 'next') &&
-            search.length === 0 &&
             filteredShops?.map((shop, i) => {
-              return <ShopCard {...shop} key={i} />;
-            })}
-          {(!shopLoading || shopLoading === 'next') &&
-            search.length > 0 &&
-            searchedShop?.map((shop, i) => {
               return <ShopCard {...shop} key={i} />;
             })}
 
@@ -49,12 +43,23 @@ const Shops = ({
                 <ShopCardSkeleton />
               </div>
             ))}
+          {!filteredShops.length && (
+            <div className="pt-5 pb-2">
+              <div className="mx-auto" style={{ width: '56px' }}>
+                <NoShopFoundIcon />
+              </div>
+
+              <p
+                className="text-center text-lightblue fs-3"
+                style={{ fontWeight: 600 }}
+              >
+                No search results available for &quot;{search}&quot;
+              </p>
+            </div>
+          )}
         </div>
         <div className="text-center pt-5">
           {queryFetchedLength > NO_OF_SHOPS_TO_SHOW && shopLoading === false && (
-            // filteredShops?.length >= NO_OF_SHOPS_TO_SHOW && (
-            // filteredShops.length >= NO_OF_SHOPS_TO_SHOW &&
-            // searchedShop?.length > NO_OF_SHOPS_TO_SHOW && (
             <div className="bg-transparent border-0" onClick={handleShowMore}>
               <MyButton style={{ padding: '1rem 2rem' }}>Show more</MyButton>
             </div>

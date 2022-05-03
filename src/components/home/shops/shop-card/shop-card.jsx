@@ -1,8 +1,7 @@
 /* eslint-disable react/prop-types */
 import styles from './shop-card.module.css';
-import ShopCardSkeleton from 'skeleton/shop-skeleton/shop-skeleton';
-import { useEffect, useState } from 'react';
 import ExternalLinkIcon from 'components/common/svg/external-link-icon';
+import { capitalizeFirstLetter } from 'utils/capitalizeFirstLetter';
 const ShopCard = ({ id, merchant, category, bgImage, overlayImg }) => {
   return (
     <div
@@ -44,7 +43,9 @@ const ShopCard = ({ id, merchant, category, bgImage, overlayImg }) => {
           }}
         >
           <p className={`${styles.category}  `}>{category}</p>
-          <p className={`${styles.marchent}  `}>{merchant}</p>
+          <p className={`${styles.marchent}  `}>
+            {capitalizeFirstLetter(merchant)}
+          </p>
         </div>
       </>
     </div>

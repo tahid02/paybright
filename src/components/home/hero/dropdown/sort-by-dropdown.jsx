@@ -10,9 +10,6 @@ const SortByDropdown = ({ styles }) => {
   const [show, setShow] = useState(false);
   const { refElement } = useClickedOutside(() => setShow(false));
 
-  function handleStatus(e) {
-    setStatus(e.target.innerText);
-  }
   function handleShow() {
     setShow((show) => !show);
   }
@@ -47,11 +44,26 @@ const SortByDropdown = ({ styles }) => {
             flexDirection: 'column',
             borderRadius: '4px',
           }}
-          onClick={handleStatus}
         >
-          <button className={`${styles.downbtn}  `}> Featured</button>
-          <button className={`${styles.downbtn}  `}>Popular</button>
-          <button className={`${styles.downbtn}  `}>New</button>
+          <button
+            className={`${styles.downbtn}  `}
+            onClick={(e) => setStatus(e.target.innerText)}
+          >
+            {' '}
+            Featured
+          </button>
+          <button
+            className={`${styles.downbtn}  `}
+            onClick={(e) => setStatus(e.target.innerText)}
+          >
+            Popular
+          </button>
+          <button
+            className={`${styles.downbtn}  `}
+            onClick={(e) => setStatus(e.target.innerText)}
+          >
+            New
+          </button>
           <button className={`${styles.downbtn}  `}>Alphabetical</button>
         </div>
       )}
