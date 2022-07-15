@@ -6,7 +6,7 @@ import Shops from '.';
 import { initializeApp } from 'firebase/app';
 import { getDocs } from 'firebase/firestore';
 import firebaseConfig from 'components/auth/firebase.config';
-import { NO_OF_SHOPS_TO_SHOW } from 'constants/constants';
+import { NO_OF_WORKSHEETS_TO_SHOW } from 'constants/constants';
 import { firstFetchQuery, nextFetchQuery } from 'services/query/get-query';
 import { allShopsdata } from './alldata';
 // init firebase app
@@ -28,10 +28,10 @@ const FilteredShop = () => {
       .then((snapshot) => {
         const qry = snapshot.docs.map((doc) => doc.data());
         setQueryFetchedLength(qry.length);
-        if (qry.length > NO_OF_SHOPS_TO_SHOW) {
+        if (qry.length > NO_OF_WORKSHEETS_TO_SHOW) {
           setLastShop(snapshot.docs[snapshot.docs.length - 1]);
         }
-        return qry.slice(0, NO_OF_SHOPS_TO_SHOW);
+        return qry.slice(0, NO_OF_WORKSHEETS_TO_SHOW);
       })
       .then((filted) => {
         setFetchedShop(filted);
@@ -57,10 +57,10 @@ const FilteredShop = () => {
       .then((snap) => {
         const qrynext = snap.docs.map((doc) => doc.data());
         setQueryFetchedLength(qrynext.length);
-        if (qrynext.length > NO_OF_SHOPS_TO_SHOW) {
+        if (qrynext.length > NO_OF_WORKSHEETS_TO_SHOW) {
           setLastShop(snap.docs[snap.docs.length - 1]);
         }
-        return [...fetchedShop, ...qrynext.slice(0, NO_OF_SHOPS_TO_SHOW)];
+        return [...fetchedShop, ...qrynext.slice(0, NO_OF_WORKSHEETS_TO_SHOW)];
       })
       .then((filted) => {
         setFetchedShop(filted);

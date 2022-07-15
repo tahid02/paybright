@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import DownArrow from 'components/common/svg/down-arrow';
 import UpArrow from 'components/common/svg/up-arrow';
+import { CATEGORY_NAME } from 'constants/constants';
 import useClickedOutside from 'hooks/useClickedOutside';
 import { FilterContext } from 'pages/HomePage';
 import { useContext, useState } from 'react';
@@ -50,14 +51,19 @@ const CategoryDropdown = ({ styles }) => {
           }}
           onClick={handleCategory}
         >
-          <button className={`${styles.downbtn}  `}> All</button>
+          {CATEGORY_NAME.map((category, index) => (
+            <button key={index} className={`${styles.downbtn}  `}>
+              {category}
+            </button>
+          ))}
+          {/* <button className={`${styles.downbtn}  `}> All</button>
           <button className={`${styles.downbtn}  `}>Home & Furniture</button>
           <button className={`${styles.downbtn}  `}>Electronics</button>
           <button className={`${styles.downbtn}  `}>Fashion</button>
           <button className={`${styles.downbtn}  `}>Beauty & Wellness</button>
           <button className={`${styles.downbtn}  `}> Sporting Goods</button>
           <button className={`${styles.downbtn}  `}> Hobby & Leisure</button>
-          <button className={`${styles.downbtn}  `}>Auto</button>
+          <button className={`${styles.downbtn}  `}>Auto</button> */}
         </div>
       )}
 
@@ -71,15 +77,17 @@ const CategoryDropdown = ({ styles }) => {
             onChange={(e) => setCategory(e.target.value)}
             style={{ padding: '1.2rem 1rem' }}
           >
-            {' '}
-            <option>All </option>
+            {CATEGORY_NAME.map((category, index) => (
+              <option key={index}>{category} </option>
+            ))}
+            {/* <option>All </option>
             <option> Home & Furniture</option>
             <option>Electronics</option>
             <option>Fashion</option>
             <option> Beauty & Wellness</option>
             <option>Sporting Goods</option>
             <option> Hobby & Leisure</option>
-            <option> Auto</option>
+            <option> Auto</option> */}
           </select>{' '}
         </button>{' '}
       </div>

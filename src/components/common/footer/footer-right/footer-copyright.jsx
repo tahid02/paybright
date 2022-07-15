@@ -11,7 +11,7 @@ const FooterCopyRight = ({ mt }) => {
           <div className=" text-white col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 col-xxl-5 order-2 order-xl-1 ">
             <p className={`${styles.footerP}`}>
               {' '}
-              ©2022 PayBright. All rights reserved.
+              ©2022 iLern | All rights reserved.
             </p>
           </div>
           <div className="text-white col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-7 col-xxl-7 order-1 order-xl-2">

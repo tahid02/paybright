@@ -14,7 +14,12 @@ const Footer = () => {
             <div className="container-fluid ps-0">
               <div style={{ marginBottom: '3rem' }}>
                 {' '}
-                <Logo />
+                {/* <Logo /> */}
+                <img
+                  src="assets/images/logo.png"
+                  alt="logo"
+                  style={{ width: '20%' }}
+                />
               </div>
 
               <h3 className={`${styles.join}  `}>Join our email list</h3>

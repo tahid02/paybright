@@ -2,7 +2,7 @@
 import styles from './shop.module.css';
 import ShopCard from './shop-card/shop-card';
 import MyButton from 'components/common/button/my-button';
-import { NO_OF_SHOPS_TO_SHOW } from 'constants/constants';
+import { NO_OF_WORKSHEETS_TO_SHOW } from 'constants/constants';
 import ShopCardSkeleton from 'skeleton/shop-skeleton/shop-skeleton';
 import { Spinner } from 'react-bootstrap';
 import NoShopFoundIcon from 'components/common/svg/no-shop-found';
@@ -17,7 +17,7 @@ const Shops = ({
 }) => {
   console.log('ln', queryFetchedLength);
   console.log('load', shopLoading);
-  console.log('cnt', NO_OF_SHOPS_TO_SHOW);
+  console.log('cnt', NO_OF_WORKSHEETS_TO_SHOW);
   console.log('shops says hi');
   return (
     <section className={`${styles.contentMargin} pt-4`}>
@@ -35,7 +35,7 @@ const Shops = ({
             })}
 
           {shopLoading === 'firstLoad' &&
-            [...Array(NO_OF_SHOPS_TO_SHOW)].map((d, i) => (
+            [...Array(NO_OF_WORKSHEETS_TO_SHOW)].map((d, i) => (
               <div
                 key={i}
                 className=" col-6 col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3"
@@ -59,11 +59,12 @@ const Shops = ({
           )}
         </div>
         <div className="text-center pt-5">
-          {queryFetchedLength > NO_OF_SHOPS_TO_SHOW && shopLoading === false && (
-            <div className="bg-transparent border-0" onClick={handleShowMore}>
-              <MyButton style={{ padding: '1rem 2rem' }}>Show more</MyButton>
-            </div>
-          )}
+          {queryFetchedLength > NO_OF_WORKSHEETS_TO_SHOW &&
+            shopLoading === false && (
+              <div className="bg-transparent border-0" onClick={handleShowMore}>
+                <MyButton style={{ padding: '1rem 2rem' }}>Show more</MyButton>
+              </div>
+            )}
           {shopLoading === 'next' && (
             <div className="bg-transparent border-0" onClick={handleShowMore}>
               <MyButton

@@ -28,7 +28,12 @@ const CustomerAuth = () => {
               <h1 className={`${styles.head}  `}>Buy now Pay later </h1>
             </div>
             <div className="d-flex justify-content-center ">
-              <LoginLogo />
+              {/* <LoginLogo /> */}
+              <img
+                src="assets/images/logo.png"
+                alt="logo"
+                style={{ width: '25%' }}
+              />
             </div>{' '}
             <div className="mt-5">
               <div className="bag w-100 d-block d-sm-none">

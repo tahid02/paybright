@@ -19,7 +19,8 @@ const Nav = ({ showMenu = true }) => {
       style={{ zIndex: 1000 }}
     >
       <div className="d-flex flex-fill align-items-center">
-        <Logo />
+        {/* <Logo /> */}
+        <img src="assets/images/logo.png" alt="logo" style={{ width: '35%' }} />
       </div>
 
       <div

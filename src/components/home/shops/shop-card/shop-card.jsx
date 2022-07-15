@@ -2,6 +2,7 @@
 import styles from './shop-card.module.css';
 import ExternalLinkIcon from 'components/common/svg/external-link-icon';
 import { capitalizeFirstLetter } from 'utils/capitalizeFirstLetter';
+import PdfModal from './pdf-modal';
 const ShopCard = ({ id, merchant, category, bgImage, overlayImg }) => {
   return (
     <div
@@ -47,6 +48,7 @@ const ShopCard = ({ id, merchant, category, bgImage, overlayImg }) => {
             {capitalizeFirstLetter(merchant)}
           </p>
         </div>
+        <PdfModal />
       </>
     </div>
   );

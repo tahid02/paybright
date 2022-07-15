@@ -1,4 +1,4 @@
-const { NO_OF_SHOPS_TO_SHOW } = require('constants/constants');
+const { NO_OF_WORKSHEETS_TO_SHOW } = require('constants/constants');
 const {
   query,
   where,
@@ -21,7 +21,7 @@ export const firstFetchQuery = (category, zeroInterest, status, search) => {
       where('merchant', '>=', search.toLowerCase().trim()),
       where('merchant', '<=', search.toLowerCase().trim() + '\uf8ff'),
       orderBy('merchant'),
-      limit(NO_OF_SHOPS_TO_SHOW + 1)
+      limit(NO_OF_WORKSHEETS_TO_SHOW + 1)
     );
   } else {
     firstQuery = query(
@@ -32,7 +32,7 @@ export const firstFetchQuery = (category, zeroInterest, status, search) => {
       where('merchant', '>=', search.toLowerCase().trim()),
       where('merchant', '<=', search.toLowerCase().trim() + '\uf8ff'),
       orderBy('merchant'),
-      limit(NO_OF_SHOPS_TO_SHOW + 1)
+      limit(NO_OF_WORKSHEETS_TO_SHOW + 1)
     );
   }
   return firstQuery;
@@ -54,7 +54,7 @@ export const nextFetchQuery = async (
       where('merchant', '<=', search.toLowerCase().trim() + '\uf8ff'),
       orderBy('merchant'),
       startAt(lastShop),
-      limit(NO_OF_SHOPS_TO_SHOW + 1)
+      limit(NO_OF_WORKSHEETS_TO_SHOW + 1)
     );
   } else {
     nextQuery = query(
@@ -66,7 +66,7 @@ export const nextFetchQuery = async (
       where('merchant', '<=', search.toLowerCase().trim() + '\uf8ff'),
       orderBy('merchant'),
       startAt(lastShop),
-      limit(NO_OF_SHOPS_TO_SHOW + 1)
+      limit(NO_OF_WORKSHEETS_TO_SHOW + 1)
     );
   }
   return nextQuery;

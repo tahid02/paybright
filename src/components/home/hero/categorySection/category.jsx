@@ -1,3 +1,4 @@
+import { CATEGORY_NAME } from 'constants/constants';
 import { FilterContext } from 'pages/HomePage';
 import { useContext, useState } from 'react';
 import styles from './category.module.css';
@@ -22,16 +23,7 @@ const Category = () => {
         className=" d-flex flex-fill flex-row justify-content-center align-items-center mx-auto"
         onClick={handleCategory}
       >
-        {[
-          'All',
-          'Home & Furniture',
-          'Electronics',
-          'Fashion',
-          'Beauty & Wellness',
-          'Sporting Goods',
-          'Hobby & Leisure',
-          'Auto',
-        ].map((cate, index) => {
+        {CATEGORY_NAME.map((cate, index) => {
           return (
             <>
               <button
